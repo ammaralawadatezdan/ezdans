@@ -5758,7 +5758,7 @@ h2.title {
 }
 @media (min-width: 1800px) {
   .container {
-    max-width: 1650px;
+    max-width: 1650px !important;
   }
 }
 @media (min-width: 1400px) {
@@ -5828,7 +5828,7 @@ h2.title {
 }
 .ezdan-logo {
   max-width: 160px;
-  margin-left: 150px;
+  margin-left: 440px;
 }
 @media (max-width: 1200px) {
   .ezdan-logo {

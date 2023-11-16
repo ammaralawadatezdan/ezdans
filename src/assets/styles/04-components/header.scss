@@ -255,7 +255,7 @@ h2.title {
 
 @media (min-width: 1800px) {
   .container {
-    max-width: 1650px;
+    max-width: 1650px !important;
   }
 }
 
@@ -270,6 +270,8 @@ h2.title {
         max-width: 1650px
     }
 }
+
+
 
 /* Base Style CSS End */
 
@@ -341,7 +343,7 @@ h2.title {
 
 .ezdan-logo {
   max-width: 160px;
-  margin-left: 150px;
+  margin-left: 440px;
 }
 
 @media (max-width: 1200px) {
