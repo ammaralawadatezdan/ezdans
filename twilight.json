@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "ezdan-coffee-section-home",
-                    "key": "a2368447-aa9f-4de2-b997-5027f280f836",
+                    "key": "ffcb04c2-2443-46a8-86df-4052db7807b9",
                     "type": "collection",
                     "format": "collection",
                     "label": "Ezdan-Coffee-Section-HomeTitle",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "Ezdan-Coffee-Section-Home-string",
-                            "key": "0300c8bb-5910-41be-b57d-b34ec13a4f79",
+                            "key": "0eaaedc4-a705-4c57-a416-9d65bf173a89",
                             "type": "string",
                             "format": "text",
                             "label": "Ezdan-Coffee-Section-Home",
@@ -992,16 +992,17 @@
                             "maxLength": 30
                         },
                         {
-                            "id": "Ezdan-Coffee-Section-Home-icon_picker",
-                            "key": "c7d979ea-ea60-4f49-92b5-a538049ff93d",
+                            "id": "Ezdan-Coffee-Section-HomeTitle-SVG",
+                            "key": "ebbae7f8-8fdc-4c19-94f0-23df8a4d4a89",
                             "type": "string",
-                            "format": "icon",
-                            "label": "Icon Picker",
-                            "description": "ايقونة السهر الى الإسفل",
+                            "format": "image",
+                            "label": "Image 1",
+                            "description": "ايقون السهم الى الأسف",
                             "labelHTML": null,
-                            "icon": "sicon-user-circle",
-                            "value": "sicon-store",
-                            "required": false
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
                         }
                     ],
                     "value": [],
@@ -1011,7 +1012,7 @@
                 },
                 {
                     "id": "ezdan-coffee-section-home2",
-                    "key": "ca15cd96-7bc1-49d5-bd11-8b54fcbc6328",
+                    "key": "ef58f5c1-e946-4081-a935-7f53361e6754",
                     "type": "collection",
                     "format": "collection",
                     "label": "Ezdan-Coffee-Section-Home",
@@ -1022,7 +1023,7 @@
                     "fields": [
                         {
                             "id": "Ezdan-Coffee-Section-Home-image",
-                            "key": "da21e754-4ecc-4a93-90cf-11fa835373d2",
+                            "key": "56de09e3-2130-45bd-bb94-06e6fd21bc28",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1035,7 +1036,7 @@
                         },
                         {
                             "id": "Ezdan-Coffee-Section-Home-url",
-                            "key": "9047fbfa-7b63-441f-bf20-8b5f8b5b56da",
+                            "key": "9adea53d-836c-4b2e-976f-017cf0742b3d",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
