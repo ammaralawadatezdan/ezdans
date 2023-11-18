@@ -851,7 +851,112 @@
             "title": "سلايدر مخصص رئيسي",
             "icon": "sicon-store",
             "path": "ezdan-MainSLiderhero",
-            "fields": []
+            "fields": [
+                {
+                    "id": "description",
+                    "key": "db30466f-e3cd-4779-a60e-c35539d03674",
+                    "type": "static",
+                    "format": "description",
+                    "label": "Description",
+                    "value": "<div ><h6 >معاينة العنصر</h6><img src='https://cdn.salla.network/images/themes/raed/main-slider.jpg?v=1.1'></div>",
+                    "variant": "h1",
+                    "icon": "sicon-format-size",
+                    "defaulted": true
+                },
+                {
+                    "id": "description_1",
+                    "key": "72a47d4f-2e82-4478-94e5-fb82fea30fcf",
+                    "type": "static",
+                    "format": "description",
+                    "label": "Description 1",
+                    "value": "<h4 >هذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر <strong>صور متحركة</strong> بدلاً من عنصر <strong>صور متحركة محسنة</strong> لتظهر صورة البنر بشكل كامل</h4>",
+                    "variant": "h1",
+                    "icon": "sicon-format-size",
+                    "defaulted": true
+                },
+                {
+                    "id": "SliderHero",
+                    "key": "a62bcfbf-1dc9-4d19-98c8-0f71e273ce11",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": "صورة",
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "image",
+                            "key": "3e79e923-fb49-4afc-aaf8-18ec1712e592",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": "المقاس المطلوب هو 1280x750",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false,
+                            "defaulted": true
+                        },
+                        {
+                            "id": "string",
+                            "key": "e6b97a69-e8e8-4902-aacf-5726b538f94a",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": "يتم عرضه على الصورة بحجم بارز جداً، مع إضافة تأثير دخول للنص يضيف لمسة جمالية على معرض الصور.",
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": "0",
+                            "maxLength": "1000",
+                            "defaulted": true
+                        },
+                        {
+                            "id": "text_area",
+                            "key": "370f865a-45d3-4226-9f6f-d8e5a2470137",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "Text Area",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Your text here",
+                            "icon": "sicon-typography",
+                            "value": "يتم عرضه على الصورة بحجم أصغر من العنوان الرئيسي، مع إضافة تأثير دخول للنص يضيف لمسة جمالية على معرض الصور.",
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": "0",
+                            "maxLength": 255,
+                            "defaulted": true
+                        },
+                        {
+                            "id": "url",
+                            "key": "ebdec052-5bbc-4c9f-adf3-bcda3f5099b2",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30,
+                            "defaulted": true
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": "1",
+                    "maxLength": "10"
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
