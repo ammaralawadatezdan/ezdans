@@ -957,6 +957,13 @@
                     "maxLength": "10"
                 }
             ]
+        },
+        {
+            "key": "d8cfbf15-8b47-40d2-8cc6-5d8e5089fb6c",
+            "title": "تصنيفات الصفحة الرئيسية",
+            "icon": "sicon-ul",
+            "path": "Ezdan-Coffee-Section-Home",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
