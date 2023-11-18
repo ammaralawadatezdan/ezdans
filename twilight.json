@@ -957,6 +957,13 @@
                     "maxLength": "10"
                 }
             ]
+        },
+        {
+            "key": "34d53ce1-d7e6-4624-acf8-9b47872eabd9",
+            "title": "سلايدر التصنيفات الصفحة الرئيسية",
+            "icon": "sicon-store",
+            "path": "CoffeSlider",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
