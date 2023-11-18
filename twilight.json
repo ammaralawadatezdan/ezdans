@@ -804,6 +804,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "fb8def86-9b78-4707-83b9-5679a24130e6",
+            "title": "MainSLiderHero",
+            "icon": "sicon-store",
+            "path": "Main-SLider-hero",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
