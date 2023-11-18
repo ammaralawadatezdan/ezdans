@@ -810,7 +810,41 @@
             "title": "MainSLiderHero",
             "icon": "sicon-store",
             "path": "Main-SLider-hero",
-            "fields": []
+            "fields": [
+                {
+                    "id": "collection-MainSLiderhero",
+                    "key": "6cc667da-48e6-4b4c-b423-c0a2022bf74a",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": "Main SLider hero",
+                    "labelHTML": "Main SLider hero",
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "slider-MainSLiderhero",
+                            "key": "5c07b8a2-f09a-4159-b9a8-39854b23f89f",
+                            "type": "number",
+                            "format": "slider",
+                            "inputType": "range",
+                            "label": "Slider",
+                            "description": "MainS Lider hero",
+                            "labelHTML": "Main SLider hero",
+                            "icon": "sicon-pin",
+                            "value": "0",
+                            "required": true,
+                            "step": 2.5,
+                            "minimum": -50,
+                            "maximum": 50
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
