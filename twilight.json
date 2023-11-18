@@ -963,7 +963,87 @@
             "title": "تصنيفات الصفحة الرئيسية",
             "icon": "sicon-ul",
             "path": "Ezdan-Coffee-Section-Home",
-            "fields": []
+            "fields": [
+                {
+                    "id": "ezdan-coffee-section-home",
+                    "key": "a2f2c6b4-fb3d-4244-b7a5-0b4ef5e798fb",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Ezdan-Coffee-Section-HomeTitle",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "Ezdan-Coffee-Section-Home-string",
+                            "key": "304552c5-04bd-4e83-8446-74da80a453e6",
+                            "type": "string",
+                            "format": "text",
+                            "label": "Ezdan-Coffee-Section-Home",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": "3",
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "required": true,
+                    "minLength": 1,
+                    "maxLength": 5
+                },
+                {
+                    "id": "ezdan-coffee-section-home2",
+                    "key": "7feff5af-dab1-496f-916d-6e15d4032e54",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Ezdan-Coffee-Section-Home",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "Ezdan-Coffee-Section-Home-image",
+                            "key": "cbe259e3-e957-4bce-82f0-a1cd55f68297",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": true
+                        },
+                        {
+                            "id": "Ezdan-Coffee-Section-Home-url",
+                            "key": "036e4f6e-4154-46de-b4a2-b19c994feca3",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "required": true,
+                    "minLength": 1,
+                    "maxLength": "10"
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
