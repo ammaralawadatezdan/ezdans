@@ -854,7 +854,7 @@
             "fields": [
                 {
                     "id": "description",
-                    "key": "db30466f-e3cd-4779-a60e-c35539d03674",
+                    "key": "deab9844-ce0c-43d9-8031-e8c0ae4c8b5f",
                     "type": "static",
                     "format": "description",
                     "label": "Description",
@@ -865,7 +865,7 @@
                 },
                 {
                     "id": "description_1",
-                    "key": "72a47d4f-2e82-4478-94e5-fb82fea30fcf",
+                    "key": "e24296d8-0493-45a5-a733-0df6ffbd5f1e",
                     "type": "static",
                     "format": "description",
                     "label": "Description 1",
@@ -876,7 +876,7 @@
                 },
                 {
                     "id": "SliderHero",
-                    "key": "a62bcfbf-1dc9-4d19-98c8-0f71e273ce11",
+                    "key": "af3f9644-2c65-4cba-bea8-880184423050",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -887,7 +887,7 @@
                     "fields": [
                         {
                             "id": "image",
-                            "key": "3e79e923-fb49-4afc-aaf8-18ec1712e592",
+                            "key": "df8249c1-f076-404e-9fe8-77b21473c0e1",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -901,7 +901,7 @@
                         },
                         {
                             "id": "string",
-                            "key": "e6b97a69-e8e8-4902-aacf-5726b538f94a",
+                            "key": "740249f5-7aff-4409-86fa-c7a5a401b89e",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -918,7 +918,7 @@
                         },
                         {
                             "id": "text_area",
-                            "key": "370f865a-45d3-4226-9f6f-d8e5a2470137",
+                            "key": "498ab692-43b6-4adf-8494-529c1014df4f",
                             "type": "string",
                             "format": "textarea",
                             "label": "Text Area",
@@ -935,7 +935,7 @@
                         },
                         {
                             "id": "url",
-                            "key": "ebdec052-5bbc-4c9f-adf3-bcda3f5099b2",
+                            "key": "79a9e14d-27c0-4335-80f0-ddfda319c985",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
