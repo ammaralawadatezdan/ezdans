@@ -249,7 +249,7 @@ h2.title {
 
 @media (min-width: 1600px) {
   .container {
-    max-width: 1500px;
+    max-width: 1500px !important;
   }
 }
 
@@ -267,7 +267,7 @@ h2.title {
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1650px
+        max-width: 1650px !important;
     }
 }
 
@@ -280,7 +280,7 @@ h2.title {
 /* Navigation Section CSS Start */
 
 .ezdan-navigation-wrapper {
-  background: #0a53be !important;
+  background: #030303f5 !important;
   position: relative;
   padding: 40px 0;
   z-index: 99;
@@ -342,8 +342,8 @@ h2.title {
 }
 
 .ezdan-logo {
-  max-width: 160px;
-  margin-left: 440px;
+  max-width: 120px;
+  margin-left: 290px;
 }
 
 @media (max-width: 1200px) {

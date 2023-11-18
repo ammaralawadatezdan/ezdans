@@ -5753,7 +5753,7 @@ h2.title {
 }
 @media (min-width: 1600px) {
   .container {
-    max-width: 1500px;
+    max-width: 1500px !important;
   }
 }
 @media (min-width: 1800px) {
@@ -5768,14 +5768,14 @@ h2.title {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1650px;
+    max-width: 1650px !important;
   }
 }
 /* Base Style CSS End */
 /* Header Part CSS Start */
 /* Navigation Section CSS Start */
 .ezdan-navigation-wrapper {
-  background: #0a53be !important;
+  background: rgba(3, 3, 3, 0.9607843137) !important;
 }
 .ezdan-navigation-wrapper {
   position: relative;
@@ -5827,8 +5827,8 @@ h2.title {
   color: #352110;
 }
 .ezdan-logo {
-  max-width: 160px;
-  margin-left: 440px;
+  max-width: 120px;
+  margin-left: 290px;
 }
 @media (max-width: 1200px) {
   .ezdan-logo {
