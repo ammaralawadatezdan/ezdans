@@ -18790,6 +18790,16 @@ model-viewer[style*=width]:before{display:none}
   background: #d7421d;
   padding: 0 35px 20px;
 }
+.ezdan-hero1-btn {
+  padding-top: 40px;
+}
+.ezdan-hero1-btn a {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  background: #d7421d;
+  padding: 0 35px 20px;
+}
 .owl-dots.disabled,
 .owl-nav.disabled {
   display: block !important;
