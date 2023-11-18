@@ -5775,9 +5775,6 @@ h2.title {
 /* Header Part CSS Start */
 /* Navigation Section CSS Start */
 .ezdan-navigation-wrapper {
-  background: rgba(3, 3, 3, 0.9607843137) !important;
-}
-.ezdan-navigation-wrapper {
   position: relative;
   padding: 40px 0;
   z-index: 99;
@@ -18466,7 +18463,12 @@ fieldset:disabled .s-block--slider-with-bg .s-slider-block__display-all {
 .s-block--tabs-produtcs + .s-block--tabs-produtcs {
   padding-top: 2em;
 }
-salla-slider{display:block}
+salla-slider {
+  margin-top: -185px !important;
+}
+salla-slider {
+  display:block;
+}
 salla-slider.details-slider .s-slider-container{border-radius:0.375rem;border-width:1px;--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity));
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), 1);
