@@ -965,8 +965,41 @@
             "path": "Coffee-Section",
             "fields": [
                 {
+                    "id": "CoffeeSectioncollection",
+                    "key": "235aeb06-5e0e-414b-8c0a-0e0d8d989810",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection 1",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "Coffee-SectionTilitel",
+                            "key": "8c6d0503-00c1-4b4d-8288-3567c99ebac4",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String 1",
+                            "description": null,
+                            "labelHTML": "العنوان الرئيسي",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                },
+                {
                     "id": "CoffeeSection",
-                    "key": "c9c9e12c-1c37-4c44-a5ea-46142e91a13e",
+                    "key": "7c2b468d-411f-4c59-875d-2388ba911fb2",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -977,12 +1010,12 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "af636861-be3c-4363-89e7-fc9f35170b8d",
+                            "key": "c9375bda-aa4b-459c-9a30-7b3555f507f4",
                             "type": "string",
                             "format": "text",
                             "label": "String",
                             "description": null,
-                            "labelHTML": null,
+                            "labelHTML": "عنوان التصنيف",
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
                             "value": "CoffeeSection",
