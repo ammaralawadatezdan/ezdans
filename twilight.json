@@ -1092,7 +1092,7 @@
         {
             "key": "dbd874f1-2b8d-4ad8-b981-c08af34c098b",
             "title": "سلايدر التصنيفات الصفحة أساسي",
-            "icon": "sicon-store",
+            "icon": "sicon-ol",
             "path": "EzdanCatSlider",
             "fields": []
         }
