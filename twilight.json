@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSectioncollection",
-                    "key": "235aeb06-5e0e-414b-8c0a-0e0d8d989810",
+                    "key": "a14363e6-7f02-4bdd-b739-7069dccda61e",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection 1",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "Coffee-SectionTilitel",
-                            "key": "8c6d0503-00c1-4b4d-8288-3567c99ebac4",
+                            "key": "c96feb6b-8a77-4369-a414-323c180ecc71",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -987,7 +987,7 @@
                             "icon": "sicon-format-text-alt",
                             "value": null,
                             "multilanguage": false,
-                            "required": false,
+                            "required": true,
                             "minLength": 6,
                             "maxLength": 30
                         }
@@ -995,11 +995,11 @@
                     "value": [],
                     "required": false,
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": "1"
                 },
                 {
                     "id": "CoffeeSection",
-                    "key": "7c2b468d-411f-4c59-875d-2388ba911fb2",
+                    "key": "a014a762-ecb3-43f9-bf9f-a4c0c814d7d8",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -1010,7 +1010,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "c9375bda-aa4b-459c-9a30-7b3555f507f4",
+                            "key": "8c1fd557-3204-4623-810e-bd8a661d11fc",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1028,7 +1028,7 @@
                     "value": [],
                     "required": false,
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": "10"
                 }
             ]
         }
