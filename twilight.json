@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "Coffee-Section",
-                    "key": "93df1d68-9755-4e10-9375-9ce1945ef389",
+                    "key": "118c8e0b-3f0f-46af-9b8e-17d2614cd22f",
                     "type": "collection",
                     "format": "collection",
                     "label": "Coffee-Section-Collection",
@@ -976,28 +976,18 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "coffee-section-title1",
-                            "key": "1cf07408-a978-4a74-91de-8b8631b144aa",
-                            "type": "static",
-                            "format": "title",
-                            "label": "Coffee-Section-Title1",
-                            "value": null,
-                            "variant": "h1",
-                            "icon": "sicon-format-text"
-                        },
-                        {
                             "id": "Coffee-Section-title",
-                            "key": "d05814ba-cd7a-4a53-9537-06fd8b249c3e",
+                            "key": "4d080a46-69fa-44b3-a4e2-f0f5fb304585",
                             "type": "static",
                             "format": "title",
                             "label": "Coffee-Section-Title",
-                            "value": null,
+                            "value": "اسم التصنيف",
                             "variant": "h1",
                             "icon": "sicon-format-text"
                         },
                         {
                             "id": "Coffee-Section-image",
-                            "key": "ff48ec60-80cf-4d62-ae47-d9902d03b30e",
+                            "key": "e45b6c5c-a102-407a-9f0a-001072dbf5ba",
                             "type": "string",
                             "format": "image",
                             "label": "Coffee-Section-Image",
@@ -1010,7 +1000,7 @@
                         },
                         {
                             "id": "Coffee-Section-url",
-                            "key": "892c540f-bbdf-44f6-a2b6-2051c0428c2c",
+                            "key": "59fa9a5b-f487-4a5e-a9d1-88b99c349b19",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
