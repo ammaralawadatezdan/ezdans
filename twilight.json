@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "Coffee-Section",
-                    "key": "5e374e32-bba9-423c-9b6a-f4c5d624452f",
+                    "key": "87374ba1-76ab-4f00-9631-4a6e779e9cd2",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "Coffee-Section-title",
-                            "key": "14fca4b8-869e-491b-9bb2-a8c24c3d37cb",
+                            "key": "20c616d1-488a-46d3-bd53-ac1cc9e52a06",
                             "type": "static",
                             "format": "title",
                             "label": "Title",
@@ -987,7 +987,7 @@
                         },
                         {
                             "id": "Coffee-Section-image",
-                            "key": "909907c1-2bc9-47e4-a60e-d6763eeffd4e",
+                            "key": "7dc0927c-7326-47af-a8ba-170de6fb81e7",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1000,7 +1000,7 @@
                         },
                         {
                             "id": "Coffee-Section-url",
-                            "key": "5533d3ef-78ad-4bc7-ad5f-8508ede3bb4d",
+                            "key": "74f33123-5212-4d5f-9395-e7ead1bb8075",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
