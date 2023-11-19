@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSectioncollection",
-                    "key": "4fe7cc6d-ec0a-4bbb-b5b5-c376d2175e01",
+                    "key": "29be012f-2074-4300-a578-0f326eb9d9cf",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection 1",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionTilitel",
-                            "key": "c04b6be8-ce0c-424b-9ba2-e1d387d7a9b4",
+                            "key": "85a0f903-cd7e-4d2e-b147-393b87e0ea4b",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -989,7 +989,7 @@
                             "multilanguage": false,
                             "required": true,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "999"
                         }
                     ],
                     "value": [],
@@ -999,7 +999,7 @@
                 },
                 {
                     "id": "CoffeeSectionstringimage_1",
-                    "key": "71ec9293-18e7-4409-a307-b9474b2f8fd3",
+                    "key": "aecb9be4-8f54-47c3-a09e-b655d8b9e387",
                     "type": "string",
                     "format": "image",
                     "label": "Image 1",
@@ -1012,7 +1012,7 @@
                 },
                 {
                     "id": "CoffeeSection",
-                    "key": "7b6e606b-83b4-492a-af3b-fdda0cf26aa0",
+                    "key": "73a82f65-a210-4461-994b-d166a2ee55a9",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -1023,7 +1023,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "2cbfd1ae-3956-45d5-898f-4d054a3ac271",
+                            "key": "63696a17-61bf-48df-a2e3-16be04aca2f4",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1039,7 +1039,7 @@
                         },
                         {
                             "id": "CoffeeSectionstringimage",
-                            "key": "5dcf4941-9c03-4f50-8585-f8d87ddbb30c",
+                            "key": "cab50989-7436-46c9-8bfc-330ce6e56ba1",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1052,7 +1052,7 @@
                         },
                         {
                             "id": "url",
-                            "key": "103bd4de-56e0-4fb9-8d03-fcde637c280a",
+                            "key": "61353030-0e09-4966-9c97-1052f222dcf0",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
