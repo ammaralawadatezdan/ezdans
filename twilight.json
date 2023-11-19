@@ -916,6 +916,13 @@
                     "maxLength": "10"
                 }
             ]
+        },
+        {
+            "key": "a1d74ff1-20fc-4ca0-b32a-792203b36a52",
+            "title": "نص مع سهم برتقالي",
+            "icon": "sicon-browser-alt",
+            "path": "TextwithOrangIcon",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
