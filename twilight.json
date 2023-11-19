@@ -963,7 +963,35 @@
             "title": "سلايدر التصنيفات الصفحة الرئيسية",
             "icon": "sicon-d-rotate",
             "path": "Coffee-Section",
-            "fields": []
+            "fields": [
+                {
+                    "id": "CoffeeSection",
+                    "key": "c3082f89-7de2-462b-bb9a-3e02ef978fbc",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "CoffeeSectiontitle",
+                            "key": "54de19a7-d187-4722-9a7d-103b71c06c87",
+                            "type": "static",
+                            "format": "title",
+                            "label": "Title",
+                            "value": null,
+                            "variant": "h1",
+                            "icon": "sicon-format-text"
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
