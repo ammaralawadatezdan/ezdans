@@ -963,68 +963,7 @@
             "title": "سلايدر التصنيفات الصفحة الرئيسية",
             "icon": "sicon-d-rotate",
             "path": "Coffee-Section",
-            "fields": [
-                {
-                    "id": "Coffee-Section",
-                    "key": "ab6c7680-31b1-471d-9dbd-f3c3d4dfd5a0",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "Collection",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "Coffee-Sectiontitle",
-                            "key": "86bad656-65fc-4388-998a-5ff6fd74c45c",
-                            "type": "static",
-                            "format": "title",
-                            "label": "Title",
-                            "value": null,
-                            "variant": "h1",
-                            "icon": "sicon-format-text"
-                        }
-                    ],
-                    "value": [],
-                    "required": false,
-                    "minLength": 1,
-                    "maxLength": 5
-                },
-                {
-                    "id": "Coffee-Section-collection_1",
-                    "key": "af9c58b3-e103-46a3-a4e8-b5246bd365bd",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "Collection 1",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "Coffee-Section-string",
-                            "key": "c86257cf-3647-425d-8d46-24c0902a3ccb",
-                            "type": "string",
-                            "format": "text",
-                            "label": "String",
-                            "description": "التصنيفات",
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        }
-                    ],
-                    "value": [],
-                    "required": false,
-                    "minLength": 1,
-                    "maxLength": 5
-                }
-            ]
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
