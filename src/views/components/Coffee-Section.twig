@@ -2,11 +2,21 @@
 
 
 
+<h1>test</h1>
 
 
-{% for catagors in component.CoffeeSection %}
+{% for catagors in component.CoffeeSectioncollection %}
 <p>
-{{catagors.CoffeeSectionstring}}
+{{catagors.CoffeeSectioncollection}}
+</p>
+
+{% endfor %}
+
+
+
+{% for catagorss in component.CoffeeSection %}
+<p>
+{{catagorss.CoffeeSectionstring}}
 </p>
 
 {% endfor %}
