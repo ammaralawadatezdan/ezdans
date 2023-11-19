@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSectioncollection",
-                    "key": "a14363e6-7f02-4bdd-b739-7069dccda61e",
+                    "key": "1689bb3e-050b-4f6e-be96-9d8950386c6e",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection 1",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "Coffee-SectionTilitel",
-                            "key": "c96feb6b-8a77-4369-a414-323c180ecc71",
+                            "key": "3c2cc35d-56df-49c5-8b1f-aa104b8601a1",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -999,7 +999,7 @@
                 },
                 {
                     "id": "CoffeeSection",
-                    "key": "a014a762-ecb3-43f9-bf9f-a4c0c814d7d8",
+                    "key": "ce3333e7-4252-4b97-a422-e33af98ba210",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -1010,7 +1010,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "8c1fd557-3204-4623-810e-bd8a661d11fc",
+                            "key": "53e4809c-f4d5-4561-ac78-e677ebbd2328",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1021,7 +1021,7 @@
                             "value": "CoffeeSection",
                             "multilanguage": false,
                             "required": true,
-                            "minLength": 6,
+                            "minLength": "3",
                             "maxLength": 30
                         }
                     ],
