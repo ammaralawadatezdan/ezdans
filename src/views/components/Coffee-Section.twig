@@ -5,17 +5,14 @@
 
 
 
-<h1>test</h1>
-
 
 {% for catagors in component.CoffeeSectioncollection %}
 <p>
-            {{CoffeeSectioncollection.CoffeeSectionTilitel}}
+            {{catagors.CoffeeSectionTilitel}}
 </p>
 
-<p>
-    {{CoffeeSectioncollection.CoffeeSectionstringimage_1}}
-</p>
+<img src="  {{catagors.CoffeeSectionstringimage_1}}" > </img>
+  
 
 
 
