@@ -1,21 +1,26 @@
-{% for orangtext in component.textwithorangiconcollection %}
 
-{% endfor %}
+
+
 
 
 <section id="Coffee">
     <div class="ezdan-coffee-wrapper">
       <div class="container">
+        {% for orangtext in component.textwithorangiconcollection %}
         <div class="ezdan-coffee-top">
           <h3>
-                  {% orangtext.extwithOrangIconstring %}    
+                  {{orangtext.TextwithOrangIconstring}}
         </h3>
           <div class="ezdan-arrow-down-icon pt-md-5 mt-4">
-            <img
+            <img style="text-align: center;"
               draggable="false"
-              src="{% orangtext.TextwithOrangIconimage %}"
+              src="{{orangtext.TextwithOrangIconimage}}"
               alt="arrow-down-icon"
             />
           </div>
         </div>
+        {% endfor %}
       </div>
+     
+
+    </section> 
