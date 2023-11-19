@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "Coffee-Section",
-                    "key": "118c8e0b-3f0f-46af-9b8e-17d2614cd22f",
+                    "key": "d8c9877e-990b-41a8-a85e-a2a6f8704c8f",
                     "type": "collection",
                     "format": "collection",
                     "label": "Coffee-Section-Collection",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "Coffee-Section-title",
-                            "key": "4d080a46-69fa-44b3-a4e2-f0f5fb304585",
+                            "key": "cb3f3719-5cd4-4918-a3eb-bc38e583f907",
                             "type": "static",
                             "format": "title",
                             "label": "Coffee-Section-Title",
@@ -987,7 +987,7 @@
                         },
                         {
                             "id": "Coffee-Section-image",
-                            "key": "e45b6c5c-a102-407a-9f0a-001072dbf5ba",
+                            "key": "757a9c11-02a3-42ed-9750-4d2238fcaaef",
                             "type": "string",
                             "format": "image",
                             "label": "Coffee-Section-Image",
@@ -999,8 +999,24 @@
                             "required": true
                         },
                         {
+                            "id": "Coffee-Section-string",
+                            "key": "727f30a3-c443-4938-96ba-d54cea3f7fc1",
+                            "type": "string",
+                            "format": "text",
+                            "label": "Coffee-Section-String",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
                             "id": "Coffee-Section-url",
-                            "key": "59fa9a5b-f487-4a5e-a9d1-88b99c349b19",
+                            "key": "26ab3b46-6e63-4ee6-a825-727a6fe6221d",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
