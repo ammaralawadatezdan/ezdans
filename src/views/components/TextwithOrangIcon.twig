@@ -1,0 +1,21 @@
+{% for orangtext in component.textwithorangiconcollection %}
+
+{% endfor %}
+
+
+<section id="Coffee">
+    <div class="ezdan-coffee-wrapper">
+      <div class="container">
+        <div class="ezdan-coffee-top">
+          <h3>
+                  {% orangtext.extwithOrangIconstring %}    
+        </h3>
+          <div class="ezdan-arrow-down-icon pt-md-5 mt-4">
+            <img
+              draggable="false"
+              src="{% orangtext.TextwithOrangIconimage %}"
+              alt="arrow-down-icon"
+            />
+          </div>
+        </div>
+      </div>
