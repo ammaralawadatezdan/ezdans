@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSection",
-                    "key": "c3082f89-7de2-462b-bb9a-3e02ef978fbc",
+                    "key": "c9c9e12c-1c37-4c44-a5ea-46142e91a13e",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -976,14 +976,20 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "CoffeeSectiontitle",
-                            "key": "54de19a7-d187-4722-9a7d-103b71c06c87",
-                            "type": "static",
-                            "format": "title",
-                            "label": "Title",
-                            "value": null,
-                            "variant": "h1",
-                            "icon": "sicon-format-text"
+                            "id": "CoffeeSectionstring",
+                            "key": "af636861-be3c-4363-89e7-fc9f35170b8d",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": "CoffeeSection",
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": 30
                         }
                     ],
                     "value": [],
