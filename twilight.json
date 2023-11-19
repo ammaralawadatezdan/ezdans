@@ -957,6 +957,13 @@
                     "maxLength": "10"
                 }
             ]
+        },
+        {
+            "key": "18deff23-43b4-4bf1-b58c-13d5714f3b65",
+            "title": "Coffee-Section",
+            "icon": "sicon-d-rotate",
+            "path": "Coffee-Section",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
