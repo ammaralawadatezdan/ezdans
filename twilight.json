@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSectioncollection",
-                    "key": "1689bb3e-050b-4f6e-be96-9d8950386c6e",
+                    "key": "6dffd2f1-6476-457c-bdcb-67aed6a6c525",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection 1",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "Coffee-SectionTilitel",
-                            "key": "3c2cc35d-56df-49c5-8b1f-aa104b8601a1",
+                            "key": "f565ddb4-d130-4c06-a4c8-6dd932f8a02f",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -999,7 +999,7 @@
                 },
                 {
                     "id": "CoffeeSection",
-                    "key": "ce3333e7-4252-4b97-a422-e33af98ba210",
+                    "key": "53e43e68-d6fd-4a1b-bca6-7e869686d7c0",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -1010,7 +1010,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "53e4809c-f4d5-4561-ac78-e677ebbd2328",
+                            "key": "838dba2a-c0f7-42c7-ae85-11aae843f8e5",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1023,6 +1023,51 @@
                             "required": true,
                             "minLength": "3",
                             "maxLength": 30
+                        },
+                        {
+                            "id": "image_1",
+                            "key": "2dea240d-b942-4dd0-8648-628bfbf0a0a0",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image 1",
+                            "description": null,
+                            "labelHTML": "السهم السفلي",
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false,
+                            "defaulted": true
+                        },
+                        {
+                            "id": "image",
+                            "key": "cae0e34e-e01f-49bb-9bd9-cb82d77c5575",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": "يجب ان تكون صورة التصنيف بشكل طولي و قياس 400*876",
+                            "labelHTML": "صورة التصنيف",
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false,
+                            "defaulted": true
+                        },
+                        {
+                            "id": "url",
+                            "key": "18a3d39b-8bc6-47cf-8b0b-dd84d8a039d7",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": null,
+                            "labelHTML": "رابط التصنيف",
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30,
+                            "defaulted": true
                         }
                     ],
                     "value": [],
