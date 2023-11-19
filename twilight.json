@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSectioncollection",
-                    "key": "e56f5ecc-721c-4108-a22b-3e74295a73bb",
+                    "key": "4fe7cc6d-ec0a-4bbb-b5b5-c376d2175e01",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection 1",
@@ -976,8 +976,8 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "Coffee-SectionTilitel",
-                            "key": "a7853778-21ba-40b2-9f7a-187e6fa888f3",
+                            "id": "CoffeeSectionTilitel",
+                            "key": "c04b6be8-ce0c-424b-9ba2-e1d387d7a9b4",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -999,7 +999,7 @@
                 },
                 {
                     "id": "CoffeeSectionstringimage_1",
-                    "key": "83bc0f57-b6a3-4466-9174-e680eba90115",
+                    "key": "71ec9293-18e7-4409-a307-b9474b2f8fd3",
                     "type": "string",
                     "format": "image",
                     "label": "Image 1",
@@ -1012,7 +1012,7 @@
                 },
                 {
                     "id": "CoffeeSection",
-                    "key": "5bbf49a9-2e1e-4d0d-8be7-f6ae5930b6fd",
+                    "key": "7b6e606b-83b4-492a-af3b-fdda0cf26aa0",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -1023,7 +1023,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "6e70d381-a081-4adc-86be-e52f6c0a0661",
+                            "key": "2cbfd1ae-3956-45d5-898f-4d054a3ac271",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1039,7 +1039,7 @@
                         },
                         {
                             "id": "CoffeeSectionstringimage",
-                            "key": "5b0563f9-f9b3-4de2-a547-fc9af16c6716",
+                            "key": "5dcf4941-9c03-4f50-8585-f8d87ddbb30c",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1052,7 +1052,7 @@
                         },
                         {
                             "id": "url",
-                            "key": "7ed52a9d-8795-4e3b-aceb-99fb4924392d",
+                            "key": "103bd4de-56e0-4fb9-8d03-fcde637c280a",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
