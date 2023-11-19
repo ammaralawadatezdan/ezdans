@@ -12,6 +12,7 @@
 
 
 <section id="Coffee">
+    <salla-slider 
     <div class="ezdan-coffee-wrapper">
       <div class="container">
         <div slot="items">
@@ -19,11 +20,12 @@
         <div class="ezdan-coffee-top">
           <h3>
             {{catagors.CoffeeSectionTilitel}}
-      
+            <div data-background="{{ catagors.image_2 }}" class="swiper-lazy"></div> 
           </h3>
-          <img src="{{catagors.CoffeeSectionstringimage1}}" />
+          <a data-emergence="hidden">
+          <img src="{{catagors.image_2}}" />
                              
-          
+        </a>
               
          
           </div>
@@ -46,3 +48,6 @@
         {% endfor %}
         
 
+        
+</salla-slider>
+</section> 
