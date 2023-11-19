@@ -922,7 +922,54 @@
             "title": "نص مع سهم برتقالي",
             "icon": "sicon-browser-alt",
             "path": "TextwithOrangIcon",
-            "fields": []
+            "fields": [
+                {
+                    "id": "textwithorangiconcollection",
+                    "key": "bd2b8f54-4bfd-4561-8c7d-8e0c1f1a8f5c",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "TextwithOrangIconCollection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "TextwithOrangIconstring",
+                            "key": "f03ff09b-e947-49d7-b59b-f5d3433df935",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "TextwithOrangIconimage",
+                            "key": "cc18548a-6dfc-46af-ac13-23535d0e90ee",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
