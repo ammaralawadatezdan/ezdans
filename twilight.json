@@ -966,7 +966,7 @@
             "fields": [
                 {
                     "id": "CoffeeSectioncollection",
-                    "key": "38555cc7-3707-48fc-b3f3-c484af5d6e38",
+                    "key": "f8c8e100-3869-4c00-ba1a-1f0550882ef9",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection 1",
@@ -977,7 +977,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionTilitel",
-                            "key": "ed4ccf97-6caf-40f7-bc6c-cfd7a1f73099",
+                            "key": "d0158161-09af-4f1a-912d-77ce870e2d52",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -999,7 +999,7 @@
                 },
                 {
                     "id": "CoffeeSectionstringimage1",
-                    "key": "ecbef327-b200-4083-9e30-88dc2eba94db",
+                    "key": "be9cc31f-7b85-4b11-a76a-be42c4ece450",
                     "type": "string",
                     "format": "image",
                     "label": "Image 1",
@@ -1011,8 +1011,22 @@
                     "required": false
                 },
                 {
+                    "id": "image_2",
+                    "key": "fdfb5b6f-3315-47f3-b2f7-8883ee38903c",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Image 2",
+                    "description": null,
+                    "labelHTML": "السهم السفلي",
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false,
+                    "defaulted": true
+                },
+                {
                     "id": "CoffeeSection",
-                    "key": "95b97e7f-6f48-47a4-b5ea-82502c9b6656",
+                    "key": "636c0d2c-fcc1-4d53-a3b7-561a45ce121b",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -1023,7 +1037,7 @@
                     "fields": [
                         {
                             "id": "CoffeeSectionstring",
-                            "key": "8746703f-3038-4b99-9780-0c197fb04d9c",
+                            "key": "131afbeb-b09f-4c52-b217-f5b33c3c6dd1",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1039,7 +1053,7 @@
                         },
                         {
                             "id": "CoffeeSectionstringimage",
-                            "key": "3df18ecd-df46-4ec2-b3cb-3c5ca9dfc605",
+                            "key": "b68f7ca7-b3a6-440f-805b-d7d15b942c43",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1052,7 +1066,7 @@
                         },
                         {
                             "id": "url",
-                            "key": "7f13c3e6-3230-415d-936f-e3722226b6a5",
+                            "key": "a3eb5700-6312-4222-bca5-4732401286cc",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
