@@ -27,4 +27,12 @@ class Home extends BasePage {
     }
 }
 
+
+
+
+
+  
+
+
+
 Home.initiateWhenReady(['index']);
