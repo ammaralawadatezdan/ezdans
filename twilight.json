@@ -970,6 +970,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "3181cd56-b1c9-4656-b21f-af0fa39f1fcd",
+            "title": "سلايدر التصنيفات الصفحة الرئيسية",
+            "icon": "sicon-d-rotate",
+            "path": "CatSlider",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
