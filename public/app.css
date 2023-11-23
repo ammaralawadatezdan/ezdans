@@ -20498,6 +20498,18 @@ button.swiper-pagination-bullet {
 .ezdan-coffee-slide-content.red::before {
   background: #d7421d;
 }
+.ezdan-coffee-slide::before {
+  position: absolute !important;
+}
+.ezdan-coffee-slide::before {
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 30px;
+  z-index: 1;
+}
 .pt-md-0 {
   padding-top: 0 !important;
 }

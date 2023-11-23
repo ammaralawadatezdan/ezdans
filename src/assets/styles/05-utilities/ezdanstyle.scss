@@ -110,6 +110,18 @@
 		background: #d7421d;
 	}
 }
+.ezdan-coffee-slide {
+	&::before {
+		position: absolute !important;
+		content: "";
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 70%;
+		height: 30px;
+		z-index: 1;
+	}
+}
 
 
 
@@ -163,3 +175,5 @@ img {
 svg {
 	vertical-align: middle;
 }
+
+

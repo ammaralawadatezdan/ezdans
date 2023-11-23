@@ -1,6 +1,29 @@
-{% for catagory in component.CatSliderCollection %}
-<div> 
-{{ catagory.CatSliderimage }}
-{{ catagory.CatSliderstring }}
-{{ catagory.CatSliderurl }}</div>
- {% endfor %}
+
+
+
+<section id="Coffee">
+    
+   
+      
+
+      
+      </div>
+      {% for catagory in component.catslidercollection %}
+      <div class="ezdan-coffee-slider owl-carousel owl-theme">
+        <div class="ezdan-coffee-slide blue item position-relative">
+          <div class="ezdan-coffee-slide-img">
+          
+            <a href="{{ catagory.CatSliderurl }}" >
+                <img src="{{ catagory.CatSliderimage }}" alt="coffee-slide-img1" />
+                 </a>
+
+            <div class="ezdan-coffee-slide-content blue">
+              <h2>{{ catagory.CatSliderstring }}</h2>
+            </div>
+  
+          </div>
+        </div>
+            
+    {% endfor %}
+
+  </section>
