@@ -1,29 +1,25 @@
 
 
-
-<section id="Coffee">
-    
-   
-      
-
-      
+  
+  <section id="Coffee">
+    <div class="ezdan-coffee-wrapper">
+      <div class="container">
+        <div class="ezdan-coffee-top">
+        
+        </div>
       </div>
-      {% for catagory in component.catslidercollection %}
       <div class="ezdan-coffee-slider owl-carousel owl-theme">
         <div class="ezdan-coffee-slide blue item position-relative">
+          {% for catagory in component.catslidercollection %}
+
           <div class="ezdan-coffee-slide-img">
-          
-            <a href="{{ catagory.CatSliderurl }}" >
-                <img src="{{ catagory.CatSliderimage }}" alt="coffee-slide-img1" />
-                 </a>
-
+            <img
+              src="{{ catagory.CatSliderimage }}"
+              alt="coffee-slide-img1"
+            />
             <div class="ezdan-coffee-slide-content blue">
-              <h2>{{ catagory.CatSliderstring }}</h2>
+              <h2>الدورات التدريبية</h2>
             </div>
-  
           </div>
-        </div>
-            
-    {% endfor %}
-
-  </section>
+          {% endfor %}
+        </div>   </section>
