@@ -976,7 +976,70 @@
             "title": "سلايدر التصنيفات الصفحة الرئيسية",
             "icon": "sicon-d-rotate",
             "path": "CatSlider",
-            "fields": []
+            "fields": [
+                {
+                    "id": "catslidercollection",
+                    "key": "edf165c8-a10d-4ccf-ad67-b280a42baa3f",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "CatSliderCollection",
+                    "description": "مجموعة التصنيفات المتحركة",
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "CatSliderimage",
+                            "key": "0be64923-6fed-48bc-b86e-bed7b06cde79",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": "صورة التصنيف بشكل طولي",
+                            "labelHTML": "صورة التصنيف",
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "CatSliderstring",
+                            "key": "de69a5cb-172d-463c-8705-fcf57179821d",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": "اسم التصنيف",
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "CatSliderurl",
+                            "key": "13327550-7d20-4010-9873-8a166d0ccce9",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": "رابط التصنيف",
+                            "labelHTML": "رابط التصنيف المراد استخدامه",
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
