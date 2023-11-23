@@ -130,6 +130,7 @@
 	padding-top: 1.5rem !important;
 }
 .pt-md-5 {
+	margin: inherit;
 	padding-top: 3rem !important;
 }
 
@@ -153,4 +154,12 @@
 }
 .mt-auto {
 	margin-top: auto !important;
+}
+
+img {
+	margin: inherit !important;
+	vertical-align: middle;
+}
+svg {
+	vertical-align: middle;
 }
