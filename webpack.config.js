@@ -16,6 +16,10 @@ module.exports = {
         product : [asset('js/product.js'), asset('js/products.js')],
         order   : asset('js/order.js'),
         testimonials   : asset('js/testimonials.js'),
+        'script.js'    : asset('js/partials/script.js'),
+        'bootstrap.bundle.min.js'    : asset('js/partials/bootstrap.bundle.min.js'),
+        'owl.carousel.min.js'    : asset('js/partials/owl.carousel.min.js'),
+        'jquery.min.js'    : asset('js/partials/jquery.min.js'),
     },
     output : {
         path: public(),
