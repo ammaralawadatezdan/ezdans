@@ -1,30 +1,73 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JavaScript -->
+<script src="https://141-27-27.preezdan.com/assets/js/owl.carousel.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://141-27-27.preezdan.com/assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="https://141-27-27.preezdan.com/assets/js/script.js"></script>
 
 
-  
-  <section id="Coffee">
-    <div class="ezdan-coffee-wrapper">
-      <div class="container">
-        <div class="ezdan-coffee-top">
-        
-        </div>
+
+<div class="ezdan-coffee-slider owl-carousel owl-theme">
+  {% for index ,catagory  in component.catslidercollection %}
+  <div class="ezdan-coffee-slide blue item position-relative">
+
+    <div class="ezdan-coffee-slide-img catagory-{{index}}">
+      <img
+        src="{{ catagory.CatSliderimage }}"
+        alt="coffee-slide-img1"
+      />
+      <div class="ezdan-coffee-slide-content blue">
+        <h2>{{catagory.CatSliderstring}}</h2>
       </div>
-      <div class="ezdan-coffee-slider owl-carousel owl-theme">
-        <div class="ezdan-coffee-slide blue item position-relative">
-          {% for catagory in component.catslidercollection %}
-
-          <div class="ezdan-coffee-slide-img">
-            <img
-              src="{{ catagory.CatSliderimage }}"
-              alt="coffee-slide-img1"
-            />
-            <div class="ezdan-coffee-slide-content blue">
-              <h2>{{ catagory.CatSliderstring }}</h2>
-            </div>
-          </div>
-          {% endfor %}
-        </div>   </section>
-
-      
-
-
-        
+    </div>
+  </div>
+  <div class="ezdan-coffee-slide sky-blue item position-relative">
+    <div class="ezdan-coffee-slide-img catagory-{{index}}">
+      <img
+        src="{{ catagory.CatSliderimage }}"
+        alt="coffee-slide-img2"
+      />
+      <div class="ezdan-coffee-slide-content sky-blue">
+        {{catagory.CatSliderstring}}
+      </div>
+    </div>
+  </div>
+  <div class="ezdan-coffee-slide green item position-relative">
+    <div class="ezdan-coffee-slide-img catagory-{{index}}">
+      <img
+        src="{{ catagory.CatSliderimage }}"
+        alt="coffee-slide-img3"
+      />
+      <div class="ezdan-coffee-slide-content green">
+        {{catagory.CatSliderstring}}
+      </div>
+    </div>
+  </div>
+  <div class="ezdan-coffee-slide orange item position-relative">
+    <div class="ezdan-coffee-slide-img catagory-{{index}}">
+      <img
+        src="{{ catagory.CatSliderimage }}"
+        alt="coffee-slide-img4"
+      />
+      <div class="ezdan-coffee-slide-content orange">
+        {{catagory.CatSliderstring}}
+      </div>
+    </div>
+  </div>
+  <div class="ezdan-coffee-slide red item position-relative">
+    <div class="ezdan-coffee-slide-img catagory-{{index}}">
+      <img
+        src="{{ catagory.CatSliderimage }}"
+        alt="coffee-slide-img5"
+      />
+      <div class="ezdan-coffee-slide-content red">
+        {{catagory.CatSliderstring}}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
