@@ -979,7 +979,7 @@
             "fields": [
                 {
                     "id": "catslidercollection",
-                    "key": "edf165c8-a10d-4ccf-ad67-b280a42baa3f",
+                    "key": "7c76b408-1fce-4e9c-b6c5-bba7b5dd84c9",
                     "type": "collection",
                     "format": "collection",
                     "label": "CatSliderCollection",
@@ -990,7 +990,7 @@
                     "fields": [
                         {
                             "id": "CatSliderimage",
-                            "key": "0be64923-6fed-48bc-b86e-bed7b06cde79",
+                            "key": "c7bbbad6-fe5b-41b0-8e4a-42b943ca4294",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1003,7 +1003,7 @@
                         },
                         {
                             "id": "CatSliderstring",
-                            "key": "de69a5cb-172d-463c-8705-fcf57179821d",
+                            "key": "48b1a40c-a70c-45f7-b4e8-b09a3d7769c6",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1014,12 +1014,12 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": "3",
                             "maxLength": 30
                         },
                         {
                             "id": "CatSliderurl",
-                            "key": "13327550-7d20-4010-9873-8a166d0ccce9",
+                            "key": "7c26eafd-8c3d-45a0-be3f-cd344ee11d02",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
@@ -1030,7 +1030,7 @@
                             "icon": "sicon-link",
                             "value": null,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": "3",
                             "maxLength": 30
                         }
                     ],
