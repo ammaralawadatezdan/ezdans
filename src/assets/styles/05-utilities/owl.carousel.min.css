@@ -12,7 +12,7 @@
  }
  
  .owl-carousel {
-     display: table-cell;
+     display: none;
      width: 100%;
      z-index: 1
  }

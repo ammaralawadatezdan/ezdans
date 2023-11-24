@@ -139,12 +139,17 @@
       });
     </script>
   
+
     <script defer src="{{ 'product-card.js'|asset }}"></script>
     <script data-cfasync="false">
         window.header_is_sticky = "{{theme.settings.get('header_is_sticky', 'Default Value')}}"
         window.imageZoom = "{{theme.settings.get('imageZoom')}}"
     </script>
     
+  <script type="text/javascript" src="{{ asset('bootstrap.bundle.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('owl.carousel.min.js') }}"></script> 
+  <script type="text/javascript" src="{{ asset('script.js') }}"></script> 
+  
     {% hook 'head:start' %}
     {% hook head %}
     {% block styles %}{% endblock %}
