@@ -1049,7 +1049,7 @@
             "fields": [
                 {
                     "id": "fullbannarcollection",
-                    "key": "54f02e96-47a0-468b-91d1-0f5df8a5bceb",
+                    "key": "bc9e3b92-e80c-490c-b00a-2be38dcc1813",
                     "type": "collection",
                     "format": "collection",
                     "label": "fullbannarCollection",
@@ -1060,7 +1060,7 @@
                     "fields": [
                         {
                             "id": "fullbannarTitle",
-                            "key": "7b91298f-d4f6-4628-8242-d05a1ac71969",
+                            "key": "e4e06f9d-a26a-4100-ab98-96c5fcd3985b",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1072,11 +1072,11 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "120"
                         },
                         {
                             "id": "fullbannardescription",
-                            "key": "e8377c62-5e2b-4b4f-8472-1ff47756c238",
+                            "key": "f459ce42-9b47-439f-b702-ec9cab46c418",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -1088,11 +1088,11 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "120"
                         },
                         {
                             "id": "fullbannarimage",
-                            "key": "63b96699-b765-453b-b582-cc67e6c3efe7",
+                            "key": "a2932330-da8f-48bf-a94a-1c394b91d93e",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
