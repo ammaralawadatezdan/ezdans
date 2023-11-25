@@ -1202,7 +1202,83 @@
             "title": "بانر اقسام برتقالي",
             "icon": "sicon-store",
             "path": "BannerOrange",
-            "fields": []
+            "fields": [
+                {
+                    "id": "BannerOrangecollection",
+                    "key": "8d56322f-68f8-472c-87ee-68001db3a7e3",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "BannerOrangeCollection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "bannerorangestring_1",
+                            "key": "0cf91e4b-bb2d-484f-afcd-eaed597674a3",
+                            "type": "string",
+                            "format": "text",
+                            "label": "BannerOrangeString 1",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "350"
+                        },
+                        {
+                            "id": "bannerorangestring",
+                            "key": "9975781a-4c77-48cc-ab72-793a597b6caf",
+                            "type": "string",
+                            "format": "text",
+                            "label": "BannerOrangeString",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "350"
+                        },
+                        {
+                            "id": "bannerorangeimage_1",
+                            "key": "a7e8532d-f04d-47e3-8afb-4fe8c6998504",
+                            "type": "string",
+                            "format": "image",
+                            "label": "BannerOrangeImage 1",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "bannerorangeimage",
+                            "key": "ab129fa6-7511-453b-8f3c-2c5f058d960c",
+                            "type": "string",
+                            "format": "image",
+                            "label": "BannerOrangeImage",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
