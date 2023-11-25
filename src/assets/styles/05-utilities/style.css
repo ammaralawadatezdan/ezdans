@@ -234,15 +234,15 @@
   }
   
   .slide-1 {
-    background: url(../images/hero-slider-img1.png);
+   
   }
   
   .slide-2 {
-    background: url(../images/hero-slider-img2.png);
+    
   }
   
   .slide-3 {
-    background: url(../images/hero-slider-img3.png);
+    
   }
   
   .ezdan-slider-conent {
@@ -566,7 +566,7 @@
   
   .ezdan-product-card-img img {
     width: 100%;
-    max-height: 440px;
+    max-height: 325px;
     height: 100%;
   }
   

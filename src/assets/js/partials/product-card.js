@@ -181,7 +181,7 @@ class ProductCard extends HTMLElement {
     
     this.innerHTML = `
 
-    
+   
     <div class="ezdan-product-card">
     <div class="ezdan-product-card-img">
     <a href="${this.product?.url}">
@@ -305,10 +305,12 @@ class ProductCard extends HTMLElement {
                       /></a>
                     </div>
                   </div>
+                  
                       </div>
                       `
                       : ``}
                   </div>
+                </div>
                 </div>
                 
                 
