@@ -1405,6 +1405,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "6d962d14-97dc-4097-8953-cefc9c0d72aa",
+            "title": "بانر مربع",
+            "icon": "sicon-d-rotate",
+            "path": "SquareBanner",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
