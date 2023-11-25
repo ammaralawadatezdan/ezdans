@@ -1414,7 +1414,7 @@
             "fields": [
                 {
                     "id": "squarebannercollection",
-                    "key": "b4e3f4b3-8074-4a6a-976b-6cbdf8e7909d",
+                    "key": "35822b97-d223-4b81-80b4-c26ea00e838b",
                     "type": "collection",
                     "format": "collection",
                     "label": "SquareBannerCollection",
@@ -1425,12 +1425,12 @@
                     "fields": [
                         {
                             "id": "SquareBannerimage",
-                            "key": "bb7e680d-7382-4370-ad3f-a7a023ef1eb2",
+                            "key": "7db337b8-9ba8-4ac5-aea2-5e849b54f850",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
                             "description": null,
-                            "labelHTML": null,
+                            "labelHTML": "صورة الخلفية المربعه",
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": null,
