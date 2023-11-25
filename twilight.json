@@ -1335,6 +1335,13 @@
                     "required": false
                 }
             ]
+        },
+        {
+            "key": "d84d10c4-e6af-4533-bed0-563a7dce5320",
+            "title": "BannerGreen",
+            "icon": "sicon-d-rotate",
+            "path": "BannerGreen",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
