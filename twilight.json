@@ -1110,6 +1110,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "fa90f0eb-c4de-452a-af5a-f8a004301ec4",
+            "title": "نص متوسط بخلفيه بنية",
+            "icon": "sicon-store",
+            "path": "textwithdarkbackground",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
