@@ -808,7 +808,7 @@
         {
             "key": "54b0049a-d04a-453a-a2fe-d421321939c0",
             "title": "سلايدر مخصص رئيسي",
-            "icon": "sicon-store",
+            "icon": "sicon-d-rotate",
             "path": "ezdan-MainSLiderhero",
             "fields": [
                 {
