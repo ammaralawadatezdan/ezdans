@@ -92,9 +92,9 @@ class ProductCard extends HTMLElement {
   getProductPrice() {
     let price = '';
     if (this.product.is_on_sale) {
-      price = `<div class="ezdan-product-card-contentonsale">
-                <h4>${this.getPriceFormat(this.product.sale_price)} <del>${this.getPriceFormat(this.product?.regular_price)} </del></h4>
-                
+      price = `<div class="s-product-card-sale-price">
+                <h4>${this.getPriceFormat(this.product.sale_price)}</h4>
+                <span>${this.getPriceFormat(this.product?.regular_price)}</span>
               </div>`;
     }
     else if (this.product.starting_price) {
@@ -104,7 +104,7 @@ class ProductCard extends HTMLElement {
               </div>`
     }
     else{
-      price = `<h4 class="ezdan-product-card-content">${this.getPriceFormat(this.product?.price)}</h4>`
+      price = `<h4 class="s-product-card-price">${this.getPriceFormat(this.product?.price)}</h4>`
     }
 
     return price;
@@ -166,13 +166,13 @@ class ProductCard extends HTMLElement {
   }
 
   render(){
-    this.classList.add('ezdan-product-card'); 
+    this.classList.add('s-product-card-entry'); 
     this.setAttribute('id', this.product.id);
     !this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-vertical') : '';
     this.horizontal && !this.fullImage && !this.minimal? this.classList.add('s-product-card-horizontal') : '';
-    this.fitImageHeight && !this.isSpecial && !this.fullImage && !this.minimal? this.classList.add('ezdan-product-card-img') : '';
+    this.fitImageHeight && !this.isSpecial && !this.fullImage && !this.minimal? this.classList.add('s-product-card-fit-height') : '';
     this.isSpecial? this.classList.add('s-product-card-special') : '';
-    this.fullImage? this.classList.add('ezdan-product-card-img') : '';
+    this.fullImage? this.classList.add('s-product-card-full-image') : '';
     this.minimal? this.classList.add('s-product-card-minimal') : '';
     this.product?.donation?  this.classList.add('s-product-card-donation') : '';
     this.shadowOnHover?  this.classList.add('s-product-card-shadow') : '';
@@ -180,224 +180,119 @@ class ProductCard extends HTMLElement {
 
     
     this.innerHTML = `
-
-    
-    <div class="ezdan-product-card">
-    <div class="ezdan-product-card-img">
-    <a href="${this.product?.url}">
-    <img class="ezdan-product-card-img-${salla.url.is_placeholder(this.product?.image?.url)
-      ? 'contain'
-      : this.fitImageHeight
-        ? this.fitImageHeight
-        : 'cover'} lazy"
-      src=${this.placeholder}
-      alt=${this.product?.image?.alt}
-      data-src=${this.product?.image?.url || this.product?.thumbnail}
-    />
-    ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
-  </a>
-  <div
-  class="ezdan-product-card-buttons d-flex justify-content-between align-items-center pt-1">
-
-
-    </div>
-    </div>  
- 
-    <div class="s-product-card-content">
-    ${this.isSpecial && this.product?.quantity ?
-      `<div class="s-product-card-content-pie">
-        <span>
-          <b>${salla.helpers.number(this.product?.quantity)}</b>
-          ${this.remained}
-        </span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 36 34" class="s-product-card-content-pie-svg">
-          <circle cx="16" cy="16" r="15.9155" class="s-product-card-content-pie-svg-base" />
-          <circle cx="16" cy="16" r="15.9155" class="s-product-card-content-pie-svg-bar" />
-        </svg>
-      </div>`
-      : ``}
-
-
-
-      <div class="ezdan-product-card-content ${this.isSpecial ? 'ezdan-product-card-content' : ''}">
-      <h3 class="ezdan-product-card-content">
-        <a href="${this.product?.url}"> <h3> ${this.product?.name}  </h3></a>
-      </h3>
-
-      ${this.product?.subtitle && !this.minimal ?
-        `<h4 class="ezdan-product-card-content">${this.product?.subtitle}</h4>`
-        : ``}
-    </div>
-    ${this.product?.donation && !this.minimal && !this.fullImage ?
-    `<salla-progress-bar donation=${this.product?.donation} />
-    <div class="s-product-card-donation-input">
-      ${this.product?.donation?.can_donate ?
-        `<label for="donation-amount-${this.product.id}">${this.donationAmount} <span>*</span></label>
-        <input
-          type="text"
-          onInput="${e => {
-            salla.helpers.inputDigitsOnly(e.target);
-            this.addBtn.donatingAmount = (e.target).value;
-          }}"
-          id="donation-amount-${this.product.id}"
-          name="donating_amount"
-          class="s-form-control"
-          placeholder="${this.donationAmount}" />`
-        : ``}
-    </div>`
-      : ''}
-    <div class="ezdan-product-card-contenton ${this.isSpecial ? 's-product-card-content-extra-padding' : ''}">
-      ${this.product?.donation?.can_donate ? '' : this.getProductPrice()}
-      ${this.product?.rating?.stars && !this.minimal ?
-        `<div class="s-product-card-rating">
-          <i class="sicon-star2"></i>
-          <span>${this.product.rating.stars}</span>
-        </div>`
-         : ``}
-    </div>
-
-    ${this.isSpecial && this.product.discount_ends
-      ? `<salla-count-down date="${this.formatDate(this.product.discount_ends)}" end-of-day=${true} boxed=${true}
-        labeled=${true} />`
-      : ``}
-
-  
-
-
-
-
-
-                    ${!this.hideAddBtn ?
-                      `
-                      <div class="ezdan-product-card-buttons d-flex justify-content-between align-items-center pt-1">
-                      <div class="ezdan-add-to-card-btn">
-                        <salla-add-product-button fill="outline"   color="#352110"  width="wide"
-                          product-id="${this.product.id}"
-                          product-status="${this.product.status}"
-                          product-type="${this.product.type}">
-                          ${this.product.status == 'sale' ? 
-                              `` : ``
-                            }
-                          <h4>${this.product.add_to_cart_label ? this.product.add_to_cart_label : this.getAddButtonLabel() }</h4>
-                        </salla-add-product-button>
-          
-                        ${this.horizontal || this.fullImage ?
-                          `<salla-button 
-                            shape="icon" 
-                            fill="outline" 
-                            color="light" 
-                            id="card-wishlist-btn-${this.product.id}-horizontal"
-                            aria-label="Add or remove to wishlist"
-                            class="s-product-card-wishlist-btn animated"
-                            onclick="salla.wishlist.toggle(${this.product.id})"
-                            data-id="${this.product.id}">
-                            <i class="sicon-heart"></i> 
-                          </salla-button>`
-                          : ``}
-                          
-                          
-                      </div>
-                      <div class="ezdan-heart-btn">
-                      <a href="#"
-                        ><img onclick="salla.wishlist.toggle(${this.product.id})"
-                          src="https://141-27-27.preezdan.com/assets/images/heart-icon.svg"
-                          alt="heart-icon"
-                      /></a>
-                    </div>
-                  </div>
-                      </div>
-                      `
-                      : ``}
-                  </div>
-                </div>
-                
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}">
+          <a href="${this.product?.url}">
+            <img class="s-product-card-image-${salla.url.is_placeholder(this.product?.image?.url)
+              ? 'contain'
+              : this.fitImageHeight
+                ? this.fitImageHeight
+                : 'cover'} lazy"
+              src=${this.placeholder}
+              alt=${this.product?.image?.alt}
+              data-src=${this.product?.image?.url || this.product?.thumbnail}
+            />
+            ${!this.fullImage && !this.minimal ? this.getProductBadge() : ''}
+          </a>
+          ${this.fullImage ? `<a href="${this.product?.url}" aria-label=${this.product.name} class="s-product-card-overlay"></a>`:''}
+          ${!this.horizontal && !this.fullImage ?
+            `<salla-button
+              shape="icon"
+              fill="outline"
+              color="light"
+              name="product-name-${this.product.id}"
+              aria-label="Add or remove to wishlist"
+              class="s-product-card-wishlist-btn animated "
+              onclick="salla.wishlist.toggle(${this.product.id})"
+              data-id="${this.product.id}">
+              <i class="sicon-heart"></i>
+            </salla-button>` : ``
+          }
+        </div>
+        <div class="s-product-card-content">
+          ${this.isSpecial && this.product?.quantity ?
+            `<div class="s-product-card-content-pie">
+              <span>
+                <b>${salla.helpers.number(this.product?.quantity)}</b>
+                ${this.remained}
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1 36 34" class="s-product-card-content-pie-svg">
+                <circle cx="16" cy="16" r="15.9155" class="s-product-card-content-pie-svg-base" />
+                <circle cx="16" cy="16" r="15.9155" class="s-product-card-content-pie-svg-bar" />
+              </svg>
+            </div>`
+            : ``}
+
+          <div class="s-product-card-content-main ${this.isSpecial ? 's-product-card-content-extra-padding' : ''}">
+            <h3 class="s-product-card-content-title">
+              <a href="${this.product?.url}">${this.product?.name}</a>
+            </h3>
+
+            ${this.product?.subtitle && !this.minimal ?
+              `<p class="s-product-card-content-subtitle">${this.product?.subtitle}</p>`
+              : ``}
+          </div>
+          ${this.product?.donation && !this.minimal && !this.fullImage ?
+          `<salla-progress-bar donation=${this.product?.donation} />
+          <div class="s-product-card-donation-input">
+            ${this.product?.donation?.can_donate ?
+              `<label for="donation-amount-${this.product.id}">${this.donationAmount} <span>*</span></label>
+              <input
+                type="text"
+                onInput="${e => {
+                  salla.helpers.inputDigitsOnly(e.target);
+                  this.addBtn.donatingAmount = (e.target).value;
+                }}"
+                id="donation-amount-${this.product.id}"
+                name="donating_amount"
+                class="s-form-control"
+                placeholder="${this.donationAmount}" />`
+              : ``}
+          </div>`
+            : ''}
+          <div class="s-product-card-content-sub ${this.isSpecial ? 's-product-card-content-extra-padding' : ''}">
+            ${this.product?.donation?.can_donate ? '' : this.getProductPrice()}
+            ${this.product?.rating?.stars && !this.minimal ?
+              `<div class="s-product-card-rating">
+                <i class="sicon-star2"></i>
+                <span>${this.product.rating.stars}</span>
+              </div>`
+               : ``}
+          </div>
+
+          ${this.isSpecial && this.product.discount_ends
+            ? `<salla-count-down date="${this.formatDate(this.product.discount_ends)}" end-of-day=${true} boxed=${true}
+              labeled=${true} />`
+            : ``}
+
+
+          ${!this.hideAddBtn ?
+            `<div class="s-product-card-content-footer gap-2">
+              <salla-add-product-button fill="outline" width="wide"
+                product-id="${this.product.id}"
+                product-status="${this.product.status}"
+                product-type="${this.product.type}">
+                ${this.product.status == 'sale' ? 
+                    `<i class="text-base sicon-${ this.product.type == 'booking' ? 'calendar-time' : 'shopping-bag'}"></i>` : ``
+                  }
+                <span>${this.product.add_to_cart_label ? this.product.add_to_cart_label : this.getAddButtonLabel() }</span>
+              </salla-add-product-button>
+
+              ${this.horizontal || this.fullImage ?
+                `<salla-button 
+                  shape="icon" 
+                  fill="outline" 
+                  color="light" 
+                  id="card-wishlist-btn-${this.product.id}-horizontal"
+                  aria-label="Add or remove to wishlist"
+                  class="s-product-card-wishlist-btn animated"
+                  onclick="salla.wishlist.toggle(${this.product.id})"
+                  data-id="${this.product.id}">
+                  <i class="sicon-heart"></i> 
+                </salla-button>`
+                : ``}
+            </div>`
+            : ``}
+        </div>
       `
 
       this.querySelectorAll('[name="donating_amount"]').forEach((element)=>{

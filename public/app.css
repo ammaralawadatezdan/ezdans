@@ -14493,21 +14493,46 @@ h2.title {
   }
 .ezdan-product-card-content h3 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     color: #352110;
     padding: 5px 0;
   }
 .ezdan-product-card-content h4 {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 30px !important;
+  }
+.ezdan-product-card-content h4 {
+    font-weight: 900;
     color: #352110;
   }
 .ezdan-product-card-content p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 10px;
+    font-weight: 700;
     color: #371a08;
     opacity: 0.57;
     padding: 10px 0;
+  }
+.ezdan-product-card-contentonsale {
+    padding-top: 10px;
+  }
+.ezdan-product-card-contentonsale h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #bd2a2a;
+    padding: 5px 0;
+  }
+.ezdan-product-card-contentonsale h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #bd2a2a;
+  
+  }
+.ezdan-product-card-contentonsale p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #c57d3e;
+    opacity: 0.57;
+    padding: 10px 0;
+    
   }
 .ezdan-add-to-card-btn {
     width: 70%;
@@ -14515,8 +14540,8 @@ h2.title {
   }
 .ezdan-add-to-card-btn a {
     display: block;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 900;
     text-align: center;
     color: #352110;
     padding: 5px 0 25px;
@@ -14524,11 +14549,11 @@ h2.title {
 .ezdan-heart-btn {
     width: 25%;
     border: 1px solid rgba(55,26,8,0.38431);
-    text-align: center;
+    text-align: -webkit-center;
   }
 .ezdan-heart-btn a img {
     width: 40px;
-    padding: 16px 0;
+    padding: 11px 0;
   }
 /* Coffee Product Section CSS End */
 .ezdan-in-demand-crops {
