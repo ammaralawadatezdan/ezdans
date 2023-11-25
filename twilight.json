@@ -1116,7 +1116,86 @@
             "title": "نص متوسط بخلفيه بنية",
             "icon": "sicon-store",
             "path": "textwithdarkbackground",
-            "fields": []
+            "fields": [
+                {
+                    "id": "textwithdarkbackgroundcollection",
+                    "key": "a7ba7b32-4cac-4eec-9e70-91aa8e69e7c8",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "textwithdarkbackgroundCollection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "textwithdarkbackgroundimage",
+                            "key": "bc345e4a-acda-4e0b-8ed4-2766f63db43e",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": "المثلث",
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "textwithdarkbackgroundurl",
+                            "key": "5840f862-531c-4d5a-bc0b-fe72646b45a9",
+                            "type": "string",
+                            "format": "url",
+                            "inputType": "url",
+                            "label": "URL",
+                            "description": null,
+                            "labelHTML": "رابط الزر",
+                            "placeholder": "e.g. https://salla.sa",
+                            "icon": "sicon-link",
+                            "value": null,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "250"
+                        },
+                        {
+                            "id": "textwithdarkbackgroundstring_1butn",
+                            "key": "54eb4216-6714-41e4-855a-cbe60a26b53e",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String 1",
+                            "description": null,
+                            "labelHTML": "نص الزر",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "60"
+                        },
+                        {
+                            "id": "textwithdarkbackgroundstring",
+                            "key": "e4fc33dd-a1c3-4ef5-8f37-db6b15c9964d",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": null,
+                            "labelHTML": "النص المتوسط",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
