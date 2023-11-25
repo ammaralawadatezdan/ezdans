@@ -1205,7 +1205,7 @@
             "fields": [
                 {
                     "id": "BannerOrangecollection",
-                    "key": "8d56322f-68f8-472c-87ee-68001db3a7e3",
+                    "key": "e3eacf8f-d0c5-446e-af8d-35db5c4ce25b",
                     "type": "collection",
                     "format": "collection",
                     "label": "BannerOrangeCollection",
@@ -1216,7 +1216,7 @@
                     "fields": [
                         {
                             "id": "bannerorangestring_1",
-                            "key": "0cf91e4b-bb2d-484f-afcd-eaed597674a3",
+                            "key": "f5ef3884-18f4-4b5b-8677-6a1c3bd79ef7",
                             "type": "string",
                             "format": "text",
                             "label": "BannerOrangeString 1",
@@ -1232,7 +1232,7 @@
                         },
                         {
                             "id": "bannerorangestring",
-                            "key": "9975781a-4c77-48cc-ab72-793a597b6caf",
+                            "key": "87a27150-cbe8-4504-8a94-538b1d404530",
                             "type": "string",
                             "format": "text",
                             "label": "BannerOrangeString",
@@ -1248,12 +1248,12 @@
                         },
                         {
                             "id": "bannerorangeimage_1",
-                            "key": "a7e8532d-f04d-47e3-8afb-4fe8c6998504",
+                            "key": "a329bc06-aee0-405c-85c9-fb6fb0656b15",
                             "type": "string",
                             "format": "image",
                             "label": "BannerOrangeImage 1",
                             "description": null,
-                            "labelHTML": null,
+                            "labelHTML": "المثلث",
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": null,
@@ -1261,12 +1261,12 @@
                         },
                         {
                             "id": "bannerorangeimage",
-                            "key": "ab129fa6-7511-453b-8f3c-2c5f058d960c",
+                            "key": "283f93e6-aaa2-47a5-b7e6-36c54cc0ffb9",
                             "type": "string",
                             "format": "image",
                             "label": "BannerOrangeImage",
                             "description": null,
-                            "labelHTML": null,
+                            "labelHTML": "الصورة الخلفية",
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": null,
