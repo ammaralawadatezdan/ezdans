@@ -1196,6 +1196,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "4c4ff068-3bfd-4ca5-86bf-05926685474f",
+            "title": "بانر اقسام برتقالي",
+            "icon": "sicon-store",
+            "path": "BannerOrange",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
