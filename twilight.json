@@ -1285,7 +1285,56 @@
             "title": "سلايدر منجات محسن",
             "icon": "sicon-d-rotate",
             "path": "EzdanProductSlider",
-            "fields": []
+            "fields": [
+                {
+                    "id": "EzdanProductSliderTitle",
+                    "key": "f0e85486-fa5a-463b-9f4f-b5e9bc0f9784",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان رئيسي",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "EzdanProductSliderDescription",
+                    "key": "5167617c-4634-4a96-befc-549616605f7d",
+                    "type": "string",
+                    "format": "text",
+                    "label": "نص توضيحي أو نص فرعي",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "EzdanProductSliderDropdown_list",
+                    "key": "038c982c-15ce-4d75-afe9-ddfd868ade76",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "Dropdown List",
+                    "description": null,
+                    "labelHTML": "المنتجات النراد عرضها",
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "Products",
+                    "multichoice": true,
+                    "searchable": true,
+                    "required": false
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
