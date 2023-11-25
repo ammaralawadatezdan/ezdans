@@ -1341,7 +1341,70 @@
             "title": "بانر أقسلم لأخضر",
             "icon": "sicon-d-rotate",
             "path": "BannerGreen",
-            "fields": []
+            "fields": [
+                {
+                    "id": "bannergreencollection",
+                    "key": "0d4e3532-c39d-4984-9d3b-3c72b0368141",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "BannerGreenCollection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "bannergreenstring",
+                            "key": "49ca5b23-ae1b-4124-9252-002dc666239c",
+                            "type": "string",
+                            "format": "text",
+                            "label": "BannerGreenString",
+                            "description": null,
+                            "labelHTML": "العنوان",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "90"
+                        },
+                        {
+                            "id": "bannergreenstring2",
+                            "key": "f0a4f307-19f4-4afa-946c-f2cd8e4412f9",
+                            "type": "string",
+                            "format": "text",
+                            "label": "BannerGreenString2",
+                            "description": null,
+                            "labelHTML": "العنوان الفرعي",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": "260"
+                        },
+                        {
+                            "id": "bannergreenimage",
+                            "key": "92e03cfc-8727-49c2-bd35-c7b2504bd77c",
+                            "type": "string",
+                            "format": "image",
+                            "label": "BannerGreenImage",
+                            "description": null,
+                            "labelHTML": "الخلفية",
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
