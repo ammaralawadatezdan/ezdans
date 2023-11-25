@@ -1,11 +1,32 @@
 
-{% for Banner in component.squarebannercollection %}
+      
+      <section id="Contact">
+        <div class="ezdan-contact-wrapper">
+          <div class="container">
 
-<section id="Contact">
-    <div class="ezdan-contact-wrapper"  style="background-image:url('{{Banner.SquareBannerimage}}')">
-      <div class="container">
-        <div class="ezdan-contact-img">
-          <img src="assets/images/contact-img.png" alt="contact-img" />
-        </div>
+            {% for Banner in component.squarebannercollection %}
 
-        {% endfor %}
+            <div class="ezdan-contact-img">
+              <img src="{{Bannersqu.SquareBannerimage}}" alt="contact-img" />
+            </div>
+            <div class="ezdan-coffee-shop-wrapper">
+              <div class="ezdan-coffee-shop-arrow">
+                <img
+                  src="{{Bannersqu.SquareBannerimage_1}}"
+                  alt="arrow-down-icon"
+                />
+              </div>
+              <div class="container">
+                <div class="ezdan-coffee-shop-content">
+                  <h3>
+                    {{Bannersqu.SquareBannerstring}}
+                </h3>
+                  <div class="ezdan-shop-btn pt-5 mt-3">
+                    <a href="{{Bannersqu.SquareBannerurl}}">{{Bannersqu.SquareBannerButton}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {% endfor %}
+      </section>
