@@ -1049,7 +1049,7 @@
             "fields": [
                 {
                     "id": "fullbannarcollection",
-                    "key": "723de127-33eb-4e46-a5e0-3052ee0ff965",
+                    "key": "54f02e96-47a0-468b-91d1-0f5df8a5bceb",
                     "type": "collection",
                     "format": "collection",
                     "label": "fullbannarCollection",
@@ -1060,27 +1060,39 @@
                     "fields": [
                         {
                             "id": "fullbannarTitle",
-                            "key": "f24c2bdc-0d61-4f7b-974e-352de0c43b25",
-                            "type": "static",
-                            "format": "title",
-                            "label": "Title 1",
-                            "value": "قهوة محمّصة خصيصاً لمزاجك",
-                            "variant": "h1",
-                            "icon": "sicon-format-text"
+                            "key": "7b91298f-d4f6-4628-8242-d05a1ac71969",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": null,
+                            "labelHTML": "قهوة محمّصة خصيصاً لمزاجك",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
                         },
                         {
                             "id": "fullbannardescription",
-                            "key": "103d0a7e-9230-4755-9f4d-fb6afebda681",
-                            "type": "static",
-                            "format": "title",
-                            "label": "Title",
-                            "value": "أنواع مختلفة من البُن ترضي مساحة معقدة من الذوق",
-                            "variant": "h1",
-                            "icon": "sicon-format-text"
+                            "key": "e8377c62-5e2b-4b4f-8472-1ff47756c238",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String 1",
+                            "description": null,
+                            "labelHTML": "أنواع مختلفة من البُن ترضي مساحة معقدة من الذوق",
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
                         },
                         {
                             "id": "fullbannarimage",
-                            "key": "67af0478-a120-4f57-9589-d155f5b2f144",
+                            "key": "63b96699-b765-453b-b582-cc67e6c3efe7",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
