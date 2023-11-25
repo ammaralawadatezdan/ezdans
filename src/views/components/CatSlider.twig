@@ -14,13 +14,14 @@
 <div class="ezdan-coffee-slider owl-carousel owl-theme">
   {% for index,catagory  in component.catslidercollection %}
 
-{% if index == 1  %}
+{% if index == 0  %}
 <div class="ezdan-coffee-slide blue item position-relative">
 <div class="ezdan-coffee-slide-img">
+  <a href="{{catagory.CatSliderurl}}"> 
   <img
     src="{{ catagory.CatSliderimage }}"
     alt="coffee-slide-img1"
-  />
+  /></a>
   <div class="ezdan-coffee-slide-content blue">
     <h2>{{catagory.CatSliderstring}}</h2>
   </div>
@@ -28,13 +29,14 @@
 
 {% endif %}
 
-{% if index == 2  %}
+{% if index == 1  %}
 <div class="ezdan-coffee-slide sky-blue item position-relative">
 <div class="ezdan-coffee-slide-img">
+  <a href="{{catagory.CatSliderurl}}"> 
   <img
     src="{{ catagory.CatSliderimage }}"
     alt="coffee-slide-img1"
-  />
+  /></a>
   <div class="ezdan-coffee-slide-content sky-blue">
     <h2>{{catagory.CatSliderstring}}</h2>
   </div>
@@ -42,13 +44,14 @@
 
 {% endif %}
 
-{% if index == 3  %}
+{% if index == 2  %}
 <div class="ezdan-coffee-slide green item position-relative">
 <div class="ezdan-coffee-slide-img">
+  <a href="{{catagory.CatSliderurl}}">
   <img
     src="{{ catagory.CatSliderimage }}"
     alt="coffee-slide-img1"
-  />
+  /></a>
   <div class="ezdan-coffee-slide-content green">
     <h2>{{catagory.CatSliderstring}}</h2>
   </div>
@@ -56,13 +59,14 @@
 
 {% endif %}
 
-{% if index == 4  %}
+{% if index == 3  %}
 <div class="ezdan-coffee-slide orange item position-relative">
 <div class="ezdan-coffee-slide-img">
+  <a href="{{catagory.CatSliderurl}}">
   <img
     src="{{ catagory.CatSliderimage }}"
     alt="coffee-slide-img1"
-  />
+  /></a>
   <div class="ezdan-coffee-slide-content orange">
     <h2>{{catagory.CatSliderstring}}</h2>
   </div>
@@ -70,13 +74,14 @@
 
 {% endif %}
 
-{% if index == 5  %}
+{% if index == 4  %}
 <div class="ezdan-coffee-slide red item position-relative">
 <div class="ezdan-coffee-slide-img">
+  <a href="{{catagory.CatSliderurl}}">
   <img
     src="{{ catagory.CatSliderimage }}"
     alt="coffee-slide-img1"
-  />
+  /></a>
   <div class="ezdan-coffee-slide-content red">
     <h2>{{catagory.CatSliderstring}}</h2>
   </div>
@@ -90,3 +95,5 @@
   </div>
  
 </div>
+
+

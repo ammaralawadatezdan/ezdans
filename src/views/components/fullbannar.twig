@@ -1,0 +1,8 @@
+{% for fullbannar in component.fullbannarcollection %}
+
+<h3> {{fullbannar.fullbannarTitle}} </h3>
+<h3> {{fullbannar.fullbannardescription}} </h3>
+
+<img src="{{ {{fullbannar.fullbannarimage}}}}" > </img>
+
+{{% endfor %}}
