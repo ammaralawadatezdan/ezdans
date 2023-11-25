@@ -1040,6 +1040,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "72c5554d-2977-4149-aa2c-c3b1bdf19953",
+            "title": "بانر حجم كامل",
+            "icon": "sicon-d-rotate",
+            "path": "fullbannar",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
