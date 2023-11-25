@@ -178,10 +178,11 @@ class ProductCard extends HTMLElement {
     this.shadowOnHover?  this.classList.add('s-product-card-shadow') : '';
     this.product?.is_out_of_stock?  this.classList.add('s-product-card-out-of-stock') : '';
 
+
     this.innerHTML = `
         <div class="${!this.fullImage ? 's-product-card-image' : 's-product-card-image-full'}">
           <a href="${this.product?.url}">
-            <img class="s-product-card-image-${salla.url.is_placeholder(this.product?.image?.url)
+            <img class="ezdan-product-card-${salla.url.is_placeholder(this.product?.image?.url)
               ? 'contain'
               : this.fitImageHeight
                 ? this.fitImageHeight

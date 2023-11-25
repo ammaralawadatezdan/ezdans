@@ -1,0 +1,35 @@
+ <!-- Coffee Product Section HTML Start -->
+
+ <section id="Product">
+    <div class="ezdan-product-wrapper">
+      <div class="container">
+       
+        <div class="ezdan-product-content">
+        <h2>{{component.EzdanProductSliderTitle}}</h2>
+        <h3> {{component.EzdanProductSliderDescription}}</h3>
+        </div>
+     
+        <div class="row">
+          
+          
+             
+             
+                <salla-products-slider
+                source="selected"
+                source-value="[{{ component.EzdanProductSliderDropdown_list|map((product) => product.id)|join(',') }}]" 
+                {% if display_all != '' and  display_all != '#' %}
+                    display-all-url="{{display_all}}" 
+                {% endif %}
+                block-title=" " 
+                slider-id="slider-with-bg-{{ position }}"
+            ></salla-products-slider>
+
+             
+         
+         
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
