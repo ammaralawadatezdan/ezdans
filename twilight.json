@@ -1344,7 +1344,7 @@
             "fields": [
                 {
                     "id": "bannergreencollection",
-                    "key": "0d4e3532-c39d-4984-9d3b-3c72b0368141",
+                    "key": "5bcac144-89ec-4755-a474-3f718fa0f33d",
                     "type": "collection",
                     "format": "collection",
                     "label": "BannerGreenCollection",
@@ -1355,7 +1355,7 @@
                     "fields": [
                         {
                             "id": "bannergreenstring",
-                            "key": "49ca5b23-ae1b-4124-9252-002dc666239c",
+                            "key": "bff75386-0531-4e97-9337-3ca3b3be36f9",
                             "type": "string",
                             "format": "text",
                             "label": "BannerGreenString",
@@ -1367,11 +1367,11 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": "90"
+                            "maxLength": "260"
                         },
                         {
                             "id": "bannergreenstring2",
-                            "key": "f0a4f307-19f4-4afa-946c-f2cd8e4412f9",
+                            "key": "db27feb9-b57d-4e26-8692-17a088d2ba5c",
                             "type": "string",
                             "format": "text",
                             "label": "BannerGreenString2",
@@ -1387,7 +1387,7 @@
                         },
                         {
                             "id": "bannergreenimage",
-                            "key": "92e03cfc-8727-49c2-bd35-c7b2504bd77c",
+                            "key": "9e24100a-7b41-4783-9d29-fa79e1341b84",
                             "type": "string",
                             "format": "image",
                             "label": "BannerGreenImage",
