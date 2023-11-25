@@ -12,10 +12,11 @@
 
 
 <div class="ezdan-coffee-slider owl-carousel owl-theme">
-  
+  {% for index,catagory  in component.catslidercollection %}
+  <div class="catagory{{index}}">
   <div class="ezdan-coffee-slide blue item position-relative">
-    {% for index ,catagory  in component.catslidercollection %}
-    <div class="ezdan-coffee-slide-img catagory-{{index}}">
+   
+    <div class="ezdan-coffee-slide-img">
       <img
         src="{{ catagory.CatSliderimage }}"
         alt="coffee-slide-img1"
@@ -25,49 +26,27 @@
       </div>
     </div>
   </div>
-  <div class="ezdan-coffee-slide sky-blue item position-relative">
-    <div class="ezdan-coffee-slide-img catagory-{{index}}">
-      <img
-        src="{{ catagory.CatSliderimage }}"
-        alt="coffee-slide-img2"
-      />
-      <div class="ezdan-coffee-slide-content sky-blue">
-        <h2>{{catagory.CatSliderstring}}</h2>
-      </div>
+</div>
+
+{% if index = 2 %}
+<div class="ezdan-coffee-slide green item position-relative">
+   
+  <div class="ezdan-coffee-slide-img">
+    <img
+      src="{{ catagory.CatSliderimage }}"
+      alt="coffee-slide-img1"
+    />
+    <div class="ezdan-coffee-slide-content green">
+      <h2>{{catagory.CatSliderstring}}</h2>
     </div>
   </div>
-  <div class="ezdan-coffee-slide green item position-relative">
-    <div class="ezdan-coffee-slide-img catagory-{{index}}">
-      <img
-        src="{{ catagory.CatSliderimage }}"
-        alt="coffee-slide-img3"
-      />
-      <div class="ezdan-coffee-slide-content green">
-       <h2> {{catagory.CatSliderstring}}</h2>
-      </div>
-    </div>
-  </div>
-  <div class="ezdan-coffee-slide orange item position-relative">
-    <div class="ezdan-coffee-slide-img catagory-{{index}}">
-      <img
-        src="{{ catagory.CatSliderimage }}"
-        alt="coffee-slide-img4"
-      />
-      <div class="ezdan-coffee-slide-content orange">
-     <h2>   {{catagory.CatSliderstring}}</h2>
-      </div>
-    </div>
-  </div>
-  <div class="ezdan-coffee-slide red item position-relative">
-    <div class="ezdan-coffee-slide-img catagory-{{index}}">
-      <img
-        src="{{ catagory.CatSliderimage }}"
-        alt="coffee-slide-img5"
-      />
-      <div class="ezdan-coffee-slide-content red">
-       <h2> {{catagory.CatSliderstring}}</h2>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+
+{% endif %}
+
+
   {% endfor %}
+  </div>
+ 
 </div>
