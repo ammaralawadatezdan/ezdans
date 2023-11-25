@@ -3,23 +3,23 @@
 
 
 <section id="Coffee-info">
-    {% for BannerOrangecollection in component.BannerOrangeCollection %}
-    <div class="ezdan-coffee-info-wrapper position-relative  style="background-image:url('{{BannerOrangecollection.bannerorangeimage}}') ">
+    {% for BannerOrangecollectione in component.BannerOrangecollection %}
+    <div class="ezdan-coffee-info-wrapper position-relative"  style="background-image:url('{{BannerOrangecollectione.bannerorangeimage}}') ">
       <div class="ezdan-soudi-coffee-arrow">
         <img
-          src="{{BannerOrangecollection.bannerorangeimage_1}}"
+          src="{{BannerOrangecollectione.bannerorangeimage_1}}"
           alt="arrow-down-icon"
         />
       </div>
       <div class="container">
         <div class="ezdan-coffee-content">
-          <h2>{{BannerOrangecollection.bannerorangestring}}</h2>
+          <h2>{{BannerOrangecollectione.bannerorangestring}}</h2>
           
-          <h3> {{BannerOrangecollection.bannerorangestring_1}}</h3>
+          <h3> {{BannerOrangecollectione.bannerorangestring_1}}</h3>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="ezdan-cis"></div>
-    </div>{% endfor %}
+    </div> {% endfor %}
   </section>
