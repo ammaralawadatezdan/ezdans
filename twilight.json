@@ -1288,7 +1288,7 @@
             "fields": [
                 {
                     "id": "EzdanProductSliderTitle",
-                    "key": "f0e85486-fa5a-463b-9f4f-b5e9bc0f9784",
+                    "key": "c98c0e5e-4802-4ced-acdb-fcd6a42e5232",
                     "type": "string",
                     "format": "text",
                     "label": "عنوان رئيسي",
@@ -1300,11 +1300,11 @@
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": 30
+                    "maxLength": "450"
                 },
                 {
                     "id": "EzdanProductSliderDescription",
-                    "key": "5167617c-4634-4a96-befc-549616605f7d",
+                    "key": "92c69b2a-9edf-4f81-a354-7bf427ae869b",
                     "type": "string",
                     "format": "text",
                     "label": "نص توضيحي أو نص فرعي",
@@ -1316,11 +1316,11 @@
                     "multilanguage": false,
                     "required": false,
                     "minLength": 6,
-                    "maxLength": 30
+                    "maxLength": "450"
                 },
                 {
                     "id": "EzdanProductSliderDropdown_list",
-                    "key": "038c982c-15ce-4d75-afe9-ddfd868ade76",
+                    "key": "bcb3e634-5d36-4f1e-b08f-6a011c3b0167",
                     "type": "items",
                     "format": "dropdown-list",
                     "label": "Dropdown List",
