@@ -1411,7 +1411,38 @@
             "title": "بانر مربع",
             "icon": "sicon-d-rotate",
             "path": "SquareBanner",
-            "fields": []
+            "fields": [
+                {
+                    "id": "squarebannercollection",
+                    "key": "b4e3f4b3-8074-4a6a-976b-6cbdf8e7909d",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "SquareBannerCollection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "SquareBannerimage",
+                            "key": "bb7e680d-7382-4370-ad3f-a7a023ef1eb2",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
