@@ -1,12 +1,13 @@
 
 
-{% for fullbannar in component.fullbannarcollection %}
 
 
 
-<section id="Roasted-coffee"  data-background="{{ fullbannar.fullbannarimage }}">
-    
-    <div class="ezdan-roasted-coffee-wrapper">
+<section id="Roasted-coffee">
+    {% for fullbannar in component.fullbannarcollection %}
+
+   
+    <div    class="ezdan-roasted-coffee-wrapper"  style="background-image:url('{{fullbannar.fullbannarimage}}') "  >
       <div class="container">
         <div  class="ezdan-coffee-content">
             <h2> {{fullbannar.fullbannarTitle}} </h2>

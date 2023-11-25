@@ -1,0 +1,26 @@
+
+
+
+
+<section id="Coffee-shop">
+    <div class="ezdan-coffee-shop-wrapper">
+        {% for textwithdarkbackground in component.textwithdarkbackgroundcollection %}
+      <div class="ezdan-coffee-shop-arrow">
+        <img
+          src="{{textwithdarkbackground.textwithdarkbackgroundimage}}"
+          alt="arrow-down-icon"
+        />
+      </div>
+      <div class="container">
+        <div class="ezdan-coffee-shop-content">
+          <h3>
+   {{textwithdarkbackground.textwithdarkbackgroundstring}}
+        </h3>
+          <div class="ezdan-shop-btn pt-5 mt-md-3">
+            <a href="{{textwithdarkbackground.textwithdarkbackgroundurl}}">  {{textwithdarkbackground.textwithdarkbackgroundstring_1butn}}</a>
+          </div>
+        </div>
+      </div>
+    </div> {% endfor %}
+  </section>
+
