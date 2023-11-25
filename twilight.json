@@ -1119,7 +1119,7 @@
             "fields": [
                 {
                     "id": "textwithdarkbackgroundcollection",
-                    "key": "a7ba7b32-4cac-4eec-9e70-91aa8e69e7c8",
+                    "key": "d4c052a2-608b-4d1c-942e-915e769a20a4",
                     "type": "collection",
                     "format": "collection",
                     "label": "textwithdarkbackgroundCollection",
@@ -1130,7 +1130,7 @@
                     "fields": [
                         {
                             "id": "textwithdarkbackgroundimage",
-                            "key": "bc345e4a-acda-4e0b-8ed4-2766f63db43e",
+                            "key": "f547c6d7-5358-4368-84eb-f052e67f29d9",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1143,7 +1143,7 @@
                         },
                         {
                             "id": "textwithdarkbackgroundurl",
-                            "key": "5840f862-531c-4d5a-bc0b-fe72646b45a9",
+                            "key": "d4b7320a-65be-454a-80b5-a62410c46708",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",
@@ -1159,7 +1159,7 @@
                         },
                         {
                             "id": "textwithdarkbackgroundstring_1butn",
-                            "key": "54eb4216-6714-41e4-855a-cbe60a26b53e",
+                            "key": "44343e83-d887-4ee7-8d53-d2be7996681d",
                             "type": "string",
                             "format": "text",
                             "label": "String 1",
@@ -1175,7 +1175,7 @@
                         },
                         {
                             "id": "textwithdarkbackgroundstring",
-                            "key": "e4fc33dd-a1c3-4ef5-8f37-db6b15c9964d",
+                            "key": "de484828-755b-4d22-bb17-bebb8427f1ef",
                             "type": "string",
                             "format": "text",
                             "label": "String",
@@ -1187,7 +1187,7 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "450"
                         }
                     ],
                     "value": [],
