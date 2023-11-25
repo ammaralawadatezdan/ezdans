@@ -1205,7 +1205,7 @@
             "fields": [
                 {
                     "id": "BannerOrangecollection",
-                    "key": "e3eacf8f-d0c5-446e-af8d-35db5c4ce25b",
+                    "key": "ac46e3a5-ffeb-4762-aa24-5323adc750dc",
                     "type": "collection",
                     "format": "collection",
                     "label": "BannerOrangeCollection",
@@ -1216,12 +1216,12 @@
                     "fields": [
                         {
                             "id": "bannerorangestring_1",
-                            "key": "f5ef3884-18f4-4b5b-8677-6a1c3bd79ef7",
+                            "key": "78d1d56c-6f0c-47c0-8c5c-1f3db4e8433c",
                             "type": "string",
                             "format": "text",
                             "label": "BannerOrangeString 1",
                             "description": null,
-                            "labelHTML": null,
+                            "labelHTML": "النص الفرعي",
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
                             "value": null,
@@ -1232,12 +1232,12 @@
                         },
                         {
                             "id": "bannerorangestring",
-                            "key": "87a27150-cbe8-4504-8a94-538b1d404530",
+                            "key": "e96139bb-d14f-4b18-a457-bb089ca1449d",
                             "type": "string",
                             "format": "text",
                             "label": "BannerOrangeString",
                             "description": null,
-                            "labelHTML": null,
+                            "labelHTML": "النص الرئيسي",
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
                             "value": null,
@@ -1248,7 +1248,7 @@
                         },
                         {
                             "id": "bannerorangeimage_1",
-                            "key": "a329bc06-aee0-405c-85c9-fb6fb0656b15",
+                            "key": "e0c9dd5a-7526-43ab-a345-a5a0f1e8b06c",
                             "type": "string",
                             "format": "image",
                             "label": "BannerOrangeImage 1",
@@ -1261,7 +1261,7 @@
                         },
                         {
                             "id": "bannerorangeimage",
-                            "key": "283f93e6-aaa2-47a5-b7e6-36c54cc0ffb9",
+                            "key": "4e641f80-1e8b-44cd-abfe-c261bc522c4e",
                             "type": "string",
                             "format": "image",
                             "label": "BannerOrangeImage",
