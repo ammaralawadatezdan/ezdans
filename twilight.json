@@ -1504,63 +1504,6 @@
                     "maxLength": 5
                 }
             ]
-        },
-        {
-            "key": "b95eaad2-db91-4bad-ab2d-8fd8542045e0",
-            "title": "مربع بالمنتصف داخل التصنيفات",
-            "icon": "sicon-store",
-            "path": "TextSection",
-            "fields": [
-                {
-                    "id": "textsectioncollection",
-                    "key": "05222a16-3c32-478b-8892-5f7390018372",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "TextSectionCollection",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "TextSectionSlug",
-                            "key": "0e30e05b-f9f1-4d19-83c8-0da4bcc0145d",
-                            "type": "string",
-                            "format": "text",
-                            "label": "String",
-                            "description": null,
-                            "labelHTML": "عنوان التصنيف",
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": "90"
-                        },
-                        {
-                            "id": "TextSectionstring",
-                            "key": "e9a9f2e1-af19-4ad8-8975-10e47616595d",
-                            "type": "string",
-                            "format": "text",
-                            "label": "String 1",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": "750"
-                        }
-                    ],
-                    "value": [],
-                    "required": false,
-                    "minLength": 1,
-                    "maxLength": 5
-                }
-            ]
         }
     ],
     "support_url": "https://ezdan.sa",
