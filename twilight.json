@@ -1510,7 +1510,40 @@
             "title": "مربع بالمنتصف داخل التصنيفات",
             "icon": "sicon-store",
             "path": "TextSection",
-            "fields": []
+            "fields": [
+                {
+                    "id": "TextSectionSlug",
+                    "key": "196da6f2-0bcb-4052-adbf-19773b83e70e",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String",
+                    "description": null,
+                    "labelHTML": "عنوان التصنيف",
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "90"
+                },
+                {
+                    "id": "TextSectionstring",
+                    "key": "15ec2c47-26d2-43ea-af8b-a6f85f584b66",
+                    "type": "string",
+                    "format": "text",
+                    "label": "String 1",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": "750"
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
