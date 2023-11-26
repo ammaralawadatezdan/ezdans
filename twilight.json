@@ -1504,6 +1504,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "b95eaad2-db91-4bad-ab2d-8fd8542045e0",
+            "title": "مربع بالمنتصف داخل التصنيفات",
+            "icon": "sicon-store",
+            "path": "TextSection",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
