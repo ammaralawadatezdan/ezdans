@@ -58,14 +58,20 @@
         </div>
         <div class="ezdan-left-menu">
           <ul class="d-flex align-items-center">
+            
             <li class="d-none d-xl-block">
              
               <a href="#">الدورات التدريبية</a>
             </li>
             <li class="d-none d-xl-block">
-              <a href="#"><i class="sicon-search"></i></a>
+              <button style="color: white;" onclick="salla.event.dispatch('search::open')" class="search-btn">
+                <span class="sicon-search"></span>
+                <span class="sm:hidden px-2 opacity-50">{{ trans('blocks.header.searchProducts') }}</span>
+              </button>
+
+          
             </li>
-            <li>
+            <li class="d-none d-xl-block">
             
                 <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4" style="color: white;">
                   <i slot="icon" style="color: aliceblue;" class="header-btn__icon icon sicon-cart2"></i>
@@ -73,8 +79,15 @@
 
 
             </li>
-            <li>
-              <a href="#"><i class="sicon-user">
+            <li class="d-none d-xl-block">
+             
+                {% if user.type=='user' %}
+                <salla-user-menu avatar-only show-header></salla-user-menu>
+              {% else %}
+                  <button class="header-btn" onclick="salla.event.dispatch('login::open')">
+                    <i style="color: white;" class="header-btn__icon sicon-user"></i>
+                  </button>
+              {% endif %}
                 
               </i></a>
             </li>
