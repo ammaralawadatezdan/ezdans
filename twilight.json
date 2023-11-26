@@ -1504,6 +1504,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "f7d8e04c-feaa-4d08-81fe-361b6408d33e",
+            "title": "SectionItem",
+            "icon": "sicon-store",
+            "path": "SectionItem",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
