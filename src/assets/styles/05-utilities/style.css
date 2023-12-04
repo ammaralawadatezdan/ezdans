@@ -556,6 +556,12 @@
     color: #371a08;
   }
   
+  .s-cart-summary-total
+{
+  display: none !important;
+}
+
+
   .ezdan-product-content h3 {
     font-size: 40px;
     font-weight: 400;

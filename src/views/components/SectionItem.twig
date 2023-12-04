@@ -2,11 +2,25 @@
 
 <div>
 
-    {% for sections in component.sectionitemcollection %}
+
+    {% for compo in  component.sectionitemcollection %}
+        
+   
+    {% if page.title == compo.SectionItemslug  %}
+    <h1>Hi</h1>
+     
+    {% else %}
+     
 
 
-<h1>{{sections.SectionItemslug}}</h1>
-<h1>{{sections.stringname}}</h1>
+
+
+
+    {% endif %}
+
     {% endfor %}
 
 </div>
+
+
+salla.api.request('component/list', {params:{paths:['home.main-links']}}).then((res) => {}

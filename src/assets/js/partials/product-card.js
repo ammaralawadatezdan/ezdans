@@ -223,9 +223,10 @@ class ProductCard extends HTMLElement {
       <h3 class="ezdan-product-card-content">
         <a href="${this.product?.url}"> <h3> ${this.product?.name}  </h3></a>
       </h3>
+      
 
       ${this.product?.subtitle && !this.minimal ?
-        `<h4 class="ezdan-product-card-content">${this.product?.subtitle}</h4>`
+        `<h6 class="ezdan-product-card-content"></h6>`
         : ``}
     </div>
     ${this.product?.donation && !this.minimal && !this.fullImage ?
