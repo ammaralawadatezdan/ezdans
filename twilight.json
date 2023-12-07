@@ -1561,6 +1561,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "4af2e75d-e962-4cef-bf19-4bb9e5d087d3",
+            "title": "ammar",
+            "icon": "sicon-store",
+            "path": "product.ammar",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
