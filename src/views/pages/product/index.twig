@@ -22,6 +22,7 @@
 
 {% extends "layouts.master" %}
 
+
 {% block content %}
 
 
@@ -62,6 +63,10 @@
 
                 </div>
 
+
+              
+       
+
                 {% hook 'product:index.items.start' %}
                 <div class="flex min-h-screen">
                     <salla-products-list class="flex-1 min-w-0 overflow-auto "
@@ -78,7 +83,7 @@
 
 
  
-    {% component 'product.ammar' %}
+    
 
     {% if store.settings.category.testimonial_enabled %}
         {% component 'home.testimonials' %}
@@ -88,5 +93,6 @@
 {% block scripts %}
     <script defer src="{{ 'product.js' | asset }}"></script>
 {% endblock %}
+
 
 
