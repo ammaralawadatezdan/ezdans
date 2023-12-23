@@ -1574,7 +1574,41 @@
             "title": "نص في أخر صفحة الأقسام",
             "icon": "sicon-d-rotate",
             "path": "home.sectionText",
-            "fields": []
+            "fields": [
+                {
+                    "id": "sectiontestonsectiospages",
+                    "key": "02d3238e-c692-43ca-b4fc-94f108a84de8",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "SectionTestOnSectiosPages",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "stringsectiontestonsectiospages",
+                            "key": "be2e3aae-ea49-44ef-826d-9d78011e2557",
+                            "type": "string",
+                            "format": "text",
+                            "label": "StringSectionTestOnSectiosPages",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://ezdan.sa",
