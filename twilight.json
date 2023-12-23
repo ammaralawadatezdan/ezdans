@@ -1571,7 +1571,7 @@
         },
         {
             "key": "57d0dc14-0e4b-421a-8d7a-86c7048e9360",
-            "title": "sectionText",
+            "title": "نص في أخر صفحة الأقسام",
             "icon": "sicon-d-rotate",
             "path": "home.sectionText",
             "fields": []
