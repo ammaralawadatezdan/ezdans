@@ -79,8 +79,9 @@
         </div>
     </div>
 
-  
-  
+   
+   
+
     {% if store.settings.category.testimonial_enabled %}
         {% component 'home.testimonials' %}
     {% endif %}
@@ -88,9 +89,8 @@
 
 {% block scripts %}
     <script defer src="{{ 'product.js' | asset }}"></script>
-
- 
-    
+    <script> salla.api.request('component/list', {params: {paths:['home.sectionText']}}).then((res) => {}) </script>
+   
 {% endblock %}
 
 
