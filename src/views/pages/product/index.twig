@@ -17,8 +17,7 @@
 | search_query               | ?string     |                                                                      |
 #}
 
-
-
+  
 
 {% extends "layouts.master" %}
 
@@ -80,16 +79,8 @@
         </div>
     </div>
 
-{{page.title  }}
-
-
-<img
-    src="{{ category.image }}"
-   
-  /></a>
-
-<h1>AMMAR</h1>
-
+  
+  
     {% if store.settings.category.testimonial_enabled %}
         {% component 'home.testimonials' %}
     {% endif %}
@@ -97,6 +88,9 @@
 
 {% block scripts %}
     <script defer src="{{ 'product.js' | asset }}"></script>
+
+ 
+    
 {% endblock %}
 
 
