@@ -1568,6 +1568,13 @@
             "icon": "sicon-store",
             "path": "product.ammar",
             "fields": []
+        },
+        {
+            "key": "57d0dc14-0e4b-421a-8d7a-86c7048e9360",
+            "title": "sectionText",
+            "icon": "sicon-d-rotate",
+            "path": "home.sectionText",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
