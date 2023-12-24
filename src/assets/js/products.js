@@ -28,14 +28,23 @@ class Products extends BasePage {
         this.initiateMobileMenu()
     }
 
+    /*
+
 async catblock()
 {
-    await  salla.api.request('component/list', {params: {paths:['home.main-links']}}).then((res) => {
+    await  salla.api.request('component/list', {params: {paths:['home.sectionText']}}).then((res) => {
 
         console.log(res.data[0].component)
     })
 
+}*/
+
+async catblock()
+{
+    salla.api.request('component/list', {params: {paths:['product.ammar']}}).then((res) => {console.log(res)})
 }
+
+
 
 
 
