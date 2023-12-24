@@ -24,9 +24,20 @@ class Products extends BasePage {
             res.title && (app.element('#page-main-title').innerHTML = res.title);
         });
 
-
+        this.catblock()
         this.initiateMobileMenu()
     }
+
+async catblock()
+{
+    await  salla.api.request('component/list', {params: {paths:['home.main-links']}}).then((res) => {
+
+        console.log(res.data[0].component)
+    })
+
+}
+
+
 
     initiateMobileMenu() {
         let filters = app.element("#filters-menu"),
