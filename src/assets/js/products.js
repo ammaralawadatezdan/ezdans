@@ -24,7 +24,7 @@ class Products extends BasePage {
             res.title && (app.element('#page-main-title').innerHTML = res.title);
         });
 
-        this.catblock()
+       this.catblock()
         this.initiateMobileMenu()
     }
 
@@ -39,9 +39,46 @@ async catblock()
 
 }*/
 
+
+
 async catblock()
 {
-    salla.api.request('component/list', {params: {paths:['product.ammar']}}).then((res) => {console.log(res)})
+     // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
+  salla.api.request('component/list', {params: {paths:['home.main-links']}})
+  .then((res) => {
+    // Assuming res contains a data array with at least one item
+    const dataArray = res.data;
+
+    // Access the div element by its id
+    const outputDiv = document.getElementById('output');
+
+    // Create a new ul element
+    const ulElement = document.createElement('ul');
+    const currentURL = window.location.href;
+    // Iterate through the array and create li elements for each item
+    dataArray.forEach((item) => {
+      if (item && item.component && item.component.ar && item.component.ar.title) {
+        // Check if the title is equal to "1"
+        if (item.component.ar.title === currentURL) {
+          const liElement = document.createElement('li');
+          liElement.textContent = item.component.ar.title;
+
+          // Append the li element to the ul
+          ulElement.appendChild(liElement);
+        } else {
+          console.warn('Title is not equal to "1" for:', item);
+        }
+      } else {
+        console.warn('Title property not found for:', item);
+      }
+    });
+
+    // Append the ul to the output div
+    outputDiv.appendChild(ulElement);
+  })
+  .catch((error) => {
+    console.error('Error fetching data:', error);
+  });
 }
 
 
