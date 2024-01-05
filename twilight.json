@@ -277,7 +277,7 @@
                             "value": true
                         }
                     ],
-                    "key": "73beb373-7386-44f9-9ed2-bdf2850e2ef6"
+                    "key": "51dfd795-1e99-4a85-90cf-6999e6f00f15"
                 },
                 {
                     "type": "static",
@@ -291,7 +291,7 @@
                             "value": false
                         }
                     ],
-                    "key": "c16d0825-53b2-40b8-8614-5bc2f6d11c5f"
+                    "key": "4efe0dfe-a9f4-4420-a429-c18bd73d9c03"
                 },
                 {
                     "type": "string",
@@ -306,7 +306,7 @@
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
                     "maxLength": 100,
-                    "key": "558c99f1-fe61-4a92-a4d3-385a8152a930"
+                    "key": "46ed596f-d054-4ee1-9bc0-189ba4086dc3"
                 },
                 {
                     "type": "boolean",
@@ -318,14 +318,14 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "68115b44-f552-44a8-9e64-778fa94f2d10"
+                    "key": "e95f3615-7b89-4aeb-9681-c036f311a3a4"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
-                    "key": "def84852-55f6-4d4e-a64b-cc77f4bad708"
+                    "key": "ddb01a30-a623-43fd-9a60-09de3a28b82a"
                 },
                 {
                     "type": "boolean",
@@ -337,7 +337,7 @@
                     "required": false,
                     "value": true,
                     "selected": true,
-                    "key": "40d02caf-ddc6-4bed-9af9-a406e25056e6"
+                    "key": "c0a38be3-19be-4e35-8c92-c8d355ffda37"
                 },
                 {
                     "type": "boolean",
@@ -349,7 +349,7 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "49170273-bdce-4f07-8b5d-57d09a03ab15"
+                    "key": "f926955f-1481-4ffe-a2a3-76f032715f84"
                 },
                 {
                     "id": "categories",
@@ -371,7 +371,7 @@
                             "value": true
                         }
                     ],
-                    "key": "4c0f0286-1911-4f2b-93e4-ec36fdc0ff72"
+                    "key": "01a4adce-1456-4456-9c69-eb857780c64f"
                 },
                 {
                     "id": "links",
@@ -406,7 +406,7 @@
                             "format": "icon",
                             "class": "form--inline",
                             "description": null,
-                            "key": "3b21384b-06c2-4879-b290-f95086d26030"
+                            "key": "4bb43384-3fe8-4674-985b-6cacd6488aea"
                         },
                         {
                             "type": "string",
@@ -420,7 +420,7 @@
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
                             "maxLength": 80,
-                            "key": "f10efcb3-6851-4c03-9fca-77c0bfda1aca"
+                            "key": "1e2efa99-a6df-4c84-b0c0-7417416ddc7f"
                         },
                         {
                             "type": "items",
@@ -485,7 +485,7 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "8cf0ff28-d944-4d8e-b2b8-2b6a26fdb0b0"
+                            "key": "cf560ca5-2bcc-4eef-ae2e-dbd859e22092"
                         }
                     ],
                     "conditions": [
@@ -495,11 +495,11 @@
                             "value": false
                         }
                     ],
-                    "key": "78f627d1-da10-4a70-860d-ac175d65f96e"
+                    "key": "346a4b63-c276-41d7-a065-c2462ad122d4"
                 },
                 {
                     "id": "collectionEzdan",
-                    "key": "d9dc9831-3c95-48d8-9222-5bffe05c53ef",
+                    "key": "ed7d6e6b-8634-47a8-be56-cdf444cbbfb5",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -510,7 +510,7 @@
                     "fields": [
                         {
                             "id": "stringezdan",
-                            "key": "2c258203-1ab0-474c-ad33-1199b5bb1a67",
+                            "key": "f5e180d5-7bb3-47e6-a227-8ad3e08f4d0a",
                             "type": "string",
                             "format": "text",
                             "label": "StringEzdan",
@@ -526,7 +526,7 @@
                         },
                         {
                             "id": "string",
-                            "key": "42ee5bf0-3d5c-4454-8a51-ca6637b77bb8",
+                            "key": "73c9e690-d91f-488a-a2b8-36aaf3cccfeb",
                             "type": "string",
                             "format": "text",
                             "label": "StringDisc",
