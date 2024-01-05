@@ -43,7 +43,7 @@ async catblock()
 
 async catblock()
 {
-     // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
+      // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
   salla.api.request('component/list', {params: {paths:['home.main-links']}})
   .then((res) => {
     // Assuming res contains a data array with at least one item
@@ -52,33 +52,37 @@ async catblock()
     // Access the div element by its id
     const outputDiv = document.getElementById('output');
 
-    // Create a new ul element
-    const ulElement = document.createElement('ul');
+    // Get the current URL
     const currentURL = window.location.href;
-    // Iterate through the array and create li elements for each item
-    dataArray.forEach((item) => {
-      if (item && item.component && item.component.ar && item.component.ar.title) {
-        // Check if the title is equal to "1"
-        if (item.component.ar.title === currentURL) {
-          const liElement = document.createElement('li');
-          liElement.textContent = item.component.ar.title;
 
-          // Append the li element to the ul
-          ulElement.appendChild(liElement);
-        } else {
-          console.warn('Title is not equal to "1" for:', item);
-        }
-      } else {
-        console.warn('Title property not found for:', item);
-      }
+    // Filter the array based on the condition
+    const filteredArray = dataArray.filter((item) => 
+      item &&
+      item.component &&
+      item.component.collectionEzdan &&
+      item.component.collectionEzdan.length > 0 &&
+      item.component.ar &&
+      item.component.ar.title === currentURL
+    );
+
+    // Iterate through the filtered array and print Stringezdan for each item
+    filteredArray.forEach((item) => {
+      const collectionStringezdan = item.component.collectionEzdan[0].stringezdan;
+
+      // Create a new div element
+      const divElement = document.createElement('div');
+
+      // Set the text content of the div to Stringezdan
+      divElement.textContent = `${collectionStringezdan}`;
+
+      // Append the div element to the output div
+      outputDiv.appendChild(divElement);
     });
-
-    // Append the ul to the output div
-    outputDiv.appendChild(ulElement);
   })
   .catch((error) => {
     console.error('Error fetching data:', error);
   });
+
 }
 
 
