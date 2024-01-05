@@ -269,27 +269,29 @@
                     "type": "static",
                     "format": "description",
                     "id": "with-bg",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img src='https://cdn.salla.network/images/themes/raed/main-links-with-bg.jpg?v=1.1'></div>",
+                    "value": "<div ><h6 >معاينة العنصر</h6><img src='https://cdn.salla.network/images/themes/raed/main-links-with-bg.jpg?v=1.1'></div>",
                     "conditions": [
                         {
                             "id": "merge_with_top_component",
                             "operation": "=",
                             "value": true
                         }
-                    ]
+                    ],
+                    "key": "74ea2449-3f33-41b6-85b0-452c66fa0164"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "without-bg",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img src='https://cdn.salla.network/images/themes/raed/main-links.png?v=1.1'></div>",
+                    "value": "<div ><h6 >معاينة العنصر</h6><img src='https://cdn.salla.network/images/themes/raed/main-links.png?v=1.1'></div>",
                     "conditions": [
                         {
                             "id": "merge_with_top_component",
                             "operation": "=",
                             "value": false
                         }
-                    ]
+                    ],
+                    "key": "ede2af8b-41bd-4fa3-90ea-3bba51a903a1"
                 },
                 {
                     "type": "string",
@@ -303,7 +305,8 @@
                     "description": null,
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
-                    "maxLength": 100
+                    "maxLength": 100,
+                    "key": "c69e3327-3de4-4c65-804c-e102a1c76d18"
                 },
                 {
                     "type": "boolean",
@@ -314,24 +317,27 @@
                     "format": "switch",
                     "required": false,
                     "value": false,
-                    "selected": false
+                    "selected": false,
+                    "key": "2f13dd10-3e6a-4d54-8962-cfa1d918f8c4"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
-                    "value": "<small style='margin: -36px 0 30px;display: block;'>* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>"
+                    "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
+                    "key": "5ca792aa-b2f3-4c99-993f-ebd7ae5df672"
                 },
                 {
                     "type": "boolean",
                     "icon": "sicon-toggle-off",
                     "label": "عرض أسهم التحرك",
-                    "description": "",
+                    "description": null,
                     "id": "show_controls",
                     "format": "switch",
                     "required": false,
                     "value": true,
-                    "selected": true
+                    "selected": true,
+                    "key": "80ddecf0-2bc4-486d-8f77-2a69da03010c"
                 },
                 {
                     "type": "boolean",
@@ -342,7 +348,8 @@
                     "format": "switch",
                     "required": false,
                     "value": false,
-                    "selected": false
+                    "selected": false,
+                    "key": "bc887132-2db3-42c4-ae88-c91c16535b25"
                 },
                 {
                     "id": "categories",
@@ -363,7 +370,8 @@
                             "operation": "=",
                             "value": true
                         }
-                    ]
+                    ],
+                    "key": "389c6a28-989a-49a4-ba79-7be28808d1c1"
                 },
                 {
                     "id": "links",
@@ -372,7 +380,7 @@
                     "required": true,
                     "minLength": 3,
                     "maxLength": 100,
-                    "item_label": "رابط ",
+                    "item_label": "رابط",
                     "value": [
                         {
                             "links.icon": "sicon-store2",
@@ -397,7 +405,8 @@
                             "required": false,
                             "format": "icon",
                             "class": "form--inline",
-                            "description": null
+                            "description": null,
+                            "key": "cfa32c03-1de8-4c24-9f78-c246d02a9d4c"
                         },
                         {
                             "type": "string",
@@ -410,7 +419,8 @@
                             "description": null,
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
-                            "maxLength": 80
+                            "maxLength": 80,
+                            "key": "e85c560e-61af-44e6-ad73-b806f007e815"
                         },
                         {
                             "type": "items",
@@ -474,7 +484,8 @@
                                     "key": "custom",
                                     "value": "custom"
                                 }
-                            ]
+                            ],
+                            "key": "3b565443-bf75-41b6-97db-b568446d8dbb"
                         }
                     ],
                     "conditions": [
@@ -483,7 +494,40 @@
                             "operation": "=",
                             "value": false
                         }
-                    ]
+                    ],
+                    "key": "bbc2d435-2667-4955-b0a6-046947e25078"
+                },
+                {
+                    "id": "collectionEzdan",
+                    "key": "141b2f8a-dd29-4814-91d5-5e0d7d44bd3a",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "stringezdan",
+                            "key": "5418ff83-af8f-4880-8d88-5adcfc86e114",
+                            "type": "string",
+                            "format": "text",
+                            "label": "StringEzdan",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
                 }
             ]
         },
