@@ -25,6 +25,9 @@
 {% block content %}
 
 
+<div id="outputStringezdan" style="color: aqua;"></div>
+<div id="outputString"></div>
+
     {% set filters_is_active = filters and products|length %}
     <div class="container px-2.5 ms:px-5 mb-10">
         {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
@@ -80,14 +83,12 @@
     </div>
 
 
-    <div id="output"></div>
 
     <!-- Display the content of outputDiv1 in HTML -->
-    <div id="outputDiv1Content"></div>
+   
     
     <!-- Display the content of outputDiv2 in HTML -->
-    <div id="outputDiv2Content"></div>
-        
+    
 
 
 

@@ -43,45 +43,50 @@ async catblock()
 
 async catblock()
 {
-      // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
-  salla.api.request('component/list', {params: {paths:['home.main-links']}})
-  .then((res) => {
-    // Assuming res contains a data array with at least one item
-    const dataArray = res.data;
+    // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
+    salla.api.request('component/list', {params: {paths:['home.main-links']}})
+    .then((res) => {
+      // Assuming res contains a data array with at least one item
+      const dataArray = res.data;
 
-    // Access the div element by its id
-    const outputDiv = document.getElementById('output');
+      // Access the div elements by their ids
+      const outputStringezdanDiv = document.getElementById('outputStringezdan');
+      const outputStringDiv = document.getElementById('outputString');
 
-    // Get the current URL
-    const currentURL = window.location.href;
+      // Get the current URL
+      const currentURL = window.location.href;
 
-    // Filter the array based on the condition
-    const filteredArray = dataArray.filter((item) => 
-      item &&
-      item.component &&
-      item.component.collectionEzdan &&
-      item.component.collectionEzdan.length > 0 &&
-      item.component.ar &&
-      item.component.ar.title === currentURL
-    );
+      // Filter the array based on the condition
+      const filteredArray = dataArray.filter((item) => 
+        item &&
+        item.component &&
+        item.component.collectionEzdan &&
+        item.component.collectionEzdan.length > 0 &&
+        item.component.ar &&
+        item.component.ar.title === currentURL
+      );
 
-    // Iterate through the filtered array and print Stringezdan for each item
-    filteredArray.forEach((item) => {
-      const collectionStringezdan = item.component.collectionEzdan[0].stringezdan;
+      // Iterate through the filtered array and print Stringezdan and string in separate divs for each item
+      filteredArray.forEach((item) => {
+        const collectionStringezdan = item.component.collectionEzdan[0].stringezdan;
+        const stringComponent = item.component.collectionEzdan[0].string;
 
-      // Create a new div element
-      const divElement = document.createElement('div');
+        // Create div elements for Stringezdan and string
+        const divStringezdan = document.createElement('div');
+        const divString = document.createElement('div');
 
-      // Set the text content of the div to Stringezdan
-      divElement.textContent = `${collectionStringezdan}`;
+        // Set the text content of the divs
+        divStringezdan.textContent = `Stringezdan: ${collectionStringezdan}`;
+        divString.textContent = `String: ${stringComponent}`;
 
-      // Append the div element to the output div
-      outputDiv.appendChild(divElement);
+        // Append the div elements to their respective output div containers
+        outputStringezdanDiv.appendChild(divStringezdan);
+        outputStringDiv.appendChild(divString);
+      });
+    })
+    .catch((error) => {
+      console.error('Error fetching data:', error);
     });
-  })
-  .catch((error) => {
-    console.error('Error fetching data:', error);
-  });
 
 }
 
