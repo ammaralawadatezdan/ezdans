@@ -43,50 +43,65 @@ async catblock()
 
 async catblock()
 {
-    // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
-    salla.api.request('component/list', {params: {paths:['home.main-links']}})
-    .then((res) => {
-      // Assuming res contains a data array with at least one item
-      const dataArray = res.data;
 
-      // Access the div elements by their ids
-      const outputStringezdanDiv = document.getElementById('outputStringezdan');
-      const outputStringDiv = document.getElementById('outputString');
+ // Assume salla.api.request('component/list', {params: {paths:['home.sectionText']}}) returns a Promise
+salla.api.request('component/list', {params: {paths:['home.main-links']}})
+.then((res) => {
+    // Assuming res contains a data array with at least one item
+    const dataArray = res.data;
 
-      // Get the current URL
-      const currentURL = window.location.href;
+    // Access the div elements by their ids
+    const outputStringezdanDiv = document.getElementById('outputStringezdan');
+    const outputStringDiv = document.getElementById('outputString');
+    const outputImageDiv = document.getElementById('outputImage');
 
-      // Filter the array based on the condition
-      const filteredArray = dataArray.filter((item) => 
+    // Get the current URL
+    const currentURL = window.location.href;
+
+    // Filter the array based on the condition
+    const filteredArray = dataArray.filter((item) =>
         item &&
         item.component &&
         item.component.collectionEzdan &&
         item.component.collectionEzdan.length > 0 &&
         item.component.ar &&
-        item.component.ar.title === currentURL
-      );
+        item.component.ar.title === currentURL &&
+        item.component.collectionEzdan[0].image // Add this condition to check if the image property exists
+    );
 
-      // Iterate through the filtered array and print Stringezdan and string in separate divs for each item
-      filteredArray.forEach((item) => {
-        const collectionStringezdan = item.component.collectionEzdan[0].stringezdan;
-        const stringComponent = item.component.collectionEzdan[0].string;
+    // If filteredArray is empty, hide the outputImageDiv
+    if (filteredArray.length === 0) {
+        outputImageDiv.style.display = 'none';
+    } else {
+        // Iterate through the filtered array and print Stringezdan, string, and set image as background for outputImageDiv
+        filteredArray.forEach((item) => {
+            const collectionStringezdan = item.component.collectionEzdan[0].stringezdan;
+            const stringComponent = item.component.collectionEzdan[0].string;
+            const imageURL = item.component.collectionEzdan[0].image;
 
-        // Create div elements for Stringezdan and string
-        const divStringezdan = document.createElement('div');
-        const divString = document.createElement('div');
+            // Create div elements for Stringezdan, string
+            const divStringezdan = document.createElement('div');
+            const divString = document.createElement('div');
 
-        // Set the text content of the divs
-        divStringezdan.textContent = `Stringezdan: ${collectionStringezdan}`;
-        divString.textContent = `String: ${stringComponent}`;
+            // Set the text content of the divs
+            divStringezdan.textContent = `${collectionStringezdan}`;
+            divString.textContent = `${stringComponent}`;
 
-        // Append the div elements to their respective output div containers
-        outputStringezdanDiv.appendChild(divStringezdan);
-        outputStringDiv.appendChild(divString);
-      });
-    })
-    .catch((error) => {
-      console.error('Error fetching data:', error);
-    });
+            // Set the background image of the outputImage div
+            outputImageDiv.style.background = `url(${imageURL}) center/cover no-repeat`;
+            outputImageDiv.style.minHeight = '1070px';
+            outputImageDiv.style.height = '100%';
+            outputImageDiv.style.marginTop = '-185px';
+
+            // Append the div elements to their respective output div containers
+            outputStringezdanDiv.appendChild(divStringezdan);
+            outputStringDiv.appendChild(divString);
+        });
+    }
+})
+.catch((error) => {
+    console.error('Error fetching data:', error);
+});
 
 }
 
