@@ -277,7 +277,7 @@
                             "value": true
                         }
                     ],
-                    "key": "73beb373-7386-44f9-9ed2-bdf2850e2ef6"
+                    "key": "f5273525-7ac6-4314-8b34-c11938dccd84"
                 },
                 {
                     "type": "static",
@@ -291,7 +291,7 @@
                             "value": false
                         }
                     ],
-                    "key": "c16d0825-53b2-40b8-8614-5bc2f6d11c5f"
+                    "key": "a5a219f0-5562-474b-97db-3a3c6f6138db"
                 },
                 {
                     "type": "string",
@@ -306,7 +306,7 @@
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
                     "maxLength": 100,
-                    "key": "558c99f1-fe61-4a92-a4d3-385a8152a930"
+                    "key": "c24d47ca-d201-42b8-a04b-3f7cd58206bd"
                 },
                 {
                     "type": "boolean",
@@ -318,14 +318,14 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "68115b44-f552-44a8-9e64-778fa94f2d10"
+                    "key": "7c81f2e0-1ef3-4f74-b85f-ba3cf41572f7"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
-                    "key": "def84852-55f6-4d4e-a64b-cc77f4bad708"
+                    "key": "ca12eb96-748c-4291-8186-bb34141647ba"
                 },
                 {
                     "type": "boolean",
@@ -337,7 +337,7 @@
                     "required": false,
                     "value": true,
                     "selected": true,
-                    "key": "40d02caf-ddc6-4bed-9af9-a406e25056e6"
+                    "key": "b0267aac-f66c-48f8-9067-969432224f18"
                 },
                 {
                     "type": "boolean",
@@ -349,7 +349,7 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "49170273-bdce-4f07-8b5d-57d09a03ab15"
+                    "key": "4ec526b0-6174-4365-9659-601f7e3a1659"
                 },
                 {
                     "id": "categories",
@@ -371,7 +371,7 @@
                             "value": true
                         }
                     ],
-                    "key": "4c0f0286-1911-4f2b-93e4-ec36fdc0ff72"
+                    "key": "239705e2-fcc4-47db-9f10-6a58083af61e"
                 },
                 {
                     "id": "links",
@@ -406,7 +406,7 @@
                             "format": "icon",
                             "class": "form--inline",
                             "description": null,
-                            "key": "3b21384b-06c2-4879-b290-f95086d26030"
+                            "key": "b27de5bf-d021-4c6c-afc3-b39cca45a7b6"
                         },
                         {
                             "type": "string",
@@ -420,7 +420,7 @@
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
                             "maxLength": 80,
-                            "key": "f10efcb3-6851-4c03-9fca-77c0bfda1aca"
+                            "key": "7f164e9f-10be-4c89-b460-e29391f8dd1a"
                         },
                         {
                             "type": "items",
@@ -485,7 +485,7 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "8cf0ff28-d944-4d8e-b2b8-2b6a26fdb0b0"
+                            "key": "c463441b-0daa-452d-8199-f3ecf9cdf9e4"
                         }
                     ],
                     "conditions": [
@@ -495,11 +495,11 @@
                             "value": false
                         }
                     ],
-                    "key": "78f627d1-da10-4a70-860d-ac175d65f96e"
+                    "key": "a813a0c1-f6ed-4a9d-b56b-dad69d6a0d3a"
                 },
                 {
                     "id": "collectionEzdan",
-                    "key": "d9dc9831-3c95-48d8-9222-5bffe05c53ef",
+                    "key": "4ecf9675-5062-4577-98c6-01bc1ada67e4",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -510,7 +510,7 @@
                     "fields": [
                         {
                             "id": "stringezdan",
-                            "key": "2c258203-1ab0-474c-ad33-1199b5bb1a67",
+                            "key": "ae928d37-ab1f-41d4-ae12-bf5e2f889fc9",
                             "type": "string",
                             "format": "text",
                             "label": "StringEzdan",
@@ -526,7 +526,7 @@
                         },
                         {
                             "id": "string",
-                            "key": "42ee5bf0-3d5c-4454-8a51-ca6637b77bb8",
+                            "key": "dda6854e-3399-463d-8ac6-85d55847d130",
                             "type": "string",
                             "format": "text",
                             "label": "StringDisc",
@@ -539,6 +539,20 @@
                             "required": false,
                             "minLength": 6,
                             "maxLength": 30
+                        },
+                        {
+                            "id": "image",
+                            "key": "20469839-3bcc-4e86-b0a5-c855684bde05",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false,
+                            "defaulted": true
                         }
                     ],
                     "value": [],
