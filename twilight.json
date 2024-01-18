@@ -277,7 +277,7 @@
                             "value": true
                         }
                     ],
-                    "key": "211a2e74-733f-4d06-8953-922973b3f2af"
+                    "key": "3a0a2d55-f638-4eaa-86c4-5320dc22dde5"
                 },
                 {
                     "type": "static",
@@ -291,7 +291,7 @@
                             "value": false
                         }
                     ],
-                    "key": "a251acdf-95eb-41f1-ac88-c6099b8e4988"
+                    "key": "180ec05c-a267-44ab-b195-4ff96b7ebcf0"
                 },
                 {
                     "type": "string",
@@ -306,7 +306,7 @@
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
                     "maxLength": 100,
-                    "key": "a162663c-6069-49e0-8798-cef1a8ae39b5"
+                    "key": "cab228fc-ae20-477f-a0f5-0f985fae660f"
                 },
                 {
                     "type": "boolean",
@@ -318,14 +318,14 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "6ceba640-6bec-45ea-a58e-a4c6af50c79f"
+                    "key": "cd07989b-d9eb-4a4b-8562-dcf1798d4640"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
-                    "key": "ff439c4f-faee-4386-8029-0c1c7fb8b2ad"
+                    "key": "bac47436-4dd4-4246-ace3-2e90a589ff4f"
                 },
                 {
                     "type": "boolean",
@@ -337,7 +337,7 @@
                     "required": false,
                     "value": true,
                     "selected": true,
-                    "key": "5324ee1b-3292-46bc-8df9-29c8720d4c80"
+                    "key": "57baf6d0-a77b-4523-953f-8b5171311b3e"
                 },
                 {
                     "type": "boolean",
@@ -349,7 +349,7 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "e13c164b-1129-485a-8d5c-aa2b36e4f21e"
+                    "key": "6eb877cb-a572-4ce4-9deb-87c93ab050ae"
                 },
                 {
                     "id": "categories",
@@ -371,7 +371,7 @@
                             "value": true
                         }
                     ],
-                    "key": "70e2f6c1-8050-4743-bded-010d553973a9"
+                    "key": "e37cf125-0563-4731-9201-47deb9768e49"
                 },
                 {
                     "id": "links",
@@ -406,7 +406,7 @@
                             "format": "icon",
                             "class": "form--inline",
                             "description": null,
-                            "key": "34a3e73e-cb53-4581-9508-688900d71e68"
+                            "key": "081fc89d-eacc-4b0b-86f0-7fc8d4920a71"
                         },
                         {
                             "type": "string",
@@ -420,7 +420,7 @@
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
                             "maxLength": 80,
-                            "key": "b7935e47-e8b3-4efb-bab5-7f4a0e8149a7"
+                            "key": "0729868e-240d-4a30-9e08-7a8623aeaf11"
                         },
                         {
                             "type": "items",
@@ -485,7 +485,7 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "60018aab-8208-4d00-b429-a6c0e306abc3"
+                            "key": "10fa9af9-ce16-40e3-bc28-790df6a65e93"
                         }
                     ],
                     "conditions": [
@@ -495,11 +495,11 @@
                             "value": false
                         }
                     ],
-                    "key": "b2197f47-8868-47a1-80ac-16bf6b279a0f"
+                    "key": "2d0635a2-a746-490b-af76-0686cdbe7402"
                 },
                 {
                     "id": "collectionEzdan",
-                    "key": "325626fe-1bd9-4d12-b7b9-8076b5f0f254",
+                    "key": "fe526c41-c0cb-4f69-9c44-d31f17038615",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -510,7 +510,7 @@
                     "fields": [
                         {
                             "id": "stringezdan",
-                            "key": "00857b22-c21f-40ce-b358-7539e9fbb1fb",
+                            "key": "fcd0c91e-9f91-487b-970f-e489c805868d",
                             "type": "string",
                             "format": "text",
                             "label": "StringEzdan",
@@ -522,11 +522,11 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "600"
                         },
                         {
                             "id": "string",
-                            "key": "189bbc9b-77d6-4cc5-8c47-7dbb63d8e08d",
+                            "key": "75663364-06d0-4569-953e-e2f6c17bf52b",
                             "type": "string",
                             "format": "text",
                             "label": "StringDisc",
@@ -538,11 +538,11 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "600"
                         },
                         {
                             "id": "image",
-                            "key": "ba31212f-fc5c-48d5-a28e-58812da8295b",
+                            "key": "c3677092-8e17-46a1-b0c9-9681ab424f22",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -556,7 +556,7 @@
                         },
                         {
                             "id": "textwithicon",
-                            "key": "36d8989b-1844-4f45-8d30-3250e0918f64",
+                            "key": "6f596f82-52e8-44ca-a83f-ef62145da9ea",
                             "type": "string",
                             "format": "text",
                             "label": "TextWithIcon",
@@ -568,11 +568,11 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "600"
                         },
                         {
                             "id": "icon",
-                            "key": "40426c43-c704-4506-bb56-53382e474541",
+                            "key": "4a1c6799-37f9-4ae3-a22a-22d1d372ff0f",
                             "type": "string",
                             "format": "image",
                             "label": "Icon",
@@ -585,7 +585,7 @@
                         },
                         {
                             "id": "endtext",
-                            "key": "39a90145-33bf-40b3-94b4-9c5f4d360168",
+                            "key": "1a1ccc90-b9da-4224-83fc-3368c8588b4f",
                             "type": "string",
                             "format": "text",
                             "label": "Endtext",
@@ -597,7 +597,7 @@
                             "multilanguage": false,
                             "required": false,
                             "minLength": 6,
-                            "maxLength": 30
+                            "maxLength": "600"
                         }
                     ],
                     "value": [],
