@@ -56,6 +56,8 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
         const outputImageDiv = document.getElementById('outputImage');
         const outputTextWithIconDiv = document.getElementById('outputTextWithIcon');
         const outputEndTextDiv = document.getElementById('outputEndText');
+        const coffeeSection = document.getElementById('Coffee'); // Get the coffee section
+        const productDetailsContentSection = document.getElementById('Product-details-content');
 
         // Get the current URL
         const currentURL = window.location.href;
@@ -71,9 +73,11 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
             item.component.collectionEzdan[0].image // Add this condition to check if the image property exists
         );
 
-        // If filteredArray is empty, hide the outputImageDiv
+        // If filteredArray is empty, hide the outputImageDiv, the coffee section, and the product details content section
         if (filteredArray.length === 0) {
             outputImageDiv.style.display = 'none';
+            coffeeSection.style.display = 'none';
+            productDetailsContentSection.style.display = 'none';
         } else {
             // Iterate through the filtered array and print Stringezdan, string, set image as background for outputImageDiv,
             // and handle TextWithIcon and EndText
@@ -92,39 +96,59 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
                 outputTextWithIconDiv.style.display = textWithIcon ? 'block' : 'none';
                 outputEndTextDiv.style.display = endText ? 'block' : 'none';
 
+                // Check if TextWithIcon is empty and hide the coffee section
+                if (!textWithIcon) {
+                    coffeeSection.style.display = 'none';
+                }
+
+                // Check if EndText is empty and hide the product details content section
+                if (!endText) {
+                    productDetailsContentSection.style.display = 'none';
+                }
+
                 // Create div elements for Stringezdan, string, icon, TextWithIcon, and EndText
-                const divStringezdan = document.createElement('div');
-                const divString = document.createElement('div');
-                const divIcon = document.createElement('img'); // Create an img element for the icon
-                const divTextWithIcon = document.createElement('div');
-                const divEndText = document.createElement('div');
+                if (collectionStringezdan) {
+                    const divStringezdan = document.createElement('div');
+                    divStringezdan.textContent = collectionStringezdan;
+                    outputStringezdanDiv.appendChild(divStringezdan);
+                }
 
-                // Set the text content and attributes of the divs
-                divStringezdan.textContent = collectionStringezdan;
-                divString.textContent = stringComponent;
-                divIcon.src = iconURL; // Set the src attribute for the icon
-                divTextWithIcon.innerHTML = textWithIcon;
-                divEndText.textContent = endText;
+                if (stringComponent) {
+                    const divString = document.createElement('div');
+                    divString.textContent = stringComponent;
+                    outputStringDiv.appendChild(divString);
+                }
 
-                // Set the background image of the outputImage div
-                outputImageDiv.style.background = `url(${imageURL}) center/cover no-repeat`;
-                outputImageDiv.style.minHeight = '1070px';
-                outputImageDiv.style.height = '100%';
-                outputImageDiv.style.marginTop = '-185px';
+                if (imageURL) {
+                    outputImageDiv.style.background = `url(${imageURL}) center/cover no-repeat`;
+                    outputImageDiv.style.minHeight = '1070px';
+                    outputImageDiv.style.height = '100%';
+                    outputImageDiv.style.marginTop = '-185px';
+                }
 
-                // Append the div elements to their respective output div containers
-                outputStringezdanDiv.appendChild(divStringezdan);
-                outputStringDiv.appendChild(divString);
-                outputTextWithIconDiv.appendChild(divTextWithIcon);
-                outputTextWithIconDiv.appendChild(divIcon); // Append the icon after the text
-                outputEndTextDiv.appendChild(divEndText);
+                if (textWithIcon) {
+                    const divTextWithIcon = document.createElement('div');
+                    divTextWithIcon.innerHTML = textWithIcon;
+                    outputTextWithIconDiv.appendChild(divTextWithIcon);
+                }
+
+                if (iconURL) {
+                    const divIcon = document.createElement('img');
+                    divIcon.src = iconURL;
+                    outputTextWithIconDiv.appendChild(divIcon);
+                }
+
+                if (endText) {
+                    const divEndText = document.createElement('div');
+                    divEndText.textContent = endText;
+                    outputEndTextDiv.appendChild(divEndText);
+                }
             });
         }
     })
     .catch((error) => {
         console.error('Error fetching data:', error);
     });
-
 
 }
 

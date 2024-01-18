@@ -18,6 +18,8 @@ class Product extends BasePage {
             // listen to screen resizing
             window.addEventListener('resize', () => this.initImagesZooming());
         }
+
+     
     }
 
 	initImagesZooming() {
@@ -45,6 +47,8 @@ class Product extends BasePage {
 			}, 200)
 		})
 	}
+
+
 
     registerEvents() {
         salla.product.event.onPriceUpdated((res) => {
@@ -75,4 +79,12 @@ class Product extends BasePage {
     }
 }
 
+
+
+
+
+
+
 Product.initiateWhenReady(['product.single']);
+
+
