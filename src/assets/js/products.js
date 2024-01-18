@@ -44,7 +44,7 @@ async catblock()
 async catblock()
 {
 
-    // Assume salla.api.request('component/list', {params: {paths:['home.main-links']}}) returns a Promise
+// Assume salla.api.request('component/list', {params: {paths:['home.main-links']}}) returns a Promise
 salla.api.request('component/list', {params: {paths:['home.main-links']}})
     .then((res) => {
         // Assuming res contains a data array with at least one item
@@ -85,6 +85,13 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
                 const endText = item.component.collectionEzdan[0].endtext;
                 const iconURL = item.component.collectionEzdan[0].icon; // Separate field for the icon
 
+                // Check if any output is empty, and hide the corresponding div
+                outputStringezdanDiv.style.display = collectionStringezdan ? 'block' : 'none';
+                outputStringDiv.style.display = stringComponent ? 'block' : 'none';
+                outputImageDiv.style.display = imageURL ? 'block' : 'none';
+                outputTextWithIconDiv.style.display = textWithIcon ? 'block' : 'none';
+                outputEndTextDiv.style.display = endText ? 'block' : 'none';
+
                 // Create div elements for Stringezdan, string, icon, TextWithIcon, and EndText
                 const divStringezdan = document.createElement('div');
                 const divString = document.createElement('div');
@@ -93,11 +100,11 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
                 const divEndText = document.createElement('div');
 
                 // Set the text content and attributes of the divs
-                divStringezdan.textContent = `${collectionStringezdan}`;
-                divString.textContent = `${stringComponent}`;
+                divStringezdan.textContent = collectionStringezdan;
+                divString.textContent = stringComponent;
                 divIcon.src = iconURL; // Set the src attribute for the icon
-                divTextWithIcon.innerHTML = `${textWithIcon}`;
-                divEndText.textContent = `${endText}`;
+                divTextWithIcon.innerHTML = textWithIcon;
+                divEndText.textContent = endText;
 
                 // Set the background image of the outputImage div
                 outputImageDiv.style.background = `url(${imageURL}) center/cover no-repeat`;
@@ -108,8 +115,8 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
                 // Append the div elements to their respective output div containers
                 outputStringezdanDiv.appendChild(divStringezdan);
                 outputStringDiv.appendChild(divString);
-                outputTextWithIconDiv.appendChild(divIcon); // Append the icon to the TextWithIcon container
                 outputTextWithIconDiv.appendChild(divTextWithIcon);
+                outputTextWithIconDiv.appendChild(divIcon); // Append the icon after the text
                 outputEndTextDiv.appendChild(divEndText);
             });
         }
@@ -117,9 +124,6 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
     .catch((error) => {
         console.error('Error fetching data:', error);
     });
-    
-
-
 
 
 }
