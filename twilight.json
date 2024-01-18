@@ -277,7 +277,7 @@
                             "value": true
                         }
                     ],
-                    "key": "3a0a2d55-f638-4eaa-86c4-5320dc22dde5"
+                    "key": "d3ffa779-af55-43a7-9937-2602abc8db5f"
                 },
                 {
                     "type": "static",
@@ -291,7 +291,7 @@
                             "value": false
                         }
                     ],
-                    "key": "180ec05c-a267-44ab-b195-4ff96b7ebcf0"
+                    "key": "82bbf637-4649-44bd-b127-b0ea82010188"
                 },
                 {
                     "type": "string",
@@ -306,7 +306,7 @@
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
                     "maxLength": 100,
-                    "key": "cab228fc-ae20-477f-a0f5-0f985fae660f"
+                    "key": "fef67a22-cbc2-4feb-9b9c-d6406a9c8c8a"
                 },
                 {
                     "type": "boolean",
@@ -318,14 +318,14 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "cd07989b-d9eb-4a4b-8562-dcf1798d4640"
+                    "key": "97e4bf7c-3f65-4e6b-b4aa-96da7df57783"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
-                    "key": "bac47436-4dd4-4246-ace3-2e90a589ff4f"
+                    "key": "c92596e0-56c7-47b2-8f4a-885e1fb7d3cc"
                 },
                 {
                     "type": "boolean",
@@ -337,7 +337,7 @@
                     "required": false,
                     "value": true,
                     "selected": true,
-                    "key": "57baf6d0-a77b-4523-953f-8b5171311b3e"
+                    "key": "fc0f685c-845e-4fc3-8bd6-0991f9d4e30d"
                 },
                 {
                     "type": "boolean",
@@ -349,7 +349,7 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "6eb877cb-a572-4ce4-9deb-87c93ab050ae"
+                    "key": "e2795ef4-f624-4ddc-9ebd-4468e4759221"
                 },
                 {
                     "id": "categories",
@@ -371,7 +371,7 @@
                             "value": true
                         }
                     ],
-                    "key": "e37cf125-0563-4731-9201-47deb9768e49"
+                    "key": "7c3db06f-13a2-4ee1-8d75-befd1b0a8870"
                 },
                 {
                     "id": "links",
@@ -406,7 +406,7 @@
                             "format": "icon",
                             "class": "form--inline",
                             "description": null,
-                            "key": "081fc89d-eacc-4b0b-86f0-7fc8d4920a71"
+                            "key": "00d38719-3fc0-4529-81a6-e1bd131b3dd1"
                         },
                         {
                             "type": "string",
@@ -420,7 +420,7 @@
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
                             "maxLength": 80,
-                            "key": "0729868e-240d-4a30-9e08-7a8623aeaf11"
+                            "key": "8d0ca2bc-14b4-4438-9b95-abbc55694e5b"
                         },
                         {
                             "type": "items",
@@ -485,7 +485,7 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "10fa9af9-ce16-40e3-bc28-790df6a65e93"
+                            "key": "cb73d08c-2a20-4f7d-81a1-18568a60613c"
                         }
                     ],
                     "conditions": [
@@ -495,26 +495,26 @@
                             "value": false
                         }
                     ],
-                    "key": "2d0635a2-a746-490b-af76-0686cdbe7402"
+                    "key": "e73137a0-da84-46fd-b44e-acba19cebef3"
                 },
                 {
                     "id": "collectionEzdan",
-                    "key": "fe526c41-c0cb-4f69-9c44-d31f17038615",
+                    "key": "f44e30b7-0473-4674-9ad5-9291133766fc",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
                     "description": null,
                     "labelHTML": null,
-                    "item_label": null,
+                    "item_label": "تخصيص صفحات الأقسام و المنتجات الداخلية",
                     "icon": "sicon-list-add",
                     "fields": [
                         {
                             "id": "stringezdan",
-                            "key": "fcd0c91e-9f91-487b-970f-e489c805868d",
+                            "key": "7e590e26-fad3-4fbd-b529-a5f5d9db8279",
                             "type": "string",
                             "format": "text",
                             "label": "StringEzdan",
-                            "description": "عنوان صفحة التصنيف",
+                            "description": "عنوان صفحة القسم",
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
@@ -526,11 +526,11 @@
                         },
                         {
                             "id": "string",
-                            "key": "75663364-06d0-4569-953e-e2f6c17bf52b",
+                            "key": "36158b51-ee28-4b07-aa9a-8fbc3dcb89d7",
                             "type": "string",
                             "format": "text",
                             "label": "StringDisc",
-                            "description": "النص اسفل عنوان التصنيف",
+                            "description": "النص اسفل عنوان القسم",
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
@@ -542,11 +542,11 @@
                         },
                         {
                             "id": "image",
-                            "key": "c3677092-8e17-46a1-b0c9-9681ab424f22",
+                            "key": "41a03318-de30-49cd-8c2d-764c567e16af",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
-                            "description": null,
+                            "description": "صورة الغلاف الخاص الأقسام",
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
@@ -556,11 +556,11 @@
                         },
                         {
                             "id": "textwithicon",
-                            "key": "6f596f82-52e8-44ca-a83f-ef62145da9ea",
+                            "key": "0b16df7b-4e50-4cf0-9cb8-022d7d18ff14",
                             "type": "string",
                             "format": "text",
                             "label": "TextWithIcon",
-                            "description": null,
+                            "description": "النص المتوسط تحت صورة الغلاف",
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
@@ -572,11 +572,11 @@
                         },
                         {
                             "id": "icon",
-                            "key": "4a1c6799-37f9-4ae3-a22a-22d1d372ff0f",
+                            "key": "796f2e01-129b-4fce-beff-79f5c7ce32a9",
                             "type": "string",
                             "format": "image",
                             "label": "Icon",
-                            "description": null,
+                            "description": "ايكون المثلث البرتقالي تحت النص",
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
@@ -585,11 +585,11 @@
                         },
                         {
                             "id": "endtext",
-                            "key": "1a1ccc90-b9da-4224-83fc-3368c8588b4f",
+                            "key": "5a3b167b-a40e-47d3-a9d5-13a2e01376be",
                             "type": "string",
                             "format": "text",
                             "label": "Endtext",
-                            "description": null,
+                            "description": "نص نهاية صفحة الأقسام",
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
                             "icon": "sicon-format-text-alt",
