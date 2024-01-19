@@ -400,17 +400,27 @@
         </div>
         
     </div>
+    <h1>gg</h1>
+    <section id="Product-details">
+        <div class="container">
+            <div class="ezdan-pdh-content">
+                <h1 id="outputStringezdan"></h1>
+                <h2 id="outputString"></h2>
+            </div>
+        </div>
+    </section>
     {% component 'product.offer' %}
     {% component 'comments' %}
     <div class="container">
         <salla-products-slider source="related" source-value="{{product.id}}" block-title="{{trans('pages.products.similar_products')}}" display-all-url></salla-products-slider>
     </div>
+
+   
 {% endblock %}
-<h2 id="outputString"></h2>
+
 {% block scripts %}
     <script defer src="{{ 'product.js' | asset }}"></script>
     {% if product.has_3d_image %}
         <script type="module" defer src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     {% endif %}
 {% endblock %}
-
