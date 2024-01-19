@@ -6,13 +6,14 @@ import { zoom } from './partials/image-zoom';
 
 class Product extends BasePage {
     onReady() {
+        this.catblock()
         app.watchElements({
             totalPrice: '.total-price',
             beforePrice: '.before-price',
             startingPriceTitle: '.starting-price-title',
 
         });
-        catblock()
+        
 
         if(imageZoom){
             // call the function when the page is ready
@@ -20,6 +21,7 @@ class Product extends BasePage {
             // listen to screen resizing
             window.addEventListener('resize', () => this.initImagesZooming());
         }
+       
     }
 
 	initImagesZooming() {
@@ -47,25 +49,20 @@ class Product extends BasePage {
 			}, 200)
 		})
 	}
-
+    
 
 
 
     async catblock()
     {
-    
-  // Assume salla.api.request('component/list', {params: {paths:['home.main-links']}}) returns a Promise
+// Assume salla.api.request('component/list', {params: {paths:['home.main-links']}}) returns a Promise
 salla.api.request('component/list', {params: {paths:['home.main-links']}})
 .then((res) => {
     // Assuming res contains a data array with at least one item
     const dataArray = res.data;
 
-    // Access the div elements by their ids
-    const outputStringezdanDiv = document.getElementById('outputStringezdan');
-    const outputStringDiv = document.getElementById('outputString');
-    const outputImageDiv = document.getElementById('outputImage');
-    const outputTextWithIconDiv = document.getElementById('outputTextWithIcon');
-    const outputEndTextDiv = document.getElementById('outputEndText');
+    // Access the div element by its id for string_1
+    const outputString1Div = document.getElementById('outputString1');
 
     // Get the current URL
     const currentURL = window.location.href;
@@ -73,37 +70,27 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
     // Filter the array based on the condition
     const filteredArray = dataArray.filter((item) =>
         item &&
+        item.item_collection &&
+        item.item_collection.length > 0 &&
         item.component &&
-        item.component.collectionEzdan &&
-        item.component.collectionEzdan.length > 0 &&
         item.component.ar &&
-        item.component.ar.title === currentURL &&
-        item.component.collectionEzdan[0].string_1 // Check if string_1 property exists
+        item.component.ar.title === currentURL
     );
 
-    // If filteredArray is empty, hide the outputImageDiv
-    if (filteredArray.length === 0) {
-        outputImageDiv.style.display = 'none';
+    // If filteredArray is not empty and the first item in item_collection has the string_1 property, display it
+    if (filteredArray.length > 0 && filteredArray[0].item_collection[0] && filteredArray[0].item_collection[0].string_1) {
+        const string1Value = filteredArray[0].item_collection[0].string_1;
+
+        // Set the text content of the outputString1 div
+        outputString1Div.textContent = string1Value;
     } else {
-        // Iterate through the filtered array and print string_1
-        filteredArray.forEach((item) => {
-            const stringComponent = item.component.collectionEzdan[0].string_1;
-
-            // Create div elements for string_1
-            const divString = document.createElement('div');
-
-            // Set the text content of the div
-            divString.textContent = `${stringComponent}`;
-
-            // Append the div elements to their respective output div containers
-            outputStringDiv.appendChild(divString);
-        });
+        // If filteredArray is empty or the structure is different, you might want to hide the corresponding div or handle it in a way that fits your design.
+        outputString1Div.style.display = 'none';
     }
 })
 .catch((error) => {
     console.error('Error fetching data:', error);
 });
-
     
     }
     
