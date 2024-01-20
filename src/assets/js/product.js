@@ -56,34 +56,39 @@ class Product extends BasePage {
 
     async catblock()
     {
-       
-        
-
-    const productId = document.getElementById('product-container').dataset.productId;
-
-    // Display productId in an alert
-    alert('Product ID: ' + productId);
-
         try {
+            // Get the productId from the HTML element with the ID 'product-container'
+            const productId = document.getElementById('product-container').dataset.productId;
+
             // Make the API request
             const response = await salla.api.request('component/list', { params: { paths: ['home.main-links'] } });
 
             // Access the data array from the response
             const dataArray = response.data;
 
-            // Loop through each item in the array
-            dataArray.forEach((item, index) => {
-                // Access the div element to display the String_1 value
-                const string1ItemDiv = document.getElementById(`string1Item${index + 1}`);
+            // Find the item where itemcode matches productId
+            const matchedItem = dataArray.find((item) => item.component.item_collection[0]?.itemcode === productId);
 
+            // Access the div elements to display the String_1 value and AboutCoffeeicon image
+            const string1DisplayDiv = document.getElementById('string1Display');
+            const aboutCoffeeIconDisplayDiv = document.getElementById('aboutCoffeeIconDisplay');
+
+            // Check if the elements and properties exist before updating content
+            if (string1DisplayDiv && aboutCoffeeIconDisplayDiv && matchedItem && matchedItem.component.item_collection[0]) {
                 // Display the String_1 value in the div
-                const string1Value = item.component.item_collection[0]?.string_1 || "N/A";
-                string1ItemDiv.textContent = `String_1: ${string1Value}`;
-            });
+                const string1Value = matchedItem.component.item_collection[0].string_1 || "N/A";
+                string1DisplayDiv.textContent = `${string1Value}`;
+
+                // Display the AboutCoffeeicon image in the div
+                const aboutCoffeeIconURL = matchedItem.component.item_collection[0].AboutCoffeeicon || "";
+                aboutCoffeeIconDisplayDiv.innerHTML = `<img src="${aboutCoffeeIconURL}" alt="About Coffee Icon" style="max-width: 100%;">`;
+            } else {
+                console.error('Data structure does not match expectations.');
+            }
         } catch (error) {
             console.error('Error fetching data:', error);
         }
-    
+        
 
     }
 
