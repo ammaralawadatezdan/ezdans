@@ -118,6 +118,40 @@ class Product extends BasePage {
                     // Display the aboutcoffedis1 text in the div
                     const aboutCoffeeDis1 = matchedItem.component.item_collection[0].aboutcoffedis1 || "N/A";
                     aboutCoffeeDis1DisplayDiv.textContent = `${aboutCoffeeDis1}`;
+        
+                    // Add new items to display
+                    const aboutCoffeeIcon2DisplayDiv = document.getElementById('aboutCoffeeIconDisplay2');
+                    const aboutCoffeeTitle2DisplayDiv = document.getElementById('aboutCoffeeTitleDisplay2');
+                    const aboutCoffeeDis2DisplayDiv = document.getElementById('aboutCoffeeDisDisplay2');
+        
+                    // Display the AboutCoffeeicon2 image in the div
+                    const aboutCoffeeIcon2URL = matchedItem.component.item_collection[0].aboutcoffeeicon2 || "";
+                    aboutCoffeeIcon2DisplayDiv.innerHTML = `<img src="${aboutCoffeeIcon2URL}" alt="About Coffee Icon 2">`;
+        
+                    // Display the aboutcoffeTitle2 text in the div
+                    const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffeTitle2 || "N/A";
+                    aboutCoffeeTitle2DisplayDiv.textContent = `${aboutCoffeeTitle2}`;
+        
+                    // Display the aboutcoffedis2 text in the div
+                    const aboutCoffeeDis2 = matchedItem.component.item_collection[0].aboutcoffedis2 || "N/A";
+                    aboutCoffeeDis2DisplayDiv.textContent = `${aboutCoffeeDis2}`;
+        
+                    // Add new items to display
+                    const aboutCoffeeIcon3DisplayDiv = document.getElementById('aboutCoffeeIconDisplay3');
+                    const aboutCoffeeTitle3DisplayDiv = document.getElementById('aboutCoffeeTitleDisplay3');
+                    const aboutCoffeeDis3DisplayDiv = document.getElementById('aboutCoffeeDisDisplay3');
+        
+                    // Display the AboutCoffeeicon3 image in the div
+                    const aboutCoffeeIcon3URL = matchedItem.component.item_collection[0].aboutcoffeeicon3 || "";
+                    aboutCoffeeIcon3DisplayDiv.innerHTML = `<img src="${aboutCoffeeIcon3URL}" alt="About Coffee Icon 3">`;
+        
+                    // Display the aboutcoffetitle3 text in the div
+                    const aboutCoffeeTitle3 = matchedItem.component.item_collection[0].aboutcoffetitle3 || "N/A";
+                    aboutCoffeeTitle3DisplayDiv.textContent = `${aboutCoffeeTitle3}`;
+        
+                    // Display the aboutcoffedis3 text in the div
+                    const aboutCoffeeDis3 = matchedItem.component.item_collection[0].aboutcoffedis3 || "N/A";
+                    aboutCoffeeDis3DisplayDiv.textContent = `${aboutCoffeeDis3}`;
                 } else {
                     // Hide the entire section if there is no match
                     aboutCoffeeSection.style.display = 'none';
