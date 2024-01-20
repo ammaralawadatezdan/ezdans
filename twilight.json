@@ -277,7 +277,7 @@
                             "value": true
                         }
                     ],
-                    "key": "d4f4aff2-7efa-4331-8dcc-9d055a190c91"
+                    "key": "0f7d40b3-f863-48ed-b4e1-0e365143855c"
                 },
                 {
                     "type": "static",
@@ -291,7 +291,7 @@
                             "value": false
                         }
                     ],
-                    "key": "83b7a4c8-9997-448f-902a-66481b5e7a21"
+                    "key": "57e180c2-8341-43ad-8038-b50b597c28c0"
                 },
                 {
                     "type": "string",
@@ -306,7 +306,7 @@
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
                     "maxLength": 100,
-                    "key": "966c6caa-7108-450f-947f-88ab73b57310"
+                    "key": "1c1ca555-a21b-40d8-abd5-beb3b9bd52b6"
                 },
                 {
                     "type": "boolean",
@@ -318,14 +318,14 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "fbd56287-06f0-48da-9bba-6780f52c34d9"
+                    "key": "31cf0c22-d8c6-47fb-a8a4-0432dda0a7d9"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
-                    "key": "79e8a48a-176e-45d9-aeac-d366b4c0776a"
+                    "key": "0c8c75dc-fde8-4e88-931d-d654ff187cd7"
                 },
                 {
                     "type": "boolean",
@@ -337,7 +337,7 @@
                     "required": false,
                     "value": true,
                     "selected": true,
-                    "key": "639c03c4-bb41-44e9-bc15-5a7af2b380b9"
+                    "key": "a25c0245-c498-483b-a353-409d1eb24a6f"
                 },
                 {
                     "type": "boolean",
@@ -349,7 +349,7 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "28d37230-312c-4916-ae23-f6aadfdde5c5"
+                    "key": "74c25a92-b66c-4e8b-9529-a273c2771e57"
                 },
                 {
                     "id": "categories",
@@ -371,7 +371,7 @@
                             "value": true
                         }
                     ],
-                    "key": "5fb8ffda-3559-4aa5-8546-beb6380695c4"
+                    "key": "b3675ecc-0e3d-4030-a412-e84059e4d348"
                 },
                 {
                     "id": "links",
@@ -406,7 +406,7 @@
                             "format": "icon",
                             "class": "form--inline",
                             "description": null,
-                            "key": "5ce1fada-40e2-4f2a-8f9a-a41e0c633b43"
+                            "key": "ab618f0e-5501-4db3-aa84-fdd0b66c80e7"
                         },
                         {
                             "type": "string",
@@ -420,7 +420,7 @@
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
                             "maxLength": 80,
-                            "key": "acb50726-df97-4750-8b0b-2e65131ea51b"
+                            "key": "b8e5f3be-0659-44c4-82ff-f029031ad54e"
                         },
                         {
                             "type": "items",
@@ -485,7 +485,7 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "97e3747e-b8df-4d4a-832a-2bb92983669b"
+                            "key": "e8d6323d-9edf-40c2-878b-dad31db8c6f2"
                         }
                     ],
                     "conditions": [
@@ -495,11 +495,11 @@
                             "value": false
                         }
                     ],
-                    "key": "605077c6-a249-4f90-9c8f-898d40c36530"
+                    "key": "85cff0c9-d7fe-44aa-91c9-07aff413207b"
                 },
                 {
                     "id": "collectionEzdan",
-                    "key": "a00336ad-bf70-45b4-8360-8185c30dee75",
+                    "key": "6c9c9f57-09e6-47d3-b294-2810c4ff6f72",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -510,7 +510,7 @@
                     "fields": [
                         {
                             "id": "stringezdan",
-                            "key": "5d1353bc-ba03-43d0-949b-4da21cb19935",
+                            "key": "6bbbd8de-3c90-48ec-9821-661d2c4a7eae",
                             "type": "string",
                             "format": "text",
                             "label": "StringEzdan",
@@ -526,7 +526,7 @@
                         },
                         {
                             "id": "string",
-                            "key": "ccf11224-003c-4db4-816d-728ab0095ff6",
+                            "key": "51222704-43e3-4dbc-a455-d90099a8d456",
                             "type": "string",
                             "format": "text",
                             "label": "StringDisc",
@@ -542,7 +542,7 @@
                         },
                         {
                             "id": "image",
-                            "key": "c5e5ac29-d09a-47e1-a1ca-ea5aec11bd97",
+                            "key": "a5022ac7-07b8-4cc0-a9a1-e63e5af25c53",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -556,7 +556,7 @@
                         },
                         {
                             "id": "textwithicon",
-                            "key": "94a7a82d-77be-44f0-b857-19df8e80ee2c",
+                            "key": "ef0b3178-5fba-49fe-bddb-a8fa98314b55",
                             "type": "string",
                             "format": "text",
                             "label": "TextWithIcon",
@@ -572,7 +572,7 @@
                         },
                         {
                             "id": "icon",
-                            "key": "5c3e38f0-6033-4441-a0a8-48da5a1ae7f1",
+                            "key": "c353db08-e972-4b42-b546-c4ac82772e55",
                             "type": "string",
                             "format": "image",
                             "label": "Icon",
@@ -585,7 +585,7 @@
                         },
                         {
                             "id": "endtext",
-                            "key": "4ba7a093-b01b-48c6-89fe-2796a40383e8",
+                            "key": "29a975d6-9350-4132-be3a-82cae62fc6a2",
                             "type": "string",
                             "format": "text",
                             "label": "Endtext",
@@ -601,7 +601,7 @@
                         },
                         {
                             "id": "aboutcoffee",
-                            "key": "05854ecd-8469-4bca-987b-c24f9edcc605",
+                            "key": "038ec49e-5949-4bdd-9ef9-f5fcf50f75f4",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffee",
@@ -622,7 +622,7 @@
                 },
                 {
                     "id": "item_collection",
-                    "key": "2cf0fec6-70f3-4022-a40e-42479d2bf8e0",
+                    "key": "67077a3c-1826-4e8b-9d7f-042e0bc668e4",
                     "type": "collection",
                     "format": "collection",
                     "label": "ProductsCollection",
@@ -633,7 +633,7 @@
                     "fields": [
                         {
                             "id": "itemcode",
-                            "key": "13efe69f-004c-49cf-852b-0b143fa07258",
+                            "key": "ef172382-4d51-4df7-941d-476054ff75d8",
                             "type": "string",
                             "format": "text",
                             "label": "itemcode",
@@ -649,7 +649,7 @@
                         },
                         {
                             "id": "string_1",
-                            "key": "2605d103-8a24-4cba-bfc3-51cc0d0ce4e6",
+                            "key": "f9b4f77f-0dad-478c-a929-220ecf8e9f97",
                             "type": "string",
                             "format": "text",
                             "label": "AboutCoffee",
@@ -666,7 +666,7 @@
                         },
                         {
                             "id": "AboutCoffeeicon",
-                            "key": "be9e4854-2c59-4f19-a0b3-de34cc2d00fa",
+                            "key": "dba8e413-b6e5-4e8a-98a7-9ff75510a5a2",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon",
@@ -679,7 +679,7 @@
                         },
                         {
                             "id": "aboutcoffetitle",
-                            "key": "fce97b22-27d4-4a28-8a3f-c32040050653",
+                            "key": "4e759bc3-2dc1-4808-b6c9-8ad02acf4081",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle",
@@ -695,7 +695,7 @@
                         },
                         {
                             "id": "aboutcoffedis",
-                            "key": "7b20d75d-fd39-42e0-8a91-de3aae0ad093",
+                            "key": "a1325bc0-742b-42c0-a6ca-be1381688f32",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis",
@@ -711,7 +711,7 @@
                         },
                         {
                             "id": "aboutcoffeeicon1",
-                            "key": "c33370ec-d1d4-4fbc-8501-6bc80342a2a1",
+                            "key": "b2d09e69-9196-4d52-a586-eac8f4835090",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon1",
@@ -724,7 +724,7 @@
                         },
                         {
                             "id": "aboutcoffetitle1",
-                            "key": "2c7b3c86-8d28-4122-a9c0-2175935658ac",
+                            "key": "b23335d5-de68-42b5-9beb-695f9a8ccbda",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle1",
@@ -735,12 +735,12 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "4",
+                            "maxLength": "600"
                         },
                         {
                             "id": "aboutcoffedis1",
-                            "key": "9a5857d1-00f5-4763-a3db-e901aa98de04",
+                            "key": "0d016084-60e2-4caa-9e7c-69397abf8706",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis1",
@@ -751,12 +751,12 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "4",
+                            "maxLength": "600"
                         },
                         {
                             "id": "aboutcoffeeicon2",
-                            "key": "296c3e24-a69c-4d9c-8e3a-af00dbb1dbdb",
+                            "key": "3059f099-1dcd-42f2-8b14-5d51ca4cc558",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon2",
@@ -769,7 +769,7 @@
                         },
                         {
                             "id": "aboutcoffetitle2",
-                            "key": "8be3302b-67bf-4e99-b0fa-1cdf5dfd3772",
+                            "key": "999c86f5-14df-459f-ae2b-4d52e18a5e99",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle2",
@@ -780,12 +780,12 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "4",
+                            "maxLength": "600"
                         },
                         {
                             "id": "aboutcoffedis2",
-                            "key": "6dd44384-3be5-4c36-affb-bfeadca7afb0",
+                            "key": "ba2acb9d-7ca7-44a0-98ee-79065399ccd2",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis2",
@@ -796,12 +796,12 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "4",
+                            "maxLength": "600"
                         },
                         {
                             "id": "aboutcoffeeicon3",
-                            "key": "1d9d31d4-fe25-4cf8-ad30-190b9c8e4d43",
+                            "key": "b27fa42c-d877-496e-9d39-92c13322266b",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon3",
@@ -814,7 +814,7 @@
                         },
                         {
                             "id": "aboutcoffetitle3",
-                            "key": "78687299-ab71-474a-9f68-784f123f4a4a",
+                            "key": "ae7c1759-0c56-45c7-b5bf-d6013250170d",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle3",
@@ -825,12 +825,12 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "4",
+                            "maxLength": "600"
                         },
                         {
                             "id": "aboutcoffedis3",
-                            "key": "4ee825a8-61c5-461d-9c7a-55cfa49db0a8",
+                            "key": "3e31bb33-c29e-44a2-b6af-891bbef1e935",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis3",
@@ -841,8 +841,8 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "4",
+                            "maxLength": "600"
                         }
                     ],
                     "value": [],
