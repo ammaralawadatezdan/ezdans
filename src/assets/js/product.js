@@ -88,7 +88,7 @@ class Product extends BasePage {
         } catch (error) {
             console.error('Error fetching data:', error);
         }
-        
+    
 
     }
 

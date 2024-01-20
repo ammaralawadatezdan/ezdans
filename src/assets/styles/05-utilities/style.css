@@ -1001,8 +1001,8 @@
   }
   
   .ezdan-about-coffee-card-icon img {
-    width: 50px;
-    min-height: 90px;
+    width: 41px !important;
+    min-height: 65px !important;
   }
   
   .w-35 {
