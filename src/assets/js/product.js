@@ -56,14 +56,36 @@ class Product extends BasePage {
 
     async catblock()
     {
+       
+        
 
+    const productId = document.getElementById('product-container').dataset.productId;
 
+    // Display productId in an alert
+    alert('Product ID: ' + productId);
 
+        try {
+            // Make the API request
+            const response = await salla.api.request('component/list', { params: { paths: ['home.main-links'] } });
+
+            // Access the data array from the response
+            const dataArray = response.data;
+
+            // Loop through each item in the array
+            dataArray.forEach((item, index) => {
+                // Access the div element to display the String_1 value
+                const string1ItemDiv = document.getElementById(`string1Item${index + 1}`);
+
+                // Display the String_1 value in the div
+                const string1Value = item.component.item_collection[0]?.string_1 || "N/A";
+                string1ItemDiv.textContent = `String_1: ${string1Value}`;
+            });
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     
+
     }
-    
-
-    
 
 
 

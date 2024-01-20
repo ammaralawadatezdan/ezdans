@@ -11,11 +11,7 @@
 | position                           | int      | Sorting number start from zero                                               |
 #}
 
-{% if is_page('index') %}
 
-{% endif %}
-
-{% else %}
   
 <section class="s-block s-block--categories {{ component.merge_with_top_component and position ?'merge-with-top-component' : '' }} {{ not component.title and component.merge_with_top_component ? 'merged-has-no-title' : '' }}">
     <div class="container">
