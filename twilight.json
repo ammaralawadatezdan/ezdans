@@ -277,7 +277,7 @@
                             "value": true
                         }
                     ],
-                    "key": "1036e42d-0dc8-4342-932a-6bc119803ce1"
+                    "key": "d971c11f-8cea-4250-84d8-879b0c61ff99"
                 },
                 {
                     "type": "static",
@@ -291,7 +291,7 @@
                             "value": false
                         }
                     ],
-                    "key": "9e15afd9-5b5f-4ac5-ab34-db17d1ca8d8f"
+                    "key": "60bf1cc1-c387-4f3e-917b-2043ca490cf7"
                 },
                 {
                     "type": "string",
@@ -306,7 +306,7 @@
                     "placeholder": "أدخل العنوان هنا...",
                     "minLength": 0,
                     "maxLength": 100,
-                    "key": "db874d6f-c433-4883-b1bc-2ae3ff924d9c"
+                    "key": "bc4c4c14-51b3-4daa-9480-37e7dbbc2835"
                 },
                 {
                     "type": "boolean",
@@ -318,14 +318,14 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "969e9b60-17f8-45d1-a237-a3b59470b75e"
+                    "key": "0355713e-7342-4869-b32d-35f8187ede76"
                 },
                 {
                     "type": "static",
                     "format": "description",
                     "id": "static-desc",
                     "value": "<small >* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). </small>",
-                    "key": "03070154-00a2-498b-8a3c-4cc94cbd8f99"
+                    "key": "7667f45d-c590-4592-b6f2-8a0fc5f7d8ac"
                 },
                 {
                     "type": "boolean",
@@ -337,7 +337,7 @@
                     "required": false,
                     "value": true,
                     "selected": true,
-                    "key": "b64f2f8e-216d-451f-bbe4-12a8d3546530"
+                    "key": "ffd28c38-d12d-48c5-82af-abc95f491fc9"
                 },
                 {
                     "type": "boolean",
@@ -349,7 +349,7 @@
                     "required": false,
                     "value": false,
                     "selected": false,
-                    "key": "436a5196-118f-4b3e-86a3-bc4cdce3df03"
+                    "key": "9d0e8d03-3f1b-45e4-b34b-2115c87a14cf"
                 },
                 {
                     "id": "categories",
@@ -371,7 +371,7 @@
                             "value": true
                         }
                     ],
-                    "key": "4d874238-f4fc-474e-9f48-f34aeefbdd71"
+                    "key": "247348af-c3a7-4ab8-a914-af35889ec7e4"
                 },
                 {
                     "id": "links",
@@ -406,7 +406,7 @@
                             "format": "icon",
                             "class": "form--inline",
                             "description": null,
-                            "key": "803de38a-dd89-4109-9d12-cb9d27a61029"
+                            "key": "91854588-cf70-4f93-a18b-ec9d313aa62d"
                         },
                         {
                             "type": "string",
@@ -420,7 +420,7 @@
                             "placeholder": "أدخل عنوان للرابط هنا...",
                             "minLength": 2,
                             "maxLength": 80,
-                            "key": "7a278a72-a4e6-42cf-ba16-17ccdd247538"
+                            "key": "de73f400-f616-4466-a117-ab8105a17fa7"
                         },
                         {
                             "type": "items",
@@ -485,7 +485,7 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "a3129a59-cb9e-4444-a9d8-ed0aa641ba13"
+                            "key": "8a717553-6c3f-40d8-bc54-415f72c42e4f"
                         }
                     ],
                     "conditions": [
@@ -495,11 +495,11 @@
                             "value": false
                         }
                     ],
-                    "key": "b75989b6-3260-42b2-bf4e-b87e78c7a04b"
+                    "key": "1d573bbb-0ad3-45ac-a6b7-bcf47a74773f"
                 },
                 {
                     "id": "collectionEzdan",
-                    "key": "383c686c-85c7-4932-892f-3ef8c5e36122",
+                    "key": "035945c1-1777-4c40-b694-7b2a37a4ec04",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -510,7 +510,7 @@
                     "fields": [
                         {
                             "id": "stringezdan",
-                            "key": "9b53765f-66ea-4b25-a055-7394ad01e89d",
+                            "key": "8334963a-79a7-4aa9-9bc8-c5c23d7ec967",
                             "type": "string",
                             "format": "text",
                             "label": "StringEzdan",
@@ -526,7 +526,7 @@
                         },
                         {
                             "id": "string",
-                            "key": "06c61740-2b5d-4e18-8b8d-f8c69007d6b0",
+                            "key": "92bb3e83-df05-4a2c-9b58-aa96a3f4bab0",
                             "type": "string",
                             "format": "text",
                             "label": "StringDisc",
@@ -542,7 +542,7 @@
                         },
                         {
                             "id": "image",
-                            "key": "72cd035d-49fd-4c12-9209-5efef85b18cd",
+                            "key": "e778a2f0-f262-479a-b735-2c29a09b4065",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -556,7 +556,7 @@
                         },
                         {
                             "id": "textwithicon",
-                            "key": "fbfd9e2b-a5dc-4d09-9c60-3a9273ae1d4b",
+                            "key": "82bee51f-6591-4fac-a06c-61b1bfc1c656",
                             "type": "string",
                             "format": "text",
                             "label": "TextWithIcon",
@@ -572,7 +572,7 @@
                         },
                         {
                             "id": "icon",
-                            "key": "903ebac5-a9bd-4002-bd41-5ab9ab0465a6",
+                            "key": "76c52793-941c-45d1-9ee4-35eba363af05",
                             "type": "string",
                             "format": "image",
                             "label": "Icon",
@@ -585,7 +585,7 @@
                         },
                         {
                             "id": "endtext",
-                            "key": "66cfe229-2792-48b4-a99e-b00ee237c603",
+                            "key": "35b1c921-c624-4847-b711-74513d4a9444",
                             "type": "string",
                             "format": "text",
                             "label": "Endtext",
@@ -601,7 +601,7 @@
                         },
                         {
                             "id": "aboutcoffee",
-                            "key": "6061f806-d57a-424f-a0b6-3edb1038d856",
+                            "key": "bd072ee7-ee36-450e-b01f-9bd504892ea4",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffee",
@@ -622,7 +622,7 @@
                 },
                 {
                     "id": "item_collection",
-                    "key": "bdeac7b8-05a2-430b-b4e2-c3ea1a1d1b5a",
+                    "key": "a8c60db5-520e-4aaa-97fd-3026d1c83c43",
                     "type": "collection",
                     "format": "collection",
                     "label": "ProductsCollection",
@@ -633,7 +633,7 @@
                     "fields": [
                         {
                             "id": "itemcode",
-                            "key": "bd9ce069-a508-424f-aceb-8d6b7d201b85",
+                            "key": "127f6019-0c9a-45d0-aee2-735275f736db",
                             "type": "string",
                             "format": "text",
                             "label": "itemcode",
@@ -649,7 +649,7 @@
                         },
                         {
                             "id": "string_1",
-                            "key": "74b94ec7-1b67-44c6-bcad-882c46865e8a",
+                            "key": "244eec18-c4cb-4732-afe9-9a75a8f834a2",
                             "type": "string",
                             "format": "text",
                             "label": "AboutCoffee",
@@ -666,7 +666,7 @@
                         },
                         {
                             "id": "AboutCoffeeicon",
-                            "key": "baf26880-e9f2-4e9a-99bd-5d9d94b9c9a8",
+                            "key": "4ac1af2f-23d5-44a7-bb7e-12b4e9b370e6",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon",
@@ -679,7 +679,7 @@
                         },
                         {
                             "id": "aboutcoffetitle",
-                            "key": "00e6f13a-0335-4631-9c2b-37729413ef57",
+                            "key": "3fecd0a2-a7fa-4f30-8048-a5e35f07282f",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle",
@@ -695,7 +695,7 @@
                         },
                         {
                             "id": "aboutcoffedis",
-                            "key": "7a191654-b941-4971-b62d-46caf97c0f20",
+                            "key": "c73cc243-50fe-4925-a0ed-b699203209e1",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis",
@@ -711,7 +711,7 @@
                         },
                         {
                             "id": "aboutcoffeeicon1",
-                            "key": "50684f54-92c5-44ba-a6b8-b11411ace0ad",
+                            "key": "5cd309d0-8544-4d4b-8a9b-ee8e75c4aea9",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon1",
@@ -724,7 +724,7 @@
                         },
                         {
                             "id": "aboutcoffetitle1",
-                            "key": "220f500e-49b6-47c6-ae01-b7935f002190",
+                            "key": "858976f2-64ac-4d8f-ba78-eddfc4a8b755",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle1",
@@ -740,7 +740,7 @@
                         },
                         {
                             "id": "aboutcoffedis1",
-                            "key": "9d9bafb3-84c8-43e7-842f-d4adaabfcbef",
+                            "key": "5a4246ad-5873-4bcc-aaaa-20f4141d6847",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis1",
@@ -756,7 +756,7 @@
                         },
                         {
                             "id": "aboutcoffeeicon2",
-                            "key": "9014034f-4e50-4234-8ba8-9b0292174de7",
+                            "key": "ba9c609b-8477-4dce-91ef-5c3a554b8f42",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon2",
@@ -769,7 +769,7 @@
                         },
                         {
                             "id": "aboutcoffetitle2",
-                            "key": "0962980a-ac94-4de2-b030-c30c437bdc74",
+                            "key": "18048032-b96d-4dd4-984e-7890ee0147c2",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle2",
@@ -785,7 +785,7 @@
                         },
                         {
                             "id": "aboutcoffedis2",
-                            "key": "81700821-9d56-4ce0-994a-71224783fed5",
+                            "key": "f5e1900f-6b34-4b9e-b2c1-2c2b0d5fe0f6",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis2",
@@ -801,7 +801,7 @@
                         },
                         {
                             "id": "aboutcoffeeicon3",
-                            "key": "a0f94423-1bde-4408-907c-2dc5b65d10bf",
+                            "key": "206b14ce-969b-4c7b-9df5-bf45add4006e",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon3",
@@ -814,7 +814,7 @@
                         },
                         {
                             "id": "aboutcoffetitle3",
-                            "key": "51e82dce-fa67-4cda-8ab2-f82df8fb2dda",
+                            "key": "fdff10fb-6050-42fc-8080-3697f31b43ab",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle3",
@@ -830,7 +830,7 @@
                         },
                         {
                             "id": "aboutcoffedis3",
-                            "key": "cad1f5ea-02cb-4fcb-af28-b205cf793dd2",
+                            "key": "ba2bcc87-7817-468a-9952-ecbf038959ff",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis3",
@@ -846,7 +846,7 @@
                         },
                         {
                             "id": "aboutcoffeeicon4",
-                            "key": "f2ee09a1-897b-41fd-ae0c-cc82d3555675",
+                            "key": "1afb062e-497f-43aa-86c8-656312dbcb24",
                             "type": "string",
                             "format": "image",
                             "label": "AboutCoffeeicon4",
@@ -859,7 +859,7 @@
                         },
                         {
                             "id": "aboutcoffetitle4",
-                            "key": "3cd1fb73-03c7-45f1-bbc7-e114ae98da3d",
+                            "key": "c96295fb-9c67-4d64-86f5-cfe13b953edb",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffeTitle4",
@@ -875,7 +875,7 @@
                         },
                         {
                             "id": "aboutcoffedis4",
-                            "key": "5c4fcb43-859d-499e-ba9a-0d04a54d2284",
+                            "key": "e89c2d1f-8a7b-4515-bbc0-a8db53f86739",
                             "type": "string",
                             "format": "text",
                             "label": "aboutcoffedis4",
@@ -891,7 +891,7 @@
                         },
                         {
                             "id": "itemdisblocktitle",
-                            "key": "6d23f6eb-2b63-4514-ad44-90cfcb10c1b7",
+                            "key": "c49cf010-17a3-4e81-a979-048aa645971a",
                             "type": "string",
                             "format": "text",
                             "label": "itemdisblocktitle",
@@ -907,7 +907,7 @@
                         },
                         {
                             "id": "itemdisblock",
-                            "key": "670283f9-deee-405c-825e-b88ae54ea9f9",
+                            "key": "5df97a80-a784-4b2d-8586-22473ff17a81",
                             "type": "string",
                             "format": "text",
                             "label": "ItemdisBlock",
@@ -923,7 +923,7 @@
                         },
                         {
                             "id": "prepearway",
-                            "key": "aedf2c20-1530-497f-a769-eab0eadb1243",
+                            "key": "819150bd-a3eb-4244-9cc0-f5be8e734a21",
                             "type": "string",
                             "format": "text",
                             "label": "prepearway",
@@ -939,7 +939,7 @@
                         },
                         {
                             "id": "prepearwayicon",
-                            "key": "3c570a06-3d72-44fb-95a3-f09bb871a3f8",
+                            "key": "102281e8-0088-49a7-9ba7-f3f8c7a978d0",
                             "type": "string",
                             "format": "image",
                             "label": "prepearwayicon",
@@ -952,7 +952,7 @@
                         },
                         {
                             "id": "prepearwaytitel",
-                            "key": "18540673-8ff8-4466-822a-8013eda1da13",
+                            "key": "db10b79e-d261-48d7-a51d-1838a2f91dd3",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaytitel",
@@ -968,7 +968,7 @@
                         },
                         {
                             "id": "prepearwaydisinfo",
-                            "key": "7432fb70-327a-4f36-91a6-cd169d2b973f",
+                            "key": "cd85b04c-9269-4c5a-adb2-65f871e657e1",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaydisinfo",
@@ -984,7 +984,7 @@
                         },
                         {
                             "id": "prepearwayicon1",
-                            "key": "b10bf54f-ea30-4462-bc2b-1a00f0e4efce",
+                            "key": "c7774c03-3b63-492b-a9eb-635ea2556ad7",
                             "type": "string",
                             "format": "image",
                             "label": "prepearwayicon1",
@@ -997,7 +997,7 @@
                         },
                         {
                             "id": "prepearwaytitel1",
-                            "key": "f57f70ac-0657-443e-9921-ef787f5c7dad",
+                            "key": "a86e03b7-2d80-46a1-84e5-a912d288c2c7",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaytitel1",
@@ -1013,7 +1013,7 @@
                         },
                         {
                             "id": "prepearwaydisinfo1",
-                            "key": "2b8bdb15-31aa-4736-a247-fdd302865c07",
+                            "key": "44b91885-80b2-487a-9e67-3d32393895f4",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaydisinfo1",
@@ -1029,7 +1029,7 @@
                         },
                         {
                             "id": "prepearwayicon2",
-                            "key": "41a247df-755a-4964-b246-8bf607574c99",
+                            "key": "fac6072d-36b8-4854-a63c-6decb20a8869",
                             "type": "string",
                             "format": "image",
                             "label": "prepearwayicon2",
@@ -1042,7 +1042,7 @@
                         },
                         {
                             "id": "prepearwaytitel2",
-                            "key": "743f9096-7056-4a46-84fb-9c1bde8b53ad",
+                            "key": "248d1c83-5cc3-468c-a376-5ed3c93dfc24",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaytitel2",
@@ -1058,7 +1058,7 @@
                         },
                         {
                             "id": "prepearwaydisinfo2",
-                            "key": "1d076eb8-bde3-4647-9283-ceefe2384601",
+                            "key": "79cb3b96-d4c7-4395-a9e6-d850964c9540",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaydisinfo2",
@@ -1074,7 +1074,7 @@
                         },
                         {
                             "id": "prepearwayicon3",
-                            "key": "e7e7980b-5932-47c8-bcb7-8ee5aa21b0e2",
+                            "key": "8c357455-67db-4c91-a89b-c358d9e0c492",
                             "type": "string",
                             "format": "image",
                             "label": "prepearwayicon3",
@@ -1087,7 +1087,7 @@
                         },
                         {
                             "id": "prepearwaytitel3",
-                            "key": "4fece991-31f6-4c9d-9b71-c3aabe74bf09",
+                            "key": "254d59c8-4fcf-44ab-809e-3801ffefe404",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaytitel3",
@@ -1103,10 +1103,55 @@
                         },
                         {
                             "id": "prepearwaydisinfo3",
-                            "key": "cddaca7b-d2ff-4912-b659-eb1685717b40",
+                            "key": "9f78b2fe-6710-486f-82a0-5e96dbb1ca8e",
                             "type": "string",
                             "format": "text",
                             "label": "prepearwaydisinfo3",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": "4",
+                            "maxLength": "300"
+                        },
+                        {
+                            "id": "prepearwayicon4",
+                            "key": "da7fbb31-3341-4ac1-ab65-a36a5fccdb67",
+                            "type": "string",
+                            "format": "image",
+                            "label": "prepearwayicon4",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false
+                        },
+                        {
+                            "id": "prepearwaytitel4",
+                            "key": "9ed15a84-72eb-425e-8ea4-fe084f727e84",
+                            "type": "string",
+                            "format": "text",
+                            "label": "prepearwaytitel4",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": "4",
+                            "maxLength": "300"
+                        },
+                        {
+                            "id": "prepearwaydisinfo4",
+                            "key": "65682e98-8d3e-4dcc-a45d-10135058a2fb",
+                            "type": "string",
+                            "format": "text",
+                            "label": "prepearwaydisinfo4",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
