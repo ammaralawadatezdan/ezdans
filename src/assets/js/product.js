@@ -129,7 +129,7 @@ class Product extends BasePage {
                     aboutCoffeeIcon2DisplayDiv.innerHTML = `<img src="${aboutCoffeeIcon2URL}" alt="About Coffee Icon 2">`;
         
                     // Display the aboutcoffeTitle2 text in the div
-                    const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffeTitle2 || "N/A";
+                    const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffetitle2 || "N/A";
                     aboutCoffeeTitle2DisplayDiv.textContent = `${aboutCoffeeTitle2}`;
         
                     // Display the aboutcoffedis2 text in the div
@@ -152,6 +152,23 @@ class Product extends BasePage {
                     // Display the aboutcoffedis3 text in the div
                     const aboutCoffeeDis3 = matchedItem.component.item_collection[0].aboutcoffedis3 || "N/A";
                     aboutCoffeeDis3DisplayDiv.textContent = `${aboutCoffeeDis3}`;
+        
+                    // Add new items to display
+                    const aboutCoffeeIcon4DisplayDiv = document.getElementById('aboutCoffeeIconDisplay4');
+                    const aboutCoffeeTitle4DisplayDiv = document.getElementById('aboutCoffeeTitleDisplay4');
+                    const aboutCoffeeDis4DisplayDiv = document.getElementById('aboutCoffeeDisDisplay4');
+        
+                    // Display the AboutCoffeeicon4 image in the div
+                    const aboutCoffeeIcon4URL = matchedItem.component.item_collection[0].aboutcoffeeicon4 || "";
+                    aboutCoffeeIcon4DisplayDiv.innerHTML = `<img src="${aboutCoffeeIcon4URL}" alt="About Coffee Icon 4">`;
+        
+                    // Display the aboutcoffetitle4 text in the div
+                    const aboutCoffeeTitle4 = matchedItem.component.item_collection[0].aboutcoffetitle4 || "N/A";
+                    aboutCoffeeTitle4DisplayDiv.textContent = `${aboutCoffeeTitle4}`;
+        
+                    // Display the aboutcoffedis4 text in the div
+                    const aboutCoffeeDis4 = matchedItem.component.item_collection[0].aboutcoffedis4 || "N/A";
+                    aboutCoffeeDis4DisplayDiv.textContent = `${aboutCoffeeDis4}`;
                 } else {
                     // Hide the entire section if there is no match
                     aboutCoffeeSection.style.display = 'none';
