@@ -7,7 +7,7 @@ import { zoom } from './partials/image-zoom';
 class Product extends BasePage {
     onReady() {
 
-      //  this.catblock()
+        this.catblock()
         app.watchElements({
             totalPrice: '.total-price',
             beforePrice: '.before-price',
@@ -245,6 +245,13 @@ class Product extends BasePage {
                     const prepearwayIcon4DisplayDiv = document.getElementById('prepearwayIconDisplay4');
                     const prepearwayTitle4DisplayDiv = document.getElementById('prepearwayTitleDisplay4');
                     const prepearwayDisinfo4DisplayDiv = document.getElementById('prepearwayDisinfoDisplay4');
+
+                    // Add new items to display for story
+const storyTitDisplayDiv = document.getElementById('storyTitDisplay');
+const storyInfoDisplayDiv = document.getElementById('storyInfoDisplay');
+
+
+
             
                     // Display the prepearwayicon4 image in the div
                     const prepearwayIcon4URL = matchedItem.component.item_collection[0].prepearwayicon4 || "";
@@ -257,6 +264,16 @@ class Product extends BasePage {
                     // Display the prepearwaydisinfo4 text in the div
                     const prepearwayDisinfo4 = matchedItem.component.item_collection[0].prepearwaydisinfo4 || "N/A";
                     prepearwayDisinfo4DisplayDiv.textContent = `${prepearwayDisinfo4}`;
+
+                    // Display the storytit text in the div
+                       const storyTit = matchedItem.component.item_collection[0].storytit || "N/A";
+                         storyTitDisplayDiv.textContent = `${storyTit}`;
+
+// Display the storyinfo text in the div
+                          const storyInfo = matchedItem.component.item_collection[0].storyinfo || "N/A";
+                         storyInfoDisplayDiv.textContent = `${storyInfo}`;
+
+
             
                     // Show or hide the Product-description section based on data presence
                     const productDescriptionSection = document.getElementById('Product-description');
@@ -269,7 +286,8 @@ class Product extends BasePage {
                         prepearwayTitel1, prepearwayDisinfo1,
                         prepearwayTitel2, prepearwayDisinfo2,
                         prepearwayTitel3, prepearwayDisinfo3,
-                        prepearwayTitel4, prepearwayDisinfo4
+                        prepearwayTitel4, prepearwayDisinfo4,
+                        storyTit, storyInfo
                     ];
             
                     const hasNonEmptyValue = displayedValues.some(value => value.trim() !== '' && value !== 'N/A');
