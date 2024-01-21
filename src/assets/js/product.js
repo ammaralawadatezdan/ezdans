@@ -241,6 +241,23 @@ class Product extends BasePage {
                     const prepearwayDisinfo3 = matchedItem.component.item_collection[0].prepearwaydisinfo3 || "N/A";
                     prepearwayDisinfo3DisplayDiv.textContent = `${prepearwayDisinfo3}`;
             
+                    // Add new items to display for prepearway4
+                    const prepearwayIcon4DisplayDiv = document.getElementById('prepearwayIconDisplay4');
+                    const prepearwayTitle4DisplayDiv = document.getElementById('prepearwayTitleDisplay4');
+                    const prepearwayDisinfo4DisplayDiv = document.getElementById('prepearwayDisinfoDisplay4');
+            
+                    // Display the prepearwayicon4 image in the div
+                    const prepearwayIcon4URL = matchedItem.component.item_collection[0].prepearwayicon4 || "";
+                    prepearwayIcon4DisplayDiv.innerHTML = `<img src="${prepearwayIcon4URL}" alt="Prepearway Icon 4">`;
+            
+                    // Display the prepearwaytitel4 text in the div
+                    const prepearwayTitel4 = matchedItem.component.item_collection[0].prepearwaytitel4 || "N/A";
+                    prepearwayTitle4DisplayDiv.textContent = `${prepearwayTitel4}`;
+            
+                    // Display the prepearwaydisinfo4 text in the div
+                    const prepearwayDisinfo4 = matchedItem.component.item_collection[0].prepearwaydisinfo4 || "N/A";
+                    prepearwayDisinfo4DisplayDiv.textContent = `${prepearwayDisinfo4}`;
+            
                     // Show or hide the Product-description section based on data presence
                     const productDescriptionSection = document.getElementById('Product-description');
                     const displayedValues = [
@@ -251,7 +268,8 @@ class Product extends BasePage {
                         prepearwayTitel, prepearwayDisinfo,
                         prepearwayTitel1, prepearwayDisinfo1,
                         prepearwayTitel2, prepearwayDisinfo2,
-                        prepearwayTitel3, prepearwayDisinfo3
+                        prepearwayTitel3, prepearwayDisinfo3,
+                        prepearwayTitel4, prepearwayDisinfo4
                     ];
             
                     const hasNonEmptyValue = displayedValues.some(value => value.trim() !== '' && value !== 'N/A');
@@ -268,7 +286,6 @@ class Product extends BasePage {
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
-
 
 
 
