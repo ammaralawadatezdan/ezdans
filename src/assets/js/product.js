@@ -129,7 +129,7 @@ class Product extends BasePage {
                     aboutCoffeeIcon2DisplayDiv.innerHTML = `<img src="${aboutCoffeeIcon2URL}" alt="About Coffee Icon 2">`;
         
                     // Display the aboutcoffeTitle2 text in the div
-                    const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffetitle2 || "N/A";
+                    const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffeTitle2 || "N/A";
                     aboutCoffeeTitle2DisplayDiv.textContent = `${aboutCoffeeTitle2}`;
         
                     // Display the aboutcoffedis2 text in the div
@@ -169,16 +169,25 @@ class Product extends BasePage {
                     // Display the aboutcoffedis4 text in the div
                     const aboutCoffeeDis4 = matchedItem.component.item_collection[0].aboutcoffedis4 || "N/A";
                     aboutCoffeeDis4DisplayDiv.textContent = `${aboutCoffeeDis4}`;
+        
+                    // Add new items to display
+                    const itemDisBlockTitleDisplayDiv = document.getElementById('itemDisBlockTitleDisplay');
+                    const itemDisBlockDisplayDiv = document.getElementById('itemDisBlockDisplay');
+        
+                    // Display the itemdisblocktitle text in the div
+                    const itemDisBlockTitle = matchedItem.component.item_collection[0].itemdisblocktitle || "N/A";
+                    itemDisBlockTitleDisplayDiv.textContent = `${itemDisBlockTitle}`;
+        
+                    // Display the itemdisblock text in the div
+                    const itemDisBlock = matchedItem.component.item_collection[0].itemdisblock || "N/A";
+                    itemDisBlockDisplayDiv.textContent = `${itemDisBlock}`;
                 } else {
                     // Hide the entire section if there is no match
                     aboutCoffeeSection.style.display = 'none';
-                    console.error('Data structure does not match expectations or item code does not match product ID.');
                 }
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
-
-
 
         }
 
