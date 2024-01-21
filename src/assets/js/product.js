@@ -57,6 +57,9 @@ class Product extends BasePage {
   
         async catblock()
         {
+  
+            
+
             try {
                 // Get the productId from the HTML element with the ID 'product-container'
                 const productId = document.getElementById('product-container').dataset.productId;
@@ -168,6 +171,11 @@ class Product extends BasePage {
                     const aboutCoffeeDis4 = matchedItem.component.item_collection[0].aboutcoffedis4 || "N/A";
                     aboutCoffeeDis4DisplayDiv.textContent = `${aboutCoffeeDis4}`;
         
+                    // Add new items to display for prepearway
+                    const prepearwayDisplayDiv = document.getElementById('prepearwayDisplay');
+                    const prepearwayValue = matchedItem.component.item_collection[0].prepearway || "N/A";
+                    prepearwayDisplayDiv.textContent = `${prepearwayValue}`;
+        
                     // Add new items to display
                     const itemDisBlockTitleDisplayDiv = document.getElementById('itemDisBlockTitleDisplay');
                     const itemDisBlockDisplayDiv = document.getElementById('itemDisBlockDisplay');
@@ -182,7 +190,7 @@ class Product extends BasePage {
         
                     // Show or hide the Product-description section based on data presence
                     const productDescriptionSection = document.getElementById('Product-description');
-                    const displayedValues = [aboutCoffeeTitle1, aboutCoffeeDis1, aboutCoffeeTitle2, aboutCoffeeDis2, aboutCoffeeTitle3, aboutCoffeeDis3, aboutCoffeeTitle4, aboutCoffeeDis4, itemDisBlockTitle, itemDisBlock];
+                    const displayedValues = [aboutCoffeeTitle1, aboutCoffeeDis1, aboutCoffeeTitle2, aboutCoffeeDis2, aboutCoffeeTitle3, aboutCoffeeDis3, aboutCoffeeTitle4, aboutCoffeeDis4, itemDisBlockTitle, itemDisBlock, prepearwayValue];
                     
                     const hasNonEmptyValue = displayedValues.some(value => value.trim() !== '' && value !== 'N/A');
         
@@ -199,6 +207,7 @@ class Product extends BasePage {
                 console.error('Error fetching data:', error);
             }
 
+            
 
 
 
