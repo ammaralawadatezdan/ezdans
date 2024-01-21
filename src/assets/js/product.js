@@ -59,7 +59,6 @@ class Product extends BasePage {
         {
   
             
-
             try {
                 // Get the productId from the HTML element with the ID 'product-container'
                 const productId = document.getElementById('product-container').dataset.productId;
@@ -72,6 +71,9 @@ class Product extends BasePage {
         
                 // Find the item where itemcode matches productId
                 const matchedItem = dataArray.find((item) => item.component.item_collection[0]?.itemcode === productId);
+        
+                // Log the matched item for debugging
+                console.log('Matched Item:', matchedItem);
         
                 // Access the section container to hide/show the entire section
                 const aboutCoffeeSection = document.getElementById('About-coffee');
@@ -172,26 +174,51 @@ class Product extends BasePage {
                     aboutCoffeeDis4DisplayDiv.textContent = `${aboutCoffeeDis4}`;
         
                     // Add new items to display for prepearway
-                    const prepearwayDisplayDiv = document.getElementById('prepearwayDisplay');
-                    const prepearwayValue = matchedItem.component.item_collection[0].prepearway || "N/A";
-                    prepearwayDisplayDiv.textContent = `${prepearwayValue}`;
+                    const prepearwayIconDisplayDiv = document.getElementById('prepearwayIconDisplay');
+                    const prepearwayTitleDisplayDiv = document.getElementById('prepearwayTitleDisplay');
+                    const prepearwayDisinfoDisplayDiv = document.getElementById('prepearwayDisinfoDisplay');
         
-                    // Add new items to display
-                    const itemDisBlockTitleDisplayDiv = document.getElementById('itemDisBlockTitleDisplay');
-                    const itemDisBlockDisplayDiv = document.getElementById('itemDisBlockDisplay');
+                    // Display the prepearwayicon image in the div
+                    const prepearwayIconURL = matchedItem.component.item_collection[0].prepearwayicon || "";
+                    prepearwayIconDisplayDiv.innerHTML = `<img src="${prepearwayIconURL}" alt="Prepearway Icon">`;
         
-                    // Display the itemdisblocktitle text in the div
-                    const itemDisBlockTitle = matchedItem.component.item_collection[0].itemdisblocktitle || "";
-                    itemDisBlockTitleDisplayDiv.textContent = itemDisBlockTitle.trim() !== '' ? itemDisBlockTitle : "N/A";
+                    // Display the prepearwaytitel text in the div
+                    const prepearwayTitel = matchedItem.component.item_collection[0].prepearwaytitel || "N/A";
+                    prepearwayTitleDisplayDiv.textContent = `${prepearwayTitel}`;
         
-                    // Display the itemdisblock text in the div
-                    const itemDisBlock = matchedItem.component.item_collection[0].itemdisblock || "";
-                    itemDisBlockDisplayDiv.textContent = itemDisBlock.trim() !== '' ? itemDisBlock : "N/A";
+                    // Display the prepearwaydisinfo text in the div
+                    const prepearwayDisinfo = matchedItem.component.item_collection[0].prepearwaydisinfo || "N/A";
+                    prepearwayDisinfoDisplayDiv.textContent = `${prepearwayDisinfo}`;
+        
+                    // Add new items to display for prepearway1
+                    const prepearwayIcon1DisplayDiv = document.getElementById('prepearwayIconDisplay1');
+                    const prepearwayTitle1DisplayDiv = document.getElementById('prepearwayTitleDisplay1');
+                    const prepearwayDisinfo1DisplayDiv = document.getElementById('prepearwayDisinfoDisplay1');
+        
+                    // Display the prepearwayicon1 image in the div
+                    const prepearwayIcon1URL = matchedItem.component.item_collection[0].prepearwayicon1 || "";
+                    prepearwayIcon1DisplayDiv.innerHTML = `<img src="${prepearwayIcon1URL}" alt="Prepearway Icon 1">`;
+        
+                    // Display the prepearwaytitel1 text in the div
+                    const prepearwayTitel1 = matchedItem.component.item_collection[0].prepearwaytitel1 || "N/A";
+                    prepearwayTitle1DisplayDiv.textContent = `${prepearwayTitel1}`;
+        
+                    // Display the prepearwaydisinfo1 text in the div
+                    const prepearwayDisinfo1 = matchedItem.component.item_collection[0].prepearwaydisinfo1 || "N/A";
+                    prepearwayDisinfo1DisplayDiv.textContent = `${prepearwayDisinfo1}`;
         
                     // Show or hide the Product-description section based on data presence
                     const productDescriptionSection = document.getElementById('Product-description');
-                    const displayedValues = [aboutCoffeeTitle1, aboutCoffeeDis1, aboutCoffeeTitle2, aboutCoffeeDis2, aboutCoffeeTitle3, aboutCoffeeDis3, aboutCoffeeTitle4, aboutCoffeeDis4, itemDisBlockTitle, itemDisBlock, prepearwayValue];
-                    
+                    const displayedValues = [
+                        aboutCoffeeTitle1, aboutCoffeeDis1,
+                        aboutCoffeeTitle2, aboutCoffeeDis2,
+                        aboutCoffeeTitle3, aboutCoffeeDis3,
+                        aboutCoffeeTitle4, aboutCoffeeDis4,
+                        itemDisBlockTitle, itemDisBlock,
+                        prepearwayTitel, prepearwayDisinfo,
+                        prepearwayTitel1, prepearwayDisinfo1
+                    ];
+        
                     const hasNonEmptyValue = displayedValues.some(value => value.trim() !== '' && value !== 'N/A');
         
                     if (hasNonEmptyValue) {
@@ -207,7 +234,6 @@ class Product extends BasePage {
                 console.error('Error fetching data:', error);
             }
 
-            
 
 
 
