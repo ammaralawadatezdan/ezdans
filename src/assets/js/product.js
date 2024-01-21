@@ -57,8 +57,6 @@ class Product extends BasePage {
   
         async catblock()
         {
-     
-            
             try {
                 // Get the productId from the HTML element with the ID 'product-container'
                 const productId = document.getElementById('product-container').dataset.productId;
@@ -175,12 +173,24 @@ class Product extends BasePage {
                     const itemDisBlockDisplayDiv = document.getElementById('itemDisBlockDisplay');
         
                     // Display the itemdisblocktitle text in the div
-                    const itemDisBlockTitle = matchedItem.component.item_collection[0].itemdisblocktitle || "N/A";
-                    itemDisBlockTitleDisplayDiv.textContent = `${itemDisBlockTitle}`;
+                    const itemDisBlockTitle = matchedItem.component.item_collection[0].itemdisblocktitle || "";
+                    itemDisBlockTitleDisplayDiv.textContent = itemDisBlockTitle.trim() !== '' ? itemDisBlockTitle : "N/A";
         
                     // Display the itemdisblock text in the div
-                    const itemDisBlock = matchedItem.component.item_collection[0].itemdisblock || "N/A";
-                    itemDisBlockDisplayDiv.textContent = `${itemDisBlock}`;
+                    const itemDisBlock = matchedItem.component.item_collection[0].itemdisblock || "";
+                    itemDisBlockDisplayDiv.textContent = itemDisBlock.trim() !== '' ? itemDisBlock : "N/A";
+        
+                    // Show or hide the Product-description section based on data presence
+                    const productDescriptionSection = document.getElementById('Product-description');
+                    const displayedValues = [aboutCoffeeTitle1, aboutCoffeeDis1, aboutCoffeeTitle2, aboutCoffeeDis2, aboutCoffeeTitle3, aboutCoffeeDis3, aboutCoffeeTitle4, aboutCoffeeDis4, itemDisBlockTitle, itemDisBlock];
+                    
+                    const hasNonEmptyValue = displayedValues.some(value => value.trim() !== '' && value !== 'N/A');
+        
+                    if (hasNonEmptyValue) {
+                        productDescriptionSection.style.display = 'block';
+                    } else {
+                        productDescriptionSection.style.display = 'none';
+                    }
                 } else {
                     // Hide the entire section if there is no match
                     aboutCoffeeSection.style.display = 'none';
@@ -188,6 +198,10 @@ class Product extends BasePage {
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
+
+
+
+
 
         }
 
