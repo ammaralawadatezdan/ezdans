@@ -84,6 +84,12 @@ class Product extends BasePage {
                 const aboutCoffeeTitleDisplayDiv = document.getElementById('aboutCoffeeTitleDisplay');
                 const aboutCoffeeDisDisplayDiv = document.getElementById('aboutCoffeeDisDisplay');
             
+
+                const itemDisBlockTitleDisplay = document.getElementById('itemDisBlockTitleDisplay');
+                const itemDisBlockDisplay = document.getElementById('itemDisBlockDisplay');
+
+                
+
                 // Check if the elements and properties exist before updating content
                 if (aboutCoffeeSection && string1DisplayDiv && aboutCoffeeIconDisplayDiv && aboutCoffeeTitleDisplayDiv && aboutCoffeeDisDisplayDiv && matchedItem && matchedItem.component.item_collection[0]) {
                     // Display the String_1 value in the div
@@ -130,11 +136,13 @@ class Product extends BasePage {
                     // Display the AboutCoffeeicon2 image in the div
                     const aboutCoffeeIcon2URL = matchedItem.component.item_collection[0].aboutcoffeeicon2 || "";
                     aboutCoffeeIcon2DisplayDiv.innerHTML = `<img src="${aboutCoffeeIcon2URL}" alt="About Coffee Icon 2">`;
+                    
             
-                    // Display the aboutcoffeTitle2 text in the div
-                    const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffeTitle2 || "N/A";
-                    aboutCoffeeTitle2DisplayDiv.textContent = `${aboutCoffeeTitle2}`;
-            
+                  // Display the aboutcoffetitle2 text in the div
+                   const aboutCoffeeTitle2 = matchedItem.component.item_collection[0].aboutcoffetitle2 || "N/A";
+                   aboutCoffeeTitle2DisplayDiv.textContent = `${aboutCoffeeTitle2}`;
+
+
                     // Display the aboutcoffedis2 text in the div
                     const aboutCoffeeDis2 = matchedItem.component.item_collection[0].aboutcoffedis2 || "N/A";
                     aboutCoffeeDis2DisplayDiv.textContent = `${aboutCoffeeDis2}`;
@@ -250,7 +258,9 @@ class Product extends BasePage {
                     const storyTitDisplayDiv = document.getElementById('storyTitDisplay');
                     const storyInfoDisplayDiv = document.getElementById('storyInfoDisplay');
 
-
+                    const itemDisBlockTitleDisplay = document.getElementById('itemDisBlockTitleDisplay');
+                    const itemDisBlockDisplay = document.getElementById('itemDisBlockDisplay');
+        
                     
 
 
@@ -275,6 +285,7 @@ class Product extends BasePage {
                     const storyInfo = matchedItem.component.item_collection[0].storyinfo || "N/A";
                     storyInfoDisplayDiv.textContent = `${storyInfo}`;
 
+                    
 
             
                     // Show or hide the Product-description section based on data presence
@@ -303,6 +314,40 @@ class Product extends BasePage {
                     // Hide the entire section if there is no match
                     aboutCoffeeSection.style.display = 'none';
                 }
+
+
+
+
+         if (itemDisBlockTitleDisplay && itemDisBlockDisplay && matchedItem.component.item_collection[0]) {
+    const itemDisBlockTitle = matchedItem.component.item_collection[0].itemdisblocktitle || "Title Not Available";
+    const itemDisBlock = matchedItem.component.item_collection[0].itemdisblock || "Description Not Available";
+
+       itemDisBlockTitleDisplay.textContent = itemDisBlockTitle;
+      itemDisBlockDisplay.textContent = itemDisBlock;
+}
+
+                // Show the entire section
+                aboutCoffeeSection.style.display = 'block';
+                // ... other logic to show/hide sections based on data availability
+           
+
+                const productDescriptionSection = document.getElementById('Product-description');
+                const productDescriptionContent = productDescriptionSection.textContent || "";
+                const isEmptyProductDescription = productDescriptionContent.trim() === '' || productDescriptionContent.trim() === 'N/A';
+                
+                if (isEmptyProductDescription) {
+                    productDescriptionSection.style.display = 'none'; // Hide the section
+                } else {
+                    productDescriptionSection.style.display = 'block'; // Show the section
+                }
+                
+
+
+                
+
+
+
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
