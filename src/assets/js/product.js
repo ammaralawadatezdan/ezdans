@@ -247,9 +247,11 @@ class Product extends BasePage {
                     const prepearwayDisinfo4DisplayDiv = document.getElementById('prepearwayDisinfoDisplay4');
 
                     // Add new items to display for story
-const storyTitDisplayDiv = document.getElementById('storyTitDisplay');
-const storyInfoDisplayDiv = document.getElementById('storyInfoDisplay');
+                    const storyTitDisplayDiv = document.getElementById('storyTitDisplay');
+                    const storyInfoDisplayDiv = document.getElementById('storyInfoDisplay');
 
+
+                    
 
 
             
@@ -269,9 +271,9 @@ const storyInfoDisplayDiv = document.getElementById('storyInfoDisplay');
                        const storyTit = matchedItem.component.item_collection[0].storytit || "N/A";
                          storyTitDisplayDiv.textContent = `${storyTit}`;
 
-// Display the storyinfo text in the div
-                          const storyInfo = matchedItem.component.item_collection[0].storyinfo || "N/A";
-                         storyInfoDisplayDiv.textContent = `${storyInfo}`;
+                    // Display the storyinfo text in the div
+                    const storyInfo = matchedItem.component.item_collection[0].storyinfo || "N/A";
+                    storyInfoDisplayDiv.textContent = `${storyInfo}`;
 
 
             
@@ -282,7 +284,7 @@ const storyInfoDisplayDiv = document.getElementById('storyInfoDisplay');
                         aboutCoffeeTitle2, aboutCoffeeDis2,
                         aboutCoffeeTitle3, aboutCoffeeDis3,
                         aboutCoffeeTitle4, aboutCoffeeDis4,
-                        prepearwayTitel, prepearwayDisinfo,
+                        prepearwayTitel, prepearwayDisinfo,    
                         prepearwayTitel1, prepearwayDisinfo1,
                         prepearwayTitel2, prepearwayDisinfo2,
                         prepearwayTitel3, prepearwayDisinfo3,
