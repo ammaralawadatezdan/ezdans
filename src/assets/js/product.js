@@ -8,6 +8,7 @@ class Product extends BasePage {
     onReady() {
 
         this.catblock()
+        
         app.watchElements({
             totalPrice: '.total-price',
             beforePrice: '.before-price',
@@ -340,6 +341,35 @@ class Product extends BasePage {
                 } else {
                     productDescriptionSection.style.display = 'block'; // Show the section
                 }
+
+
+
+
+
+                  // Function to hide section and div if their contents are empty or 'N/A'
+    function hideSectionAndDivIfEmpty(sectionId, divClass, values) {
+        const section = document.getElementById(sectionId);
+        const div = document.querySelector('.' + divClass);
+        const hasNonEmptyValue = values.some(value => value.trim() !== '' && value !== 'N/A');
+
+        if (hasNonEmptyValue) {
+            section.style.display = 'block';
+            div.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+            div.style.display = 'none';
+        }
+    }
+
+    // ... [other logic to get data and update contents] ...
+
+    // Check and update the visibility of the Product-descriptionstory section and the ezdan-product-desc-wrapper div
+    const storyTit = matchedItem?.component.item_collection[0]?.storytit || "N/A";
+    const storyInfo = matchedItem?.component.item_collection[0]?.storyinfo || "N/A";
+    
+    hideSectionAndDivIfEmpty('Product-descriptionstory', 'ezdan-product-desc-wrapper', [storyTit, storyInfo]);
+
+    
                 
 
 
@@ -359,6 +389,11 @@ class Product extends BasePage {
     
 
 
+
+
+
+
+        
 
 
 

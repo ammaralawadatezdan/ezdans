@@ -15374,6 +15374,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .table{display:table}
 .flow-root{display:flow-root}
 .grid{display:grid}
+.contents{display:contents}
 .\!hidden{display:none !important}
 .hidden{display:none}
 .\!h-36{height:9rem !important}
