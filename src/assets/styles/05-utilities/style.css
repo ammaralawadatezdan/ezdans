@@ -871,6 +871,9 @@
     padding: 0 35px 16px;
     border: 1px solid #3725194a;
   }
+  .s-quantity-input-container{display:flex;height:2.5rem;align-items:stretch;justify-content:space-around;border-radius:0.375rem;border-width:0px;font-size:0.875rem;line-height:1.25rem;
+  }
+  
   
   .ezdan-atoc-btn a {
     font-size: 20px;
