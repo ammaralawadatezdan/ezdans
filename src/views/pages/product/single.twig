@@ -82,7 +82,7 @@
 #}
 {% extends "layouts.master" %}
 {% block content %}
-    <div class="container">
+    <div class="container" style="background-color: #f7f2ed;">
         {# add breadcumbs container in pages to make a space in case breadcrumbs is off #}
         <nav class="breadcrumbs w-full py-5">
             {% component 'header.breadcrumbs' %}
@@ -199,25 +199,37 @@
                     <small class="color-grey">{{ trans('pages.products.tax_included') }}</small>
                 {% endif %}
 
-                <h1 class="text-xl md:text-2xl leading-10 font-bold mb-6 text-gray-800">{{ product.name }} </h1>
+                <div class="ezdan-product-hero-content pe-lg-4">
+                  <div class="container">
+                    <h2>{{ product.name }} </h2>
+                   
 
                 {% if product.subtitle %}
-                    <h3 class="product-entry__sub-title text-sm text-gray-400 leading-6 mb-2.5">
+                    <h3>
                         {{ product.subtitle }}
                     </h3>
                 {% endif %}
+
+                  </div>
+                </div>
 
                 {% if product.rating %}
                     <salla-rating-stars value="{{ product.rating.stars }}"
                                         reviews="{{ product.rating.count }}"></salla-rating-stars>
                 {% endif %}
+               
 
                 {# Price #}
                 <div class="flex whitespace-nowrap gap-4 items-center">
                   {% if product.is_on_sale %}
                     <div class="flex items-center space-x-2 rtl:space-x-reverse whitespace-nowrap">
+                      <div class="ezdan-product-hero-content pe-lg-4">
+                        <div class="container">
+
                       <h4 class="text-red-400 font-bold text-xl inline-block">{{product.sale_price|money}}</h4>
                       <span class="text-gray-400 line-through opacity-70">{{product.regular_price|money}}</span>
+                    </div>
+                      </div>
                     </div>
                   {% elseif product.starting_price %}
                     <span>{{ trans('pages.products.starting_price') }}</span> <h4 class="font-bold text-xl inline-block"> {{product.starting_price|money}}</h4>
@@ -319,7 +331,7 @@
                     </section>
                 {% endif %}
 
-                <form class="form product-form" enctype="multipart/form-data" method="post"
+                <form class="col-lg-6"  enctype="multipart/form-data" method="post"
                       onchange="salla.product.getPrice(new FormData(event.currentTarget))"
                       onsubmit="return salla.form.onSubmit('cart.addItem', event)" >
                     <input type="hidden" name="id" value="{{ product.id }}">
@@ -332,15 +344,15 @@
                     {% hook 'product:single.form.end' %}
 
 
-                    <section class="flex bg-white p-5 sm:pb-0 rounded-md rounded-b-none">
+                    <section class="col-lg-6" >
                         <div class="center-between w-full">
-                            <label class="form-label">
+                            <label class="form-label" hidden>
                                 <b class="block">
                                     {{ trans('pages.products.price') }}
                                 </b>
                             </label>
 
-                            <div class="flex whitespace-nowrap gap-4 items-center">
+                            <div class="col-lg-6" hidden>
                               {% if product.is_on_sale %}
                                 <div class="flex items-center space-x-2 rtl:space-x-reverse whitespace-nowrap">
                                   <h4 class="total-price text-red-400 font-bold text-xl inline-block">{{product.sale_price|money}}</h4>
@@ -354,40 +366,94 @@
                             </div>
                         </div>
                     </section>
-                    <section class="sticky-product-bar bg-white p-5 rounded-md rounded-b-none">
+              
+                    
                         {# Quantity #}
                         {% if product.is_hidden_quantity or product.type == 'booking' %}
                             <input type="hidden" value="1" name="quantity"/>
                         {% else %}
-                            <div class="sticky-product-bar__quantity center-between mb-5">
-                                <label class="form-label font-bold">
-                                    {{ trans('pages.products.quantity') }}
-                                </label>
-                                <salla-quantity-input max="{{ product.max_quantity }}" value="1" name="quantity"
-                                                      class="border-gray-200 flex justify-end"></salla-quantity-input>
+                       
+
+
+
+
+
+
+
+
+                              
+                             
+                                <div class="ezdan-product-hero-content pe-lg-4">
+                                 
+                                     <div class="ezdan-price-tax-buttons d-flex align-items-center pt-4">
+                                        <div class="ezdan-quantity-btn">
+                                        
+                                          
+                                          <salla-quantity-input max="{{ product.max_quantity }}" value="1" name="quantity"
+                                          ></salla-quantity-input>
+
+
+                                          </span>
+                                        </div>
+                                        <div class="ezdan-atoc-btn" >
+                                         
+                                          <salla-add-product-button
+                                          quick-buy
+                                          support-sticky-bar
+                                          amount="{{ product.base_currency_price }}"
+                                          class="ezdan-atoc-btn "
+                                          product-status="{{ product.status }}"
+                                          product-type="{{ product.type }}"
+                                          product-id="{{ product.id }}"
+                                          loader-position="end"
+                                          type="submit"
+                                          width="wide"
+                                          {# Notify availability props#}
+                                          {% if product.notify_availability %}
+                                              {{ product.notify_availability.subscribed ? 'is-subscribed' : '' }}
+                                              channels="{{ product.notify_availability.channels|join(',') }}"
+                                              subscribed-options="{{ product.notify_availability.subscribed_options|json_encode }}"
+                                              {{ product.notify_availability.options ? 'notify-options-availability' : '' }}
+                                          {% endif %}>
+                                      {{ product.add_to_cart_label }}
+                                      </salla-add-product-button>
+
+
+
+
+                                        </div>
+                                        <div class="ezdan-buy-btn">
+                                          
+                                          <salla-quick-order class="mt-5 md:-mb-2 block"></salla-quick-order>
+                                        </div><br>
+                                      </div><br>
+                                    </div>
+                                 
+                                </div>
+                              </div>
                             </div>
+                          </div>
+                        </section>
+
+
+
+
+
+
+
+
+
+
+
+                    
+                            
+                         
+
+
+
                         {% endif %}
-                        {# Add to cart #}
-                        <salla-add-product-button
-                                quick-buy
-                                support-sticky-bar
-                                amount="{{ product.base_currency_price }}"
-                                class="mt-5 w-full sticky-product-bar__btn"
-                                product-status="{{ product.status }}"
-                                product-type="{{ product.type }}"
-                                product-id="{{ product.id }}"
-                                loader-position="end"
-                                type="submit"
-                                width="wide"
-                                {# Notify availability props#}
-                                {% if product.notify_availability %}
-                                    {{ product.notify_availability.subscribed ? 'is-subscribed' : '' }}
-                                    channels="{{ product.notify_availability.channels|join(',') }}"
-                                    subscribed-options="{{ product.notify_availability.subscribed_options|json_encode }}"
-                                    {{ product.notify_availability.options ? 'notify-options-availability' : '' }}
-                                {% endif %}>
-                            {{ product.add_to_cart_label }}
-                        </salla-add-product-button>
+                      
+                 
                     </section>
                     {% if product.is_giftable %}
                         <salla-gifting class="mt-5" widget-subtitle="{{ gifting_intro }}" product-id="{{ product.id }}"></salla-gifting>
@@ -395,17 +461,13 @@
                 </form>
 
                 {% hook 'product:single.description.end' %}
-                <salla-quick-order class="mt-5 md:-mb-2 block"></salla-quick-order>
+                
             </div>
         </div>
         
     </div>
     
    
-
-
-
-
 
 
 
