@@ -93,7 +93,7 @@
   .ezdan-navigation-wrapper {
     position: relative;
     padding: 40px 0;
-    z-index: 99;
+    z-index: 99 !important;
   }
   
   .ezdan-product-nav {
@@ -577,7 +577,7 @@
   }
   
   .ezdan-product-card-content {
-    padding-top: 10px;
+    padding-top: 0px !important;
   }
   
   .ezdan-product-card-content h3 {
@@ -614,7 +614,7 @@
   }
   
   .ezdan-product-card-contentonsale h4 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     color: #bd2a2a;
   
@@ -864,15 +864,82 @@
     color: #352110;
   }
   
+
+
+  .s-quantity-input-container {
+    display: flex;
+    height: 2.5rem;
+    align-items: stretch;
+    justify-content: space-around;
+    border-radius: 0.375rem;
+    border-width: 0px !important;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border: 0px solid #dee2e6 !important;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+
+  }
+
+   .s-button-element s-button-btn s-button-solid s-button-wide s-button-primary s-button-loader-center
+    {
+
+      background-color: #00a56e !important;
+    }
+
+    .s-quantity-input-input
+    {
+      background-color: #f7f2ed !important;
+    }
+
+    .s-button-primary {
+      display: inline !important;
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      color: #ffffff !important;
+      background: #352110 !important;
+      padding: 16px 35px !important; /* Updated padding for vertical centering */
+      border: 1px solid #352110 !important;
+      align-items: center !important;
+      border-radius: 0 !important;
+  }
+  
+  .s-button-primary-outline {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #352110 !important;
+    padding: 16px 35px !important; /* Adequate padding */
+    border: 1px solid #3725194a !important;
+    overflow: visible !important; /* Ensures text is not cut off */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
+    display: inline-block; /* Adjust as needed */
+    max-width: 100%; /* Ensures the button doesn't exceed its container width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    line-height: normal; /* Adjust line height as needed */
+}
+
+
+.s-button-primary-outline:hover {
+    /* Keeping the hover state the same as the normal state */
+    color: #352110 !important;
+    background: transparent !important;
+    border: 1px solid #3725194a !important;
+}
+.s-button-text {
+
+  overflow: visible !important;
+}
+
+
   .ezdan-buy-btn a {
     font-size: 20px;
     font-weight: 600;
     color: #352110;
     padding: 0 35px 16px;
     border: 1px solid #3725194a;
+
   }
-  .s-quantity-input-container{display:flex;height:2.5rem;align-items:stretch;justify-content:space-around;border-radius:0.375rem;border-width:0px;font-size:0.875rem;line-height:1.25rem;
-  }
+
   
   
   .ezdan-atoc-btn a {
@@ -883,6 +950,8 @@
     padding: 0 35px 16px;
     border: 1px solid #352110;
   }
+
+
   
   .ezdan-buy-btn,
   .ezdan-atoc-btn,
@@ -891,7 +960,7 @@
   }
   
   .ezdan-quantity-btn {
-    margin-top: 15px;
+    margin-top: 0px;
     padding: 9px 5px;
     border: 1px solid #3725194a;
   }
@@ -1152,3 +1221,11 @@
   
   /* Crop Story Section CSS End */
   
+
+
+
+
+
+  
+
+
