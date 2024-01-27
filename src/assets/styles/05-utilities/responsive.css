@@ -59,7 +59,7 @@
     }
   
     .ezdan-slider-conent {
-      padding-top: 200px;
+      padding-top: 200px !important;
     }
   
     .ezdan-slider-conent h2,
@@ -547,3 +547,4 @@
     }
   }
   
+ 
