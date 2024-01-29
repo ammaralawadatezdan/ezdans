@@ -183,51 +183,6 @@
             "required": false,
             "value": false,
             "selected": false
-        },
-        {
-            "id": "mobile_menu",
-            "type": "collection",
-            "format": "collection",
-            "label": "mobile_menu",
-            "description": null,
-            "labelHTML": null,
-            "item_label": null,
-            "icon": "sicon-list-add",
-            "fields": [
-                {
-                    "id": "mobile_menu.text",
-                    "type": "string",
-                    "format": "text",
-                    "label": "text",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Placeholder text ..",
-                    "icon": "sicon-format-text-alt",
-                    "value": "نص قائمة الجوال",
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": 30
-                },
-                {
-                    "id": "mobile_menu.url",
-                    "type": "string",
-                    "format": "url",
-                    "inputType": "url",
-                    "label": "URL",
-                    "description": "رابط قائمة الجوال",
-                    "labelHTML": null,
-                    "placeholder": "e.g. https://salla.sa",
-                    "icon": "sicon-link",
-                    "value": "https://ezdan.sa",
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": 30
-                }
-            ],
-            "value": [],
-            "minLength": 1,
-            "maxLength": 5
         }
     ],
     "components": [
