@@ -44,7 +44,7 @@
             <li class="d-xl-none" id="cross">
               <i class="fa-solid fa-xmark">
                 <Br>
-                <h1  class="lg:hidden text-sm font-bold" {{ menu.attrs }} style="text-align: center;"><a href="#">{% component 'header.menu' %} </a></h1>
+                {{theme.setting.get('mobile_menu')}}
               </i>
             </li>
             <li class="lg:hidden text-sm font-bold" {{ menu.attrs }}></li>
