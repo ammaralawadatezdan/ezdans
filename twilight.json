@@ -2316,62 +2316,6 @@
                     "maxLength": 5
                 }
             ]
-        },
-        {
-            "key": "37fe5a4b-2717-4946-93c0-54fcec42c896",
-            "title": "mobilemenu",
-            "icon": "sicon-store",
-            "path": "home.mobile_menu",
-            "fields": [
-                {
-                    "id": "mobile_menu",
-                    "key": "431d2d11-928c-4911-bdd6-3d0d91abbb15",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "mobile_menu",
-                    "description": "هنا يتم تعريف روابط القائمة الجانبية للموبايل",
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "mobilestring",
-                            "key": "e3978e29-1a57-4c60-b45a-c562e86470e9",
-                            "type": "string",
-                            "format": "text",
-                            "label": "mobileString",
-                            "description": "النص في القائمة",
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        },
-                        {
-                            "id": "mobileurl",
-                            "key": "400031d8-e6f3-4f16-90c4-ea5ce3c5c88d",
-                            "type": "string",
-                            "format": "url",
-                            "inputType": "url",
-                            "label": "Mobileurl",
-                            "description": "الرابط الخاص بالقائمة",
-                            "labelHTML": null,
-                            "placeholder": "e.g. https://salla.sa",
-                            "icon": "sicon-link",
-                            "value": null,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        }
-                    ],
-                    "value": [],
-                    "minLength": 1,
-                    "maxLength": 5
-                }
-            ]
         }
     ],
     "support_url": "https://ezdan.sa",
