@@ -2323,6 +2323,13 @@
                     "maxLength": 5
                 }
             ]
+        },
+        {
+            "key": "37fe5a4b-2717-4946-93c0-54fcec42c896",
+            "title": "mobilemenu",
+            "icon": "sicon-store",
+            "path": "home.mobile_menu",
+            "fields": []
         }
     ],
     "support_url": "https://ezdan.sa",
