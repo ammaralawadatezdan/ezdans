@@ -15050,11 +15050,13 @@ h2.title {
 /* Crop Story Section CSS End */
 .mm-spn.mm-spn--navbar.mm-spn--main:after
  {
+  color: #352110 !important;
   font-family:  'DINNextLTArabic-Regular' !important;
   
  }
 .mm-spn a
  {
+  color: #352110 !important;
   font-family:  'DINNextLTArabic-Regular' !important;
   background: none !important;
  }
