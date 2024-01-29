@@ -219,7 +219,7 @@
                     "labelHTML": null,
                     "placeholder": "e.g. https://salla.sa",
                     "icon": "sicon-link",
-                    "value": null,
+                    "value": "https://ezdan.sa",
                     "required": false,
                     "minLength": 6,
                     "maxLength": 30
