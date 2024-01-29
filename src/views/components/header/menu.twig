@@ -14,12 +14,16 @@
 <nav id="mobile-menu" class="ezdan-main-nav d-xl-flex align-items-xl-center">
     <ul class="ezdan-main-nav d-xl-flex align-items-xl-center">
         <li class="d-xl-none">
+            <h2>test</h2>
         {% for menu_id, menu in menus %}
             {% include 'components.header._menu-item' with {is_root_menu:true} %}
         {% endfor %}</li>
+
+
+
     </ul>
   
-    <button class="btn--close close-mobile-menu sicon-cancel lg:hidden">بب</button>
+    <button class="btn--close close-mobile-menu sicon-cancel lg:hidden"></button>
 </nav>
-<button class="btn--close-sm close-mobile-menu sicon-cancel hidden">بب</button>
+<button class="btn--close-sm close-mobile-menu sicon-cancel hidden"></button>
 
