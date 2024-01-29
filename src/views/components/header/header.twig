@@ -31,13 +31,17 @@
       <div
         class="ezdan-navbar-wrapper d-flex justify-content-between align-items-center"
       >
-      <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="Open-menu">
-        <i class="sicon-menu text-primary text-2xl"></i>
+     
         
         <div class="ezdan-main-menu">
           <ul class="d-flex d-xl-none align-items-center">
             <li id="bar">
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars" >
+             
+             
+              
+              </i>
+              
             </li>
             <li>
               <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -45,18 +49,41 @@
           </ul>
           <ul class="ezdan-main-nav d-xl-flex align-items-xl-center">
             <li class="d-xl-none" id="cross">
+              <i class="fa-solid fa-xmark"></i>
+            
             
               <i class="fa-solid fa-xmark">
                 <a href="#">{% component 'header.menu' %} </a>
+             
+              <i class="fa-solid fa-xmark">
+                <a href="#">{% component 'header.menu' %} </a>
+              
+                <li  {{ menu.attrs }}>
+                  {% if not menu.has_children %}
+                      <a {{ menu.link_attrs|raw }} href="{{ menu.url }}>{{ menu.title }}</a>
+                  {% else %}
+                      <span>{{ menu.title }}</span>
+                      <ul>
+                          <li><a {{ menu.link_attrs|raw }} href="{{ menu.url }}>{{ menu.title }}</a></li>
+                          {% for submenu in menu.children %}
+                              {% include _self with {menu:submenu} %}
+                          {% endfor %}
+                      </ul>
+                  {% endif %}
+              </li>
+              
 
-
-                <ul class="ezdan-main-nav d-xl-flex align-items-xl-center">
-                 
-                  <li class="d-xl-none">
+                  
                   
                 </li>
               </ul>
+ 
+                </li>
+              </ul>
 
+
+              </i>
+              
               </i>
             </li>
             
