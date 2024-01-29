@@ -1,4 +1,29 @@
-
+{# MOBILE #}
+<li class="lg:hidden text-sm font-bold" {{ menu.attrs }}>
+    {% set item_image %}
+      {% if menu.image %}
+        <img src="{{ menu.image }}" class="rounded-full" width="48" height="48" alt="{{ menu.title }}"/>  
+      {% endif %}
+    {% endset %} 
+<h1>test</h1>
+    {% if not menu.has_children %}
+      <a {{ menu.link_attrs|raw }} aria-label="{{menu.title ? menu.title : 'category'}}" href="{{ menu.url }}" class="text-gray-500 {{ menu.image ? '!py-3' : '' }}">
+          {{ item_image }}
+          <span>{{ menu.title }}</span>
+      </a>
+    {% else %}
+      <span class="{{ menu.image ? '!py-3' : '' }}">
+        {{ item_image }}
+        {{ menu.title }}
+      </span>
+      <ul>
+          <li class="text-sm font-bold"><a {{ menu.link_attrs|raw }} href="{{ menu.url }}" class="text-gray-500">{{ trans('blocks.home.display_all') }}</a></li>
+          {% for submenu in menu.children %}
+              {% include _self with {menu:submenu} %}
+          {% endfor %}
+      </ul>
+    {% endif %}
+</li>
 
 {# DESKTOP #}
 <li class="!hidden lg:!block {{ is_root_menu?'root-level lg:!inline-block':'relative' }}
