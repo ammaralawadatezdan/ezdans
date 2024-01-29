@@ -93,9 +93,25 @@
   
   .ezdan-navigation-wrapper {
     position: relative;
-    padding: 40px 0;
+    padding: 30px 0 !important;
     z-index: 99 !important;
+    display: flex;        /* Establishes a flex container */
+    align-items: center;  /* Vertically centers the items in the container */
+    
+    flex-wrap: nowrap;
+
   }
+  .ezdan-navigation-wrapper > * {
+    margin-right: 10px; /* Optional: Adds spacing between items, adjust as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .ezdan-navigation-wrapper > * {
+      flex: 1; /* Allows items to grow and shrink as needed */
+      margin-right: 5px; /* Reduces margin */
+      /* Other adjustments as necessary */
+  }
+}
   
   .ezdan-product-nav {
     background: #f7f2ed;
@@ -127,14 +143,16 @@
   }
   
   .ezdan-main-nav li {
-    padding-left: 25px;
-  }
+    font-weight: 300 !important;
+    padding-left: 13px !important;
+    margin-bottom: 5px !important; /* Adds a small gap below each list item */
+}
   
-  .ezdan-main-nav li a {
-    font-size: 16px;
-    color: #fff;
-  }
-  
+.ezdan-main-nav li a {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #fff !important;
+}
   .ezdan-product-nav .ezdan-main-nav li a {
     color: #352110;
   }
@@ -153,13 +171,14 @@
   }
   
   .ezdan-logo {
+ 
     max-width: 160px;
     margin-left: 350px;
   }
   
   @media (max-width: 1200px) {
     .ezdan-logo {
-      width: 70px;
+      width: 60px;
     }
   
     .ezdan-navigation-wrapper {
@@ -1225,35 +1244,95 @@
 
 
 
-
-
-
-  #horizontal-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-#horizontal-menu li {
-    margin-right: 20px;
-}
-
-#horizontal-menu li a {
-    text-decoration: none;
-    color: #000;
-}
-
-
-
-
-
-
-
-
-
-
-
- 
-
+ .mm-spn.mm-spn--navbar.mm-spn--main:after
+ {
+  font-family:  'DINNextLTArabic-Regular' !important;
   
+ }
+
+
+ .mm-spn a
+ {
+  font-family:  'DINNextLTArabic-Regular' !important;
+  background: none !important;
+ }
+
+
+
+ .mm-spn.mm-spn--light
+{
+  color: #352110 !important;
+ 
+}
+
+.mobile-menu mm-spn--light mm-spn--navbar mm-spn--main
+{
+  font-family:  'DINNextLTArabic-Regular' !important;
+  color: #371a08;
+
+}
+.main-menu{
+
+  font-family:  'DINNextLTArabic-Regular' !important;
+ 
+  font-size: 13px;
+ font-weight: 300 !important;
+}
+
+.search-btn1 {
+  display: none; /* Hide button by default */
+  
+}
+
+@media screen and (max-width: 768px) {
+  .search-btn1 {
+      display: block; /* Show button on screens smaller than 768px */
+  }
+}
+
+.menu-container {
+ 
+  display: flex;
+  align-items: center; /* Align vertically */
+  justify-content: flex-start; /* Align horizontally */
+}
+
+.MobileVisible {
+  display: none;
+}
+
+/* Use Flexbox for horizontal alignment */
+.menu-items {
+  padding-top:  35%;
+  display: flex;
+  align-items: center;
+  gap: 15px;             /* Adds space between flex items */
+
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .MobileVisible {
+      display: block; /* Show on mobile */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MobileVisible {
+      display: flex; /* Show and use flexbox layout on mobile */
+      justify-content: flex-start; /* Align items to the left */
+      align-items: center; /* Align items vertically in the center */
+      width: 100%; /* Ensure it takes the full width of the screen */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ezdan-left-menu {
+    display: flex;        /* Establishes a flex container */
+    align-items: center;  /* Vertically centers the items in the container */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    flex-wrap: nowrap;   /* Prevents wrapping of items to a new line */
+    display: flex;
+    overflow-x: auto;
+  }
+}

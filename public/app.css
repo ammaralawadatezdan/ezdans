@@ -14116,12 +14116,28 @@ h2.title {
 /* Header Part CSS Start */
 /* Navigation Section CSS Start */
 .ezdan-navigation-wrapper {
+    padding: 30px 0 !important;
     z-index: 99 !important;
+
   }
 .ezdan-navigation-wrapper {
     position: relative;
-    padding: 40px 0;
+    display: flex;        /* Establishes a flex container */
+    align-items: center;  /* Vertically centers the items in the container */
+    
+    flex-wrap: nowrap;
+
   }
+.ezdan-navigation-wrapper > * {
+    margin-right: 10px; /* Optional: Adds spacing between items, adjust as needed */
+}
+@media screen and (max-width: 768px) {
+  .ezdan-navigation-wrapper > * {
+      flex: 1; /* Allows items to grow and shrink as needed */
+      margin-right: 5px; /* Reduces margin */
+      /* Other adjustments as necessary */
+  }
+}
 .ezdan-product-nav {
     background: #f7f2ed;
   }
@@ -14147,12 +14163,17 @@ h2.title {
     }
   }
 .ezdan-main-nav li {
-    padding-left: 25px;
-  }
+    font-weight: 300 !important;
+    padding-left: 13px !important;
+    margin-bottom: 5px !important;
+}
+.ezdan-main-nav li { /* Adds a small gap below each list item */
+}
 .ezdan-main-nav li a {
-    font-size: 16px;
-    color: #fff;
-  }
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    color: #fff !important;
+}
 .ezdan-product-nav .ezdan-main-nav li a {
     color: #352110;
   }
@@ -14167,12 +14188,13 @@ h2.title {
     color: #352110;
   }
 .ezdan-logo {
+ 
     max-width: 160px;
     margin-left: 350px;
   }
 @media (max-width: 1200px) {
     .ezdan-logo {
-      width: 70px;
+      width: 60px;
     }
   
     .ezdan-navigation-wrapper {
@@ -15026,19 +15048,82 @@ h2.title {
     color: #371a08;
   }
 /* Crop Story Section CSS End */
-#horizontal-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.mm-spn.mm-spn--navbar.mm-spn--main:after
+ {
+  font-family:  'DINNextLTArabic-Regular' !important;
+  
+ }
+.mm-spn a
+ {
+  font-family:  'DINNextLTArabic-Regular' !important;
+  background: none !important;
+ }
+.mm-spn.mm-spn--light
+{
+  color: #352110 !important;
+ 
+}
+.mobile-menu mm-spn--light mm-spn--navbar mm-spn--main
+{
+  font-family:  'DINNextLTArabic-Regular' !important;
+
+}
+.mobile-menu mm-spn--light mm-spn--navbar mm-spn--main
+{
+  color: #371a08;
+
+}
+.main-menu{
+
+  font-family:  'DINNextLTArabic-Regular' !important;
+ font-weight: 300 !important;
+}
+.main-menu{
+ 
+  font-size: 13px;
+}
+.search-btn1 {
+  display: none; /* Hide button by default */
+  
+}
+@media screen and (max-width: 768px) {
+  .search-btn1 {
+      display: block; /* Show button on screens smaller than 768px */
+  }
+}
+.menu-container {
+ 
+  display: flex;
+  align-items: center; /* Align vertically */
+  justify-content: flex-start; /* Align horizontally */
+}
+.MobileVisible {
+  display: none;
+}
+/* Use Flexbox for horizontal alignment */
+.menu-items {
+  padding-top:  35%;
+  display: flex;
+  align-items: center;
+  gap: 15px;             /* Adds space between flex items */
+
+}
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .MobileVisible {
+      display: block; /* Show on mobile */
+      display: flex; /* Show and use flexbox layout on mobile */
+      justify-content: flex-start; /* Align items to the left */
+      align-items: center; /* Align items vertically in the center */
+      width: 100%; /* Ensure it takes the full width of the screen */
+  }
+  .ezdan-left-menu {        /* Establishes a flex container */
+    align-items: center;  /* Vertically centers the items in the container */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    flex-wrap: nowrap;   /* Prevents wrapping of items to a new line */
     display: flex;
-}
-#horizontal-menu li {
-    margin-right: 20px;
-}
-#horizontal-menu li a {
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    color: #000;
+    overflow-x: auto;
+  }
 }
 /*
  ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com

@@ -33,19 +33,38 @@
       >
         <div class="ezdan-main-menu">
           <ul class="d-flex d-xl-none align-items-center">
-            <li id="bar">
-              <i class="fa-solid fa-bars"></i>
+            <li id="bar" hidden>
+              <i class="fa-solid fa-bars" hidden></i>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass" hidden></i></a>
+             
+                
+            
             </li>
           </ul>
+        
+          <div class="menu-container">
+            <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" style="font-family: DiodrumArabic !important;" aria-label="Open-menu">
+                <i class="fa-solid fa-bars text-primary text-2xl" style="color: white !important;"></i>
+            </a>
+            <button style="color: rgb(255, 255, 255);" onclick="salla.event.dispatch('search::open')" class="search-btn1">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </button>
+        </div>
+        
+           
+           
+
+        
+         
+       
+
           <ul class="ezdan-main-nav d-xl-flex align-items-xl-center">
-            <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="Open-menu">
-              <i class="sicon-menu text-primary text-2xl"></i>
+          
               
-            <li class="d-xl-none" id="cross">
-              <i class="fa-solid fa-xmark">
+            <li class="d-xl-none" id="cross" hidden>
+              <i class="fa-solid fa-xmark" hidden> 
                 <Br>
             
               </i>
@@ -101,6 +120,28 @@
                 
               </i></a>
             </li>
+
+            <li class="MobileVisible">
+              
+          
+
+              <div class="menu-items">
+                  <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4" style="color: white;">
+                      <i slot="icon" style="color: aliceblue;" class="fa-solid fa-cart-shopping"></i>
+                  </salla-cart-summary>
+          
+                  {% if user.type == 'user' %}
+                      <salla-user-menu avatar-only show-header></salla-user-menu>
+                  {% else %}
+                      <button class="header-btn" onclick="salla.event.dispatch('login::open')">
+                          <i style="color: white;" class="fa-regular fa-user"></i>
+                      </button>
+                  {% endif %}
+              </div>
+          </li>
+
+
+
           </ul>
         </div>
       </div>
@@ -123,18 +164,43 @@
       >
         <div class="ezdan-main-menu">
           <ul class="d-flex d-xl-none align-items-center">
-            <li id="bar">
-              <i class="fa-solid fa-bars"></i>
+            <li id="bar" hidden>
+              <i class="fa-solid fa-bars" hidden></i>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass" hidden></i></a>
+             
+                
+            
             </li>
           </ul>
+        
+          <div class="menu-container">
+            <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" style="font-family: DiodrumArabic !important;" aria-label="Open-menu">
+                <i class="fa-solid fa-bars text-primary text-2xl" style="color: white !important;"></i>
+            </a>
+            <button style="color: rgb(255, 255, 255);" onclick="salla.event.dispatch('search::open')" class="search-btn1">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </button>
+        </div>
+        
+           
+           
+
+        
+         
+       
+
           <ul class="ezdan-main-nav d-xl-flex align-items-xl-center">
-            <li class="d-xl-none" id="cross">
-              <i class="fa-solid fa-xmark"></i>
-            </li>
+          
+              
+            <li class="d-xl-none" id="cross" hidden>
+              <i class="fa-solid fa-xmark" hidden> 
+                <Br>
             
+              </i>
+            </li>
+            <li class="lg:hidden text-sm font-bold" {{ menu.attrs }}></li>
             <li><a href="#">{% component 'header.menu' %} </a></li>
             
            
@@ -185,13 +251,34 @@
                 
               </i></a>
             </li>
+
+            <li class="MobileVisible">
+              
+          
+
+              <div class="menu-items">
+                  <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4" style="color: white;">
+                      <i slot="icon" style="color: #352110;" class="fa-solid fa-cart-shopping"></i>
+                  </salla-cart-summary>
+          
+                  {% if user.type == 'user' %}
+                      <salla-user-menu avatar-only show-header></salla-user-menu>
+                  {% else %}
+                      <button class="header-btn" onclick="salla.event.dispatch('login::open')">
+                          <i style="color: white;" class="fa-regular fa-user"></i>
+                      </button>
+                  {% endif %}
+              </div>
+          </li>
+
+
+
           </ul>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
 
 {% else %}
   
@@ -199,32 +286,58 @@
   
 
 <nav id="Navigation">
-  <div class="ezdan-navigation-wrapper ezdan-product-nav">
+  <div class="ezdan-navigation-wrapper" style="background-color: #f7f2ed !important; color: #352110 !important;">
     <div class="container">
       <div
-        class="ezdan-navbar-wrapper d-flex justify-content-between align-items-center"
+        class="ezdan-navbar-wrapper d-flex justify-content-between align-items-center "   style="color: #352110 !important;"
       >
-        <div class="ezdan-main-menu">
+        <div class="ezdan-main-menu" style="color: #352110 !important;">
           <ul class="d-flex d-xl-none align-items-center">
-            <li id="bar">
-              <i class="fa-solid fa-bars"></i>
+            <li id="bar" hidden>
+              <i class="fa-solid fa-bars" hidden></i>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass" hidden></i></a>
+             
+                
+            
             </li>
           </ul>
-          <ul class="ezdan-main-nav d-xl-flex align-items-xl-center">
-            <li class="d-xl-none" id="cross">
-              <i class="fa-solid fa-xmark"></i>
-            </li>
+        
+          <div class="menu-container" style="color: #352110 !important;">
+            <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" style="font-family: DiodrumArabic !important; color: #352110 !important;" aria-label="Open-menu">
+                <i class="fa-solid fa-bars text-primary text-2xl" style="color: white !important;"></i>
+            </a>
+            <button style="color: rgb(255, 255, 255);" onclick="salla.event.dispatch('search::open')" class="search-btn1">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </button>
+        </div>
+        
+           
+           
+
+        
+         
+       
+
+          <ul class="ezdan-main-nav d-xl-flex align-items-xl-center" style="color: #352110 !important;">
+          
+              
+            <li class="d-xl-none" id="cross" hidden>
+              <i class="fa-solid fa-xmark" hidden> 
+                <Br>
             
-            <li><a href="#">{% component 'header.menu' %} </a></li>
+              </i>
+            </li>
+            <li class="lg:hidden text-sm font-bold" {{ menu.attrs }}></li>
+            <li style="color: #352110 !important;"><a href="#">{% component 'header.menu' %} </a></li>
+            
            
           </ul>
         </div>
         <div class="ezdan-logo">
           <a class="" href="{{ store.url }}">
-            <img  loading="eager" src="https://141-27-27.preezdan.com/assets/images/logo-coffee.svg" alt="{{ store.name }} logo">
+            <img  loading="eager" src="{{ store.logo }}" alt="{{ store.name }} logo">
             {% if is_page('index') %}
               <h1 class="sr-only">{{ store.name }}</h1>
             {% else %}
@@ -232,45 +345,68 @@
             {% endif %}
         </a>
         </div>
-        <div class="ezdan-left-menu">
+        <div class="ezdan-left-menu" style="color: #352110 !important;">
           <ul class="d-flex align-items-center">
-            <li class="d-none d-xl-block">
             
-              <a href="https://arriyadhroaster.com/%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9/c137650432">الدورات التدريبية</a>
+            <li class="d-none d-xl-block" style="color: #352110 !important;">
+             
+              <a href="#" style="color: #352110 !important;">الدورات التدريبية</a>
             </li>
-            <li class="d-none d-xl-block">
-              <button style="color: #352110;" onclick="salla.event.dispatch('search::open')" class="search-btn">
+            <li class="d-none d-xl-block" style="color: #352110 !important;">
+              <button style="color: 352110;" onclick="salla.event.dispatch('search::open')" class="search-btn">
                 <span class="sicon-search"></span>
                 <span class="sm:hidden px-2 opacity-50">{{ trans('blocks.header.searchProducts') }}</span>
               </button>
+
+          
             </li>
-            <li>
-           
-                <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4">
-                  <i slot="icon" class="header-btn__icon icon sicon-shopping-bag"></i>
+            <li class="d-none d-xl-block" style="color: #352110 !important;">
+            
+                <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4" style="color: 352110;">
+                  <i slot="icon" style="color: 352110;" class="header-btn__icon icon sicon-cart2"></i>
                 </salla-cart-summary>
-                
-             
-              </a>
+
+
             </li>
             <li class="d-none d-xl-block">
              
-              {% if user.type=='user' %}
-              <salla-user-menu avatar-only show-header></salla-user-menu>
-            {% else %}
-                <button class="header-btn" onclick="salla.event.dispatch('login::open')">
-                  <i style="color: #352110;" class="header-btn__icon sicon-user"></i>
-                </button>
-            {% endif %}
+                {% if user.type=='user' %}
+                <salla-user-menu avatar-only show-header></salla-user-menu>
+              {% else %}
+                  <button class="header-btn" onclick="salla.event.dispatch('login::open')">
+                    <i style="color: 352110;" class="header-btn__icon sicon-user"></i>
+                  </button>
+              {% endif %}
+                
+              </i></a>
+            </li>
+
+            <li class="MobileVisible">
               
-            </i></a>
+          
+
+              <div class="menu-items">
+                  <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4" style="color: 352110;">
+                      <i slot="icon" style="color: 352110;" class="fa-solid fa-cart-shopping"></i>
+                  </salla-cart-summary>
+          
+                  {% if user.type == 'user' %}
+                      <salla-user-menu avatar-only show-header></salla-user-menu>
+                  {% else %}
+                      <button class="header-btn" onclick="salla.event.dispatch('login::open')">
+                          <i style="color: 352110;" class="fa-regular fa-user"></i>
+                      </button>
+                  {% endif %}
+              </div>
           </li>
+
+
+
           </ul>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
 {% endif %}
 
