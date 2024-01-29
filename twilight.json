@@ -2220,63 +2220,6 @@
             ]
         },
         {
-            "key": "f7d8e04c-feaa-4d08-81fe-361b6408d33e",
-            "title": "SectionItem",
-            "icon": "sicon-store",
-            "path": "SectionItem",
-            "fields": [
-                {
-                    "id": "sectionitemcollection",
-                    "key": "bef83276-5e7f-45a9-add8-c6e0f5c3b2e7",
-                    "type": "collection",
-                    "format": "collection",
-                    "label": "SectionItemCollection",
-                    "description": null,
-                    "labelHTML": null,
-                    "item_label": null,
-                    "icon": "sicon-list-add",
-                    "fields": [
-                        {
-                            "id": "SectionItemslug",
-                            "key": "7cb1cc9f-a220-4efb-9211-665560d1a7e5",
-                            "type": "string",
-                            "format": "text",
-                            "label": "String 1",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        },
-                        {
-                            "id": "stringname",
-                            "key": "77e61b91-2dcc-4ee5-bf95-4eabb7af90b7",
-                            "type": "string",
-                            "format": "text",
-                            "label": "String",
-                            "description": null,
-                            "labelHTML": null,
-                            "placeholder": "Placeholder text ..",
-                            "icon": "sicon-format-text-alt",
-                            "value": null,
-                            "multilanguage": false,
-                            "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
-                        }
-                    ],
-                    "value": [],
-                    "required": false,
-                    "minLength": 1,
-                    "maxLength": 5
-                }
-            ]
-        },
-        {
             "key": "57d0dc14-0e4b-421a-8d7a-86c7048e9360",
             "title": "نص في أخر صفحة الأقسام",
             "icon": "sicon-d-rotate",
