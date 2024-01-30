@@ -14124,7 +14124,7 @@ h2.title {
     position: relative;
     display: flex;        /* Establishes a flex container */
     align-items: center;  /* Vertically centers the items in the container */
-    
+   
     flex-wrap: nowrap;
 
   }
@@ -14190,7 +14190,6 @@ h2.title {
     color: #352110;
   }
 .ezdan-left-menu ul li {
-
     padding-right: 23px;
   }
 .ezdan-left-menu ul li a {
@@ -14699,10 +14698,8 @@ h2.title {
     margin-top: -185px;
   }
 .ezdan-pdh-content {
-    padding-top: 0% !important;
-  }
-.ezdan-pdh-content {
-    padding-top: 400px;
+    padding-top: 350px !important;
+    
   }
 .ezdan-pdh-content h1 {
     font-size: 90px;
@@ -14714,6 +14711,25 @@ h2.title {
     font-weight: 400;
     color: #ffffff;
     padding-top: 10px;
+  }
+@media only screen and (max-width: 767px) {
+    .ezdan-pdh-content h1 {
+      font-size: 50px !important;
+    }
+    .ezdan-pdh-content h1 {
+      font-weight: 600;
+      color: #ffffff;
+    }
+  
+    .ezdan-pdh-content h2 {
+      font-size: 30px !important;
+    }
+  
+    .ezdan-pdh-content h2 {
+      font-weight: 400;
+      color: #ffffff;
+      padding-top: 10px;
+    }
   }
 /* Product Details Hero Section CSS End */
 /* Product Details Content Section CSS Start */
@@ -14810,7 +14826,7 @@ h2.title {
 .s-button-element s-button-btn s-button-solid s-button-wide s-button-primary s-button-loader-center
     {
 
-      background-color: #00a56e !important;
+      background-color: #352110 !important;
     }
 .s-quantity-input-input
     {
@@ -14856,6 +14872,7 @@ h2.title {
 .s-button-text {
 
   overflow: visible !important;
+
 }
 .ezdan-buy-btn a {
     font-size: 20px;
@@ -15147,7 +15164,99 @@ h2.title {
     flex-wrap: nowrap;   /* Prevents wrapping of items to a new line */
     display: flex;
     overflow-x: auto;
+    
   }
+}
+@media (min-width: 300px) and (max-width: 767px){
+.ezdan-product-hero-content {
+    padding-top: 5%!important;
+}
+
+
+
+
+.s-button-element s-button-btn s-button-solid s-button-wide s-button-primary s-button-loader-center
+{
+
+  background-color: #352110 !important;
+}
+
+.s-quantity-input-input
+{
+  background-color: #f7f2ed !important;
+}
+.s-button-wrap svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: currentColor;
+  display: none;
+}
+
+.s-button-primary {
+  
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  background: #352110 !important;
+  font-size: 14px !important;
+  border: 1px solid #352110 !important;
+  align-items: center !important;
+  border-radius: 0 !important;
+  width: 13px !important;
+  height: 20px !important; 
+  display: flex !important;
+}
+
+.s-button-primary {
+  padding-top: 0px;/* Updated padding for vertical centering */
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  flex: auto;  /* Set the width of the button */
+}
+.s-button-text {
+  font-size: 11px !important;
+
+}
+
+
+
+
+.s-button-primary-outline {
+font-size: 14px !important;
+font-weight: 600 !important;
+color: #352110 !important;
+border: 1px solid rgba(55,37,25,0.2902) !important;
+width: 13px !important; 
+  height: 20px !important; 
+
+}
+
+
+
+
+.s-button-primary-outline {
+padding-top: 0px;/* Updated padding for vertical centering */
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+/* Ensures text is not cut off */ 
+
+}
+
+
+.s-button-primary-outline:hover {
+color: #352110 !important;
+background: transparent !important;
+border: 1px solid rgba(55,37,25,0.2902) !important;
+}
+
+
+.s-button-primary-outline:hover {
+/* Keeping the hover state the same as the normal state */
+}
+
+
+
 }
 /*
  ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
@@ -29667,7 +29776,6 @@ fieldset:disabled .btn {
   align-items: flex-end !important;
 }
 .align-items-center {
-    padding-left: 0px !important;
   align-items: center !important;
 }
 .align-items-baseline {
