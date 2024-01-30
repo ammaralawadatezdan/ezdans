@@ -89,6 +89,30 @@ class Product extends BasePage {
             const itemDisBlockDisplay = document.getElementById('itemDisBlockDisplay');
 
 
+            // اخفاء السيكشن اذا كان لا يحتوي داتا
+       // Access the About-coffeealo section
+       const aboutCoffeealoSection = document.getElementById('About-coffeealo');
+
+       // Logic to hide or show the About-coffeealo section
+       if (!aboutCoffeealoSection) {
+           console.error('About-coffeealo section not found');
+           return;
+       }
+
+       if (matchedItem && matchedItem.component && matchedItem.component.item_collection[0]) {
+           // Show the section if matched item is found
+           aboutCoffeealoSection.style.display = 'block';
+           // Update the content based on matchedItem
+           // ... (code to update content based on matchedItem) ...
+       } else {
+           // Hide the About-coffeealo section if no matching item is found
+           aboutCoffeealoSection.style.display = 'none';
+       }
+
+         // اخفاء السيكشن اذا كان لا يحتوي داتا
+            
+
+
 
             // Check if the elements and properties exist before updating content
             if (aboutCoffeeSection && string1DisplayDiv && aboutCoffeeIconDisplayDiv && aboutCoffeeTitleDisplayDiv && aboutCoffeeDisDisplayDiv && matchedItem && matchedItem.component.item_collection[0]) {
@@ -317,14 +341,46 @@ class Product extends BasePage {
 
 
 
+
+
+
+
+            const prepearwayDisplayElement = document.getElementById('prepearwayDisplay');
+
+            if (!prepearwayDisplayElement) {
+                console.error('prepearwayDisplay element not found');
+                return;
+            }
+        
+            if (!matchedItem || !matchedItem.component || !matchedItem.component.item_collection || !Array.isArray(matchedItem.component.item_collection)) {
+                console.error('Invalid data structure');
+                prepearwayDisplayElement.style.display = 'none';
+                return;
+            }
+        
+            // Find the first item with prepearway data
+            const prepearwayDataItem = matchedItem.component.item_collection.find(item => item.prepearway);
+        
+            if (prepearwayDataItem && prepearwayDataItem.prepearway) {
+                // Assuming prepearway is a string. If it's not, you'll need to process it accordingly.
+                prepearwayDisplayElement.textContent = prepearwayDataItem.prepearway;
+                prepearwayDisplayElement.style.display = 'block';
+            } else {
+                prepearwayDisplayElement.style.display = 'none';
+            }
+
+
+           
+       
+
+
+
+    
+
+
+
+
             
-
-
-
-
-
-
-
 
             
 
