@@ -341,6 +341,13 @@ class Product extends BasePage {
 
             // Access the section and wrapper elements
          
+      
+
+
+
+
+
+
 
           
 
