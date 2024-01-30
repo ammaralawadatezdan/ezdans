@@ -14190,6 +14190,7 @@ h2.title {
     color: #352110;
   }
 .ezdan-left-menu ul li {
+
     padding-right: 23px;
   }
 .ezdan-left-menu ul li a {
@@ -14696,6 +14697,9 @@ h2.title {
     min-height: 1070px;
     height: 100%;
     margin-top: -185px;
+  }
+.ezdan-pdh-content {
+    padding-top: 0% !important;
   }
 .ezdan-pdh-content {
     padding-top: 400px;
@@ -29663,6 +29667,7 @@ fieldset:disabled .btn {
   align-items: flex-end !important;
 }
 .align-items-center {
+    padding-left: 0px !important;
   align-items: center !important;
 }
 .align-items-baseline {

@@ -121,7 +121,7 @@ salla.api.request('component/list', {params: {paths:['home.main-links']}})
 
                 if (imageURL) {
                     outputImageDiv.style.background = `url(${imageURL}) center/cover no-repeat`;
-                    outputImageDiv.style.minHeight = '1070px';
+                    outputImageDiv.style.minHeight = '700px';
                     outputImageDiv.style.height = '100%';
                     outputImageDiv.style.marginTop = '-185px';
                 }
