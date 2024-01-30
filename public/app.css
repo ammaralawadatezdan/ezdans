@@ -14133,10 +14133,13 @@ h2.title {
 }
 @media screen and (max-width: 768px) {
   .ezdan-navigation-wrapper > * {
+       
       flex: 1; /* Allows items to grow and shrink as needed */
       margin-right: 5px; /* Reduces margin */
       /* Other adjustments as necessary */
-  }
+ 
+ 
+    }
 }
 .ezdan-product-nav {
     background: #f7f2ed;
@@ -14207,7 +14210,7 @@ h2.title {
     }
   
     .ezdan-navigation-wrapper {
-      position: fixed;
+     
       width: 100%;
       padding: 15px 10px;
     }

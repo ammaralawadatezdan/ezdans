@@ -258,7 +258,7 @@
 
               <div class="menu-items">
                   <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4" style="color: white;">
-                      <i slot="icon" style="color: #352110;" class="fa-solid fa-cart-shopping"></i>
+                      <i slot="icon" class="fa-solid fa-cart-shopping"></i>
                   </salla-cart-summary>
           
                   {% if user.type == 'user' %}
@@ -286,7 +286,7 @@
   
 
 <nav id="Navigation">
-  <div class="ezdan-navigation-wrapper" style="background-color: #f7f2ed !important; color: #352110 !important;">
+  <div class="ezdan-navigation-wrapper" style="background-color: #f7f2ed !important; color: #352110 !important; position: relative ;">
     <div class="container">
       <div
         class="ezdan-navbar-wrapper d-flex justify-content-between align-items-center "   style="color: #352110 !important;"
@@ -337,7 +337,7 @@
         </div>
         <div class="ezdan-logo">
           <a class="" href="{{ store.url }}">
-            <img  loading="eager" src="{{ store.logo }}" alt="{{ store.name }} logo">
+            <img  loading="eager" src="https://141-27-27.preezdan.com/assets/images/logo-coffee.svg" alt="{{ store.name }} logo">
             {% if is_page('index') %}
               <h1 class="sr-only">{{ store.name }}</h1>
             {% else %}

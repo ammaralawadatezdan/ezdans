@@ -107,10 +107,13 @@
 
 @media screen and (max-width: 768px) {
   .ezdan-navigation-wrapper > * {
+       
       flex: 1; /* Allows items to grow and shrink as needed */
       margin-right: 5px; /* Reduces margin */
       /* Other adjustments as necessary */
-  }
+ 
+ 
+    }
 }
   
   .ezdan-product-nav {
@@ -195,7 +198,7 @@
     }
   
     .ezdan-navigation-wrapper {
-      position: fixed;
+     
       width: 100%;
       padding: 15px 10px;
     }
@@ -807,7 +810,13 @@
     color: #ffffff;
     padding-top: 10px;
   }
+
+
+
+
   
+
+
   /* Product Details Hero Section CSS End */
   
   /* Product Details Content Section CSS Start */
@@ -1355,4 +1364,6 @@
     overflow-x: auto;
   }
 }
+
+
 
