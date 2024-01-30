@@ -14172,8 +14172,17 @@ h2.title {
 .ezdan-main-nav li a {
     font-size: 16px !important;
     font-weight: 300 !important;
-    color: #fff !important;
+    color: #ffffff !important;
 }
+.ezdan-main-nav1 li a {
+      font-size: 16px !important;
+      font-weight: 300 !important;
+      color: #352110 !important;
+  }
+.ezdan-main-nav1 a {
+
+    color: #352110 !important;
+  }
 .ezdan-product-nav .ezdan-main-nav li a {
     color: #352110;
   }
@@ -14229,10 +14238,14 @@ h2.title {
     .ezdan-main-menu ul li i {
       color: #ffffff;
     }
+
   
     .ezdan-product-nav .ezdan-main-menu ul li i {
       color: #352110;
     }
+
+
+
   
     #bar {
       cursor: pointer;
@@ -14339,10 +14352,12 @@ h2.title {
     padding-top: 150px;
   }
 .ezdan-coffee-top {
+    text-align: center !important;
+  }
+.ezdan-coffee-top {
     max-width: 1080px;
     width: 100%;
     margin: auto;
-    text-align: center;
   }
 .ezdan-coffee-top h3 {
     font-size: 35px;
