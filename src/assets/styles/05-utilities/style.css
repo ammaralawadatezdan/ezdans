@@ -172,6 +172,10 @@
   .ezdan-product-nav .ezdan-main-nav li a {
     color: #352110;
   }
+
+  .ezdan-left-menu ul{
+    padding: 0!important;
+  }
   
   .ezdan-left-menu ul li {
     padding-right: 23px;
@@ -221,6 +225,7 @@
       right: 0;
       background-color: #371a08;
     }
+
   
     .ezdan-main-menu ul li {
       padding-left: 12px;
@@ -968,6 +973,14 @@
       align-items: center !important;
       border-radius: 0 !important;
   }
+
+
+  @media only screen and (max-width: 767px) {
+    .s-button-primary {
+      padding: 25px 35px !important;
+  }
+  }
+
   
   .s-button-primary-outline {
     font-size: 20px !important;
@@ -1023,12 +1036,12 @@
   .ezdan-buy-btn,
   .ezdan-atoc-btn,
   .ezdan-quantity-btn {
-    padding-right: 20px;
+    padding-right: 5px;
   }
   
   .ezdan-quantity-btn {
     margin-top: 0px;
-    padding: 9px 5px;
+    padding: 6px 5px;
     border: 1px solid #3725194a;
   }
   
@@ -1339,10 +1352,10 @@
 }
 
 .menu-container {
- 
   display: flex;
   align-items: center; /* Align vertically */
   justify-content: flex-start; /* Align horizontally */
+  margin-top: -18px;
 }
 
 .MobileVisible {
@@ -1415,10 +1428,6 @@
   color: #ffffff !important;
   background: #352110 !important;
   font-size: 14px !important;
-  padding-top: 0px;/* Updated padding for vertical centering */
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   border: 1px solid #352110 !important;
   align-items: center !important;
   border-radius: 0 !important;
@@ -1439,14 +1448,9 @@
 font-size: 14px !important;
 font-weight: 600 !important;
 color: #352110 !important;
-padding-top: 0px;/* Updated padding for vertical centering */
-padding-right: 0px;
-padding-bottom: 0px;
-padding-left: 0px;
 border: 1px solid #3725194a !important;
 /* Ensures text is not cut off */
-width: 13px !important; 
-  height: 20px !important; 
+width: 13px !important;
 
 }
 

@@ -13470,577 +13470,561 @@ fieldset:disabled .btn {
  }
 /* Min Width 1200px and Max Width 1399px */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .ezdan-footer-logo {
-      padding-left: 120px!important;
-    }
-  
-    /* Product Page CSS */
-  
-    .ezdan-about-coffee-container {
-      gap: 50px!important;
-    }
+  .ezdan-footer-logo {
+    padding-left: 120px !important;
   }
+
+  /* Product Page CSS */
+
+  .ezdan-about-coffee-container {
+    gap: 50px !important;
+  }
+}
 /* Min Width 992px and Max Width 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .ezdan-logo {
-      margin-left: 0!important;
-    }
-  
-    .slide-1,
-    .slide-2,
-    .slide-3 {
-      min-height: 800px!important;
-    }
+  .ezdan-logo {
+    margin-left: 0 !important;
+  }
 
-    .ezdan-navigation-wrapper {
-      position: fixed!important;
-      width: 100%!important;
-      padding: 15px 10px!important;
-      z-index: 999!important;
+  .slide-1,
+  .slide-2,
+  .slide-3 {
+    min-height: 800px !important;
   }
-  
-    .ezdan-slider-conent {
-      padding-top: 200px!important;
-    }
-  
-    .ezdan-roasted-coffee-wrapper {
-      min-height: 900px!important;
-    }
-  
-    .ezdan-coffee-info-wrapper {
-      min-height: 600px!important;
-    }
-  
-    /* Product Page CSS */
-  
-    .ezdan-about-coffee-container {
-      grid-template-columns: repeat(4, 1fr)!important;
-      gap: 50px!important;
-    }
+
+  .ezdan-navigation-wrapper {
+    position: fixed !important;
+    width: 100% !important;
+    padding: 15px 10px !important;
+    z-index: 999 !important;
   }
+
+  .ezdan-slider-conent {
+    padding-top: 200px !important;
+  }
+
+  .ezdan-roasted-coffee-wrapper {
+    min-height: 900px !important;
+  }
+
+  .ezdan-coffee-info-wrapper {
+    min-height: 600px !important;
+  }
+
+  /* Product Page CSS */
+
+  .ezdan-about-coffee-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 50px !important;
+  }
+}
 /* Min Width 768px and Max Width 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-    .ezdan-logo {
-      margin-left: 0!important;
-    }
-  
-    .slide-1,
-    .slide-2,
-    .slide-3 {
-      min-height: 700px!important;
-    }
-  
-    .ezdan-slider-conent {
-      padding-top: 200px !important;
-    }
-  
-    .ezdan-slider-conent h2,
-    .ezdan-coffee-content h2 {
-      font-size: 30px!important;
-    }
-  
-    .ezdan-slider-conent p,
-    .ezdan-hero-btn a,
-    .ezdan-coffee-slide-content h2,
-    .ezdan-coffee-content h3,
-    .ezdan-coffee-shop-content h3,
-    .ezdan-product-content h3 {
-      font-size: 20px!important;
-      padding-top: 5px!important;
-    }
-  
-    .ezdan-coffee-top h3 {
-      font-size: 20px!important;
-    
-    }
-  
-    .ezdan-roasted-coffee-wrapper {
-      min-height: 800px!important;
-    }
-  
-    .ezdan-coffee-info-wrapper {
-      min-height: 600px!important;
-    }
-  
-    .ezdan-shop-btn a {
-      font-size: 14px!important;
-    }
-  
-    .ezdan-product-content h2 {
-      font-size: 32px!important;
-    }
-  
-    /* Product Details Page CSS */
-  
-    .ezdan-pdh-content h1 {
-      font-size: 30px!important;
-    }
-  
-    .ezdan-pdh-content h2 {
-      font-size: 20px!important;
-      padding-top: 0!important;
-    }
-  
-    .ezdan-pdc-wrapper {
-      padding: 0 0 50px!important;
-    }
-  
-    .ezdan-product-details-content h3 {
-      font-size: 20px!important;
-      margin-top: -30px!important;
-    }
-  
-    /* Product Page CSS */
-  
-    .ezdan-about-coffee-container {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 50px;
-    }
+  .ezdan-logo {
+    margin-left: 0 !important;
   }
+
+  .slide-1,
+  .slide-2,
+  .slide-3 {
+    min-height: 700px !important;
+  }
+
+  .ezdan-slider-conent {
+    padding-top: 200px !important;
+  }
+
+  .ezdan-slider-conent h2,
+  .ezdan-coffee-content h2 {
+    font-size: 30px !important;
+  }
+
+  .ezdan-slider-conent p,
+  .ezdan-hero-btn a,
+  .ezdan-coffee-slide-content h2,
+  .ezdan-coffee-content h3,
+  .ezdan-coffee-shop-content h3,
+  .ezdan-product-content h3 {
+    font-size: 20px !important;
+    padding-top: 5px !important;
+  }
+
+  .ezdan-coffee-top h3 {
+    font-size: 20px !important;
+
+  }
+
+  .ezdan-roasted-coffee-wrapper {
+    min-height: 800px !important;
+  }
+
+  .ezdan-coffee-info-wrapper {
+    min-height: 600px !important;
+  }
+
+  .ezdan-shop-btn a {
+    font-size: 14px !important;
+  }
+
+  .ezdan-product-content h2 {
+    font-size: 32px !important;
+  }
+
+  /* Product Details Page CSS */
+
+  .ezdan-pdh-content h1 {
+    font-size: 30px !important;
+  }
+
+  .ezdan-pdh-content h2 {
+    font-size: 20px !important;
+    padding-top: 0 !important;
+  }
+
+  .ezdan-pdc-wrapper {
+    padding: 0 0 50px !important;
+  }
+
+  .ezdan-product-details-content h3 {
+    font-size: 20px !important;
+    margin-top: -30px !important;
+  }
+
+  /* Product Page CSS */
+
+  .ezdan-about-coffee-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+}
 /* Min Width 300px and Max Width 767px */
 @media (min-width: 300px) and (max-width: 767px) {
-    .ezdan-logo {
-      margin-left: 0!important;
-    }
-  
-    .slide-1,
-    .slide-2,
-    .slide-3 {
-      min-height: 350px!important;
-      background-size: cover!important;
-      background-position: center!important;
-    }
-  
-    .ezdan-slider-conent {
-      padding-top: 120px!important;
-    }
-  
-    .ezdan-slider-conent h2 {
-      font-size: 19px!important;
-      text-align: right!important;
-    }
 
-    .ezdan-slider-conent p {
-      text-align: right!important;
-    }
-
-    .ezdan-hero-btn{
-      margin-right: -100px!important;
-    }
-  
-    .ezdan-slider-conent h2 br {
-      display: none!important;
-    }
-  
-    .ezdan-hero-btn {
-      padding-top: 5px!important;
-    }
-  
-    .ezdan-hero-btn a {
-      font-size: 13px!important;
-      padding: 5px 20px 12px!important;
-    }
-  
-    .ezdan-hero-slider .owl-prev {
-      right: 20px!important;
-      top: 48%!important;
-    }
-  
-    .ezdan-slider-conent {
-      padding-right: 60px!important;
-    }
-  
-    .ezdan-hero-slider .owl-next {
-      left: 20px!important;
-      top: 48%!important;
-    }
-  
-    .ezdan-coffee-slide::before {
-      width: 60%!important;
-      height: 15px!important;
-    }
-  
-    .ezdan-coffee-slide-content {
-      right: 20px!important;
-      bottom: 30px!important;
-    }
-  
-    .ezdan-coffee-slide-content::before {
-      top: -20px!important;
-      width: 20px!important;
-      height: 20px!important;
-    }
-  
-    .ezdan-coffee-wrapper {
-      padding-top: 60px!important;
-    }
-  
-    .ezdan-coffee-slider {
-      padding-top: 25px!important;
-    }
-  
-    .ezdan-coffee-content h2 {
-      font-size: 20px!important;
-      margin-bottom: 0px!important;
-    }
-  
-    .ezdan-slider-conent p,
-    .ezdan-coffee-slide-content h2,
-    .ezdan-coffee-content h3,
-    .ezdan-coffee-shop-content h3,
-    .ezdan-product-content h3 {
-      font-size: 25px!important;
-      padding-top: 0!important;
-    }
-
-.ezdan-arrow-down-icon img{
-      max-width: 50px;
-      margin: auto;
-      text-align: center;
-    }
-  
-    .ezdan-coffee-top h3 {
-      font-size: 11px!important;
-      margin-bottom: -80px!important;
-    }
-  
-    .ezdan-roasted-coffee-wrapper {
-      min-height: 264px!important;
-      margin-top: 45px!important;
-    }
-  
-    .ezdan-coffee-content {
-      width: 100%!important;
-      padding-top: 80px!important;
-      text-align: center!important;
-    }
-  
-    .ezdan-coffee-content h3 {
-      color: #ffffff !important;
-      opacity: 1!important;
-    }
-  
-    .ezdan-coffee-shop-wrapper {
-      padding: 45px 0 70px!important;
-    }
-  
-    .ezdan-shop-btn a {
-      font-size: 8px!important;
-    }
-  
-    .ezdan-coffee-shop-arrow,
-    .ezdan-soudi-coffee-arrow {
-      display: none!important;
-    }
-  
-    .ezdan-coffee-info-wrapper {
-      min-height: 320px!important;
-      background-size: cover!important;
-      background-position: center!important;
-    }
-  
-    .ezdan-cis::after {
-      bottom: -5px!important;
-      width: 144px!important;
-      height: 10px!important;
-    }
-  
-    .ezdan-shop-btn a {
-      font-size: 14px!important;
-      padding: 3px 23px 10px!important;
-    }
-  
-    .ezdan-product-wrapper {
-      padding: 40px 28px!important;
-    }
-  
-    .ezdan-product-content {
-      text-align: center!important;
-      padding-bottom: 40px!important;
-    }
-  
-    .ezdan-product-content h2 {
-      font-size: 23px!important;
-    }
-  
-    .ezdan-product-card {
-      padding-bottom: 48px!important;
-    }
-  
-    .ezdan-product-card-content h3,
-    .ezdan-product-card-content h4 {
-      font-size: 20px!important;
-    }
-  
-    .ezdan-product-card-content p,
-    .ezdan-add-to-card-btn a {
-      font-size: 15px!important;
-      padding: 10px 0 18px!important;
-    }
-  
-    .ezdan-heart-btn a img {
-      width: 30px!important;
-      padding: 12px 0!important;
-    }
-  
-    .ezdan-contact-wrapper {
-      padding-bottom: 0!important;
-    }
-  
-    .ezdan-footer-social {
-      padding-top: 60px!important;
-    }
-  
-    .ezdan-footer-logo {
-      padding: 60px 0!important;
-    }
-  
-    /* Product Details Page CSS */
-  
-    .ezdan-product-details-hero-wrapper {
-      background: url(../images/product-details-hero-bg-mobile.png)!important;
-      background-repeat: no-repeat!important;
-      min-height: 267px !important;
-      height: 100%!important;
-      margin-top: 0!important;
-    }
-  
-    .ezdan-pdh-content {
-      padding-top: 115px!important;
-    }
-  
-    .ezdan-pdh-content h1 {
-      font-size: 15px!important;
-    }
-  
-    .ezdan-pdh-content h2 {
-      font-size: 12px!important;
-      padding-top: 0!important;
-    }
-  
-    .ezdan-pdc-wrapper {
-      padding: 0 0 50px!important;
-    }
-  
-    .ezdan-product-details-content h3 {
-      font-size: 11px!important;
-      line-height: 15px!important;
-      margin-top: -30px!important;
-    }
-  
-    /* Product Page CSS */
-  
-    .ezdan-product-hero-slide {
-      background-size: contain!important;
-      background-position: center!important;
-      min-height: 400px!important;
-    }
-  
-    .ezdan-product-hero-slider .owl-prev,
-    .ezdan-product-hero-slider .owl-next {
-      top: 50%!important;
-      transform: translateY(-50%)!important;
-    }
-  
-    .ezdan-product-hero-slider .owl-prev {
-      right: 20px!important;
-    }
-  
-    .ezdan-product-hero-slider .owl-next {
-      left: 20px!important;
-    }
-  
-    .ezdan-product-hero-content {
-      padding-top: 40px!important;
-    }
-  
-    .ezdan-product-hero-content h2 {
-      font-size: 20px!important;
-      font-weight: 500!important;
-      margin-bottom: 10px!important;
-    }
-  
-    .ezdan-product-hero-content h3 {
-      font-size: 15px!important;
-      font-weight: 500!important;
-      margin-bottom: 30px!important;
-    }
-  
-    .ezdan-product-hero-content h4 {
-      font-size: 20px!important;
-    }
-  
-    .ezdan-product-hero-content p {
-      font-size: 15px!important;
-    }
-  
-    .ezdan-price-tax-box {
-      padding-top: 0px!important;
-    }
-  
-    .ezdan-quantity-btn {
-      margin-top: 8px!important;
-      padding: 3px 5px!important;
-    }
-  
-    .ezdan-buy-btn,
-    .ezdan-atoc-btn,
-    .ezdan-quantity-btn {
-      padding-right: 10px!important;
-    }
-  
-    .ezdan-buy-btn a,
-    .ezdan-atoc-btn a,
-    .ezdan-quantity-btn p,
-    .ezdan-quantity-btn a {
-      font-size: 11px!important;
-      padding: 6px 20px 10px!important;
-    }
-  
-    .ezdan-quantity-btn a {
-      padding: 0 12px !important;
-      margin-top: 0!important;
-    }
-  
-    .ezdan-product-desc-wrapper,
-    .ezdan-prepare-wrapper,
-    .ezdan-about-coffee-wrapper,
-    .ezdan-crop-story-wrapper {
-      padding: 40px 0!important;
-    }
-  
-    .ezdan-about-coffee-container {
-      grid-template-columns: repeat(1, 1fr)!important;
-      gap: 50px!important;
-      padding: 0 78px!important;
-    }
-  
-    .ezdan-about-coffee-title {
-      display: none!important;
-    }
-  
-    .ezdan-product-desc-content h2,
-    .ezdan-prepare-content h2,
-    .ezdan-crop-story-content h2 {
-      font-size: 20px!important;
-      margin-bottom: 20px!important;
-    }
-  
-    .ezdan-product-desc-content h4,
-    .ezdan-prepare-content h4,
-    .ezdan-crop-story-content h3 {
-      font-size: 11px!important;
-      line-height: 14px!important;
-    }
-  
-    .ezdan-about-coffee-card-content h4,
-    .ezdan-about-coffee-card-content p {
-      font-size: 15px!important;
-    }
-  
-  
-    .ezdan-about-coffee-wrapper,
-    .ezdan-crop-story-wrapper {
-      padding: 40px 0!important;
-    }
-  
-    .ezdan-about-coffee-container {
-      gap: 50px!important;
-      padding: 0 78px!important;
-    }
-  
-    .ezdan-about-coffee-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .ezdan-about-coffee-title {
-      display: none!important;
-    }
-  
-    .ezdan-product-desc-content h2,
-    .ezdan-prepare-content h2,
-    .ezdan-crop-story-content h2 {
-      font-size: 20px!important;
-      margin-bottom: 20px!important;
-    }
-  
-    .ezdan-product-desc-content h4,
-    .ezdan-prepare-content h4,
-    .ezdan-crop-story-content h3 {
-      font-size: 11px!important;
-      line-height: 14px!important;
-    }
-  
-    .ezdan-about-coffee-card-content h4,
-    .ezdan-about-coffee-card-content p {
-      font-size: 15px!important;
-    }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    .ezdan-about-coffee-wrapper2,
-    .ezdan-crop-story-wrapper2 {
-      padding: 40px 0!important;
-    }
-  
-    .ezdan-about-coffee-container2 {
-      gap: 50px!important;
-      padding: 0 78px!important;
-    }
-  
-    .ezdan-about-coffee-container2 {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .ezdan-about-coffee-title2 {
-      display: none!important;
-    }
-  
-    .ezdan-product-desc-content2 h2,
-    .ezdan-prepare-content h2,
-    .ezdan-crop-story-content h2 {
-      font-size: 20px!important;
-      margin-bottom: 20px!important;
-    }
-  
-    .ezdan-product-desc-content2 h4,
-    .ezdan-prepare-content h4,
-    .ezdan-crop-story-content h3 {
-      font-size: 11px!important;
-      line-height: 14px!important;
-    }
-  
-    .ezdan-about-coffee-card-content2 h4,
-    .ezdan-about-coffee-card-content p {
-      font-size: 15px!important;
-    }
+  .ezdan-logo {
+    margin-left: 0 !important;
   }
+
+  .slide-1,
+  .slide-2,
+  .slide-3 {
+    min-height: 350px !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .ezdan-slider-conent {
+    padding-top: 120px !important;
+  }
+
+  .ezdan-slider-conent h2 {
+    font-size: 19px !important;
+    text-align: right !important;
+  }
+
+  .ezdan-slider-conent p {
+    text-align: right !important;
+  }
+
+  .ezdan-hero-btn {
+    margin-right: -100px !important;
+  }
+
+  .ezdan-slider-conent h2 br {
+    display: none !important;
+  }
+
+  .ezdan-hero-btn {
+    padding-top: 5px !important;
+  }
+
+  .ezdan-hero-btn a {
+    font-size: 13px !important;
+    padding: 5px 20px 12px !important;
+  }
+
+  .ezdan-hero-slider .owl-prev {
+    right: 20px !important;
+    top: 48% !important;
+  }
+
+  .ezdan-slider-conent {
+    padding-right: 60px !important;
+  }
+
+  .ezdan-hero-slider .owl-next {
+    left: 20px !important;
+    top: 48% !important;
+  }
+
+  .ezdan-coffee-slide::before {
+    width: 60% !important;
+    height: 15px !important;
+  }
+
+  .ezdan-coffee-slide-content {
+    right: 20px !important;
+    bottom: 30px !important;
+  }
+
+  .ezdan-coffee-slide-content::before {
+    top: -20px !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .ezdan-coffee-wrapper {
+    padding-top: 60px !important;
+  }
+
+  .ezdan-coffee-slider {
+    padding-top: 25px !important;
+  }
+
+  .ezdan-coffee-content h2 {
+    font-size: 20px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .ezdan-slider-conent p,
+  .ezdan-coffee-slide-content h2,
+  .ezdan-coffee-content h3,
+  .ezdan-coffee-shop-content h3,
+  .ezdan-product-content h3 {
+    font-size: 25px !important;
+    padding-top: 0 !important;
+  }
+
+  .ezdan-arrow-down-icon img {
+    max-width: 50px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .ezdan-coffee-top h3 {
+    font-size: 11px !important;
+    margin-bottom: -80px !important;
+  }
+
+  .ezdan-roasted-coffee-wrapper {
+    min-height: 264px !important;
+    margin-top: 45px !important;
+  }
+
+  .ezdan-coffee-content {
+    width: 100% !important;
+    padding-top: 80px !important;
+    text-align: center !important;
+  }
+
+  .ezdan-coffee-content h3 {
+    color: #ffffff !important;
+    opacity: 1 !important;
+  }
+
+  .ezdan-coffee-shop-wrapper {
+    padding: 45px 0 70px !important;
+  }
+
+  .ezdan-shop-btn a {
+    font-size: 8px !important;
+  }
+
+  .ezdan-coffee-shop-arrow,
+  .ezdan-soudi-coffee-arrow {
+    display: none !important;
+  }
+
+  .ezdan-coffee-info-wrapper {
+    min-height: 320px !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .ezdan-cis::after {
+    bottom: -5px !important;
+    width: 144px !important;
+    height: 10px !important;
+  }
+
+  .ezdan-shop-btn a {
+    font-size: 14px !important;
+    padding: 3px 23px 10px !important;
+  }
+
+  .ezdan-product-wrapper {
+    padding: 40px 28px !important;
+  }
+
+  .ezdan-product-content {
+    text-align: center !important;
+    padding-bottom: 40px !important;
+  }
+
+  .ezdan-product-content h2 {
+    font-size: 23px !important;
+  }
+
+  .ezdan-product-card {
+    padding-bottom: 48px !important;
+  }
+
+  .ezdan-product-card-content h3,
+  .ezdan-product-card-content h4 {
+    font-size: 20px !important;
+  }
+
+  .ezdan-product-card-content p,
+  .ezdan-add-to-card-btn a {
+    font-size: 15px !important;
+    padding: 10px 0 18px !important;
+  }
+
+  .ezdan-heart-btn a img {
+    width: 30px !important;
+    padding: 12px 0 !important;
+  }
+
+  .ezdan-contact-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  .ezdan-footer-social {
+    padding-top: 60px !important;
+  }
+
+  .ezdan-footer-logo {
+    padding: 60px 0 !important;
+  }
+
+  /* Product Details Page CSS */
+
+  .ezdan-product-details-hero-wrapper {
+    background: url(../images/product-details-hero-bg-mobile.png) !important;
+    background-repeat: no-repeat !important;
+    min-height: 267px !important;
+    height: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .ezdan-pdh-content {
+    padding-top: 115px !important;
+  }
+
+  .ezdan-pdh-content h1 {
+    font-size: 15px !important;
+  }
+
+  .ezdan-pdh-content h2 {
+    font-size: 12px !important;
+    padding-top: 0 !important;
+  }
+
+  .ezdan-pdc-wrapper {
+    padding: 0 0 50px !important;
+  }
+
+  .ezdan-product-details-content h3 {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    margin-top: -30px !important;
+  }
+
+  /* Product Page CSS */
+
+  .ezdan-product-hero-slide {
+    background-size: contain !important;
+    background-position: center !important;
+    min-height: 400px !important;
+  }
+
+  .ezdan-product-hero-slider .owl-prev,
+  .ezdan-product-hero-slider .owl-next {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .ezdan-product-hero-slider .owl-prev {
+    right: 20px !important;
+  }
+
+  .ezdan-product-hero-slider .owl-next {
+    left: 20px !important;
+  }
+
+  .ezdan-product-hero-content {
+    padding-top: 40px !important;
+  }
+
+  .ezdan-product-hero-content h2 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ezdan-product-hero-content h3 {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    margin-bottom: 30px !important;
+  }
+
+  .ezdan-product-hero-content h4 {
+    font-size: 20px !important;
+  }
+
+  .ezdan-product-hero-content p {
+    font-size: 15px !important;
+  }
+
+  .ezdan-price-tax-buttons {
+    padding-bottom: 30px;
+  }
+
+  .ezdan-price-tax-box {
+    padding-top: 0px !important;
+  }
+
+  .ezdan-quantity-btn {
+    padding: 5px 0 !important;
+  }
+
+  .ezdan-buy-btn,
+  .ezdan-atoc-btn,
+  .ezdan-quantity-btn {
+    padding-right: 5px !important;
+  }
+
+  .ezdan-buy-btn a,
+  .ezdan-atoc-btn a,
+  .ezdan-quantity-btn p,
+  .ezdan-quantity-btn a {
+    font-size: 11px !important;
+    padding: 6px 20px 10px !important;
+  }
+
+  .ezdan-quantity-btn a {
+    padding: 0 12px !important;
+    margin-top: 0 !important;
+  }
+
+
+  .ezdan-product-desc-wrapper,
+  .ezdan-prepare-wrapper,
+  .ezdan-about-coffee-wrapper,
+  .ezdan-crop-story-wrapper {
+    padding: 40px 0 !important;
+  }
+
+  .ezdan-about-coffee-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 50px !important;
+    padding: 0 78px !important;
+  }
+
+  .ezdan-about-coffee-title {
+    display: none !important;
+  }
+
+  .ezdan-product-desc-content h2,
+  .ezdan-prepare-content h2,
+  .ezdan-crop-story-content h2 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .ezdan-product-desc-content h4,
+  .ezdan-prepare-content h4,
+  .ezdan-crop-story-content h3 {
+    font-size: 11px !important;
+    line-height: 14px !important;
+  }
+
+  .ezdan-about-coffee-card-content h4,
+  .ezdan-about-coffee-card-content p {
+    font-size: 15px !important;
+  }
+
+
+  .ezdan-about-coffee-wrapper,
+  .ezdan-crop-story-wrapper {
+    padding: 40px 0 !important;
+  }
+
+  .ezdan-about-coffee-container {
+    gap: 50px !important;
+    padding: 0 78px !important;
+  }
+
+  .ezdan-about-coffee-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ezdan-about-coffee-title {
+    display: none !important;
+  }
+
+  .ezdan-product-desc-content h2,
+  .ezdan-prepare-content h2,
+  .ezdan-crop-story-content h2 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .ezdan-product-desc-content h4,
+  .ezdan-prepare-content h4,
+  .ezdan-crop-story-content h3 {
+    font-size: 11px !important;
+    line-height: 14px !important;
+  }
+
+  .ezdan-about-coffee-card-content h4,
+  .ezdan-about-coffee-card-content p {
+    font-size: 15px !important;
+  }
+
+  .ezdan-about-coffee-wrapper2,
+  .ezdan-crop-story-wrapper2 {
+    padding: 40px 0 !important;
+  }
+
+  .ezdan-about-coffee-container2 {
+    gap: 50px !important;
+    padding: 0 78px !important;
+  }
+
+  .ezdan-about-coffee-container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ezdan-about-coffee-title2 {
+    display: none !important;
+  }
+
+  .ezdan-product-desc-content2 h2,
+  .ezdan-prepare-content h2,
+  .ezdan-crop-story-content h2 {
+    font-size: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .ezdan-product-desc-content2 h4,
+  .ezdan-prepare-content h4,
+  .ezdan-crop-story-content h3 {
+    font-size: 11px !important;
+    line-height: 14px !important;
+  }
+
+  .ezdan-about-coffee-card-content2 h4,
+  .ezdan-about-coffee-card-content p {
+    font-size: 15px !important;
+  }
+
+  /*New CSS for section page*/
+
+  .s-products-list-vertical-cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+}
 /* Base Style CSS Start */
 /* Font */
 @font-face {
@@ -14189,6 +14173,9 @@ h2.title {
 .ezdan-product-nav .ezdan-main-nav li a {
     color: #352110;
   }
+.ezdan-left-menu ul{
+    padding: 0!important;
+  }
 .ezdan-left-menu ul li {
     padding-right: 23px;
   }
@@ -14233,6 +14220,7 @@ h2.title {
       right: 0;
       background-color: #371a08;
     }
+
   
     .ezdan-main-menu ul li {
       padding-left: 12px;
@@ -14846,6 +14834,11 @@ h2.title {
   }
 .s-button-primary { /* Updated padding for vertical centering */
   }
+@media only screen and (max-width: 767px) {
+    .s-button-primary {
+      padding: 25px 35px !important;
+  }
+  }
 .s-button-primary-outline {
     font-size: 20px !important;
     font-weight: 600 !important;
@@ -14894,11 +14887,11 @@ h2.title {
 .ezdan-buy-btn,
   .ezdan-atoc-btn,
   .ezdan-quantity-btn {
-    padding-right: 20px;
+    padding-right: 5px;
   }
 .ezdan-quantity-btn {
     margin-top: 0px;
-    padding: 9px 5px;
+    padding: 6px 5px;
     border: 1px solid rgba(55,37,25,0.2902);
   }
 .ezdan-quantity-btn p {
@@ -15134,10 +15127,10 @@ h2.title {
   }
 }
 .menu-container {
- 
   display: flex;
   align-items: center; /* Align vertically */
   justify-content: flex-start; /* Align horizontally */
+  margin-top: -18px;
 }
 .MobileVisible {
   display: none;
@@ -15204,10 +15197,6 @@ h2.title {
 
 
 .s-button-primary {
-  padding-top: 0px;/* Updated padding for vertical centering */
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
   flex: auto;  /* Set the width of the button */
 }
 .s-button-text {
@@ -15223,8 +15212,7 @@ font-size: 14px !important;
 font-weight: 600 !important;
 color: #352110 !important;
 border: 1px solid rgba(55,37,25,0.2902) !important;
-width: 13px !important; 
-  height: 20px !important; 
+width: 13px !important;
 
 }
 
@@ -15232,11 +15220,7 @@ width: 13px !important;
 
 
 .s-button-primary-outline {
-padding-top: 0px;/* Updated padding for vertical centering */
-padding-right: 0px;
-padding-bottom: 0px;
-padding-left: 0px;
-/* Ensures text is not cut off */ 
+/* Ensures text is not cut off */
 
 }
 
