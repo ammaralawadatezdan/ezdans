@@ -183,6 +183,18 @@
             "required": false,
             "value": false,
             "selected": false
+        },
+        {
+            "id": "footerlogo",
+            "type": "string",
+            "format": "image",
+            "label": "footerlogo",
+            "description": "الشعار في تذييل الصفحة",
+            "labelHTML": null,
+            "placeholder": "e.g. https://hostname.com/image.png",
+            "icon": "sicon-image",
+            "value": null,
+            "required": false
         }
     ],
     "components": [
